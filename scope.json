@@ -1,0 +1,5 @@
+{
+  "countries": ["DE", "AT", "CH", "FR", "BE", "NL", "LU", "DK", "PL", "CZ", "IT", "ES", "PT", "GB", "IE", "NO", "SE", "FI", "IS", "EE", "LV", "LT", "SK", "HU", "SI", "HR", "BA", "RS", "ME", "XK", "AL", "MK", "GR", "BG", "RO", "MD", "UA", "BY", "MT", "CY", "AD", "LI", "MC", "SM", "VA", "FO", "AX", "GI", "GG", "JE", "IM", "GE", "AM", "AZ", "TR", "RU", "KZ"],
+  "transcontinental_or_boundary_scope": ["GE", "AM", "AZ", "TR", "RU", "KZ"],
+  "note": "Germany first, then country by country. Includes European microstates and dependencies. Transcontinental and boundary countries are collected in full and flagged, so users can later apply their own Europe boundary. Overseas territories separately coded in OSM are not included. Country-area membership follows OSM administrative boundaries and is not a political assertion."
+}
