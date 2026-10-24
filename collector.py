@@ -111,15 +111,15 @@ def normalize_osm(element, country, timestamp):
 
 
 def discover(country, endpoint):
-    query = f'[out:json][timeout:180];area["ISO3166-1"="{country}"][admin_level=2]->.a;nwr(area.a)[tourism=hotel];out center meta;'
+    query = f'[out:json][timeout:180];area["ISO3166-1"="{country}"]->.a;.a out ids;nwr(area.a)[tourism=hotel];out center meta;'
     raw, _ = fetch(endpoint, urllib.parse.urlencode({"data": query}).encode(), limit=80000000, timeout=220)
     result = json.loads(raw)
     if result.get("remark") or not isinstance(result.get("elements"), list):
         raise ValueError(result.get("remark", "Incomplete Overpass response"))
+    if not any(e.get("type") == "area" for e in result["elements"]):
+        raise ValueError("Country boundary not resolved; prior snapshot and cursor retained")
     timestamp = now()
     rows = [r for e in result["elements"] if (r := normalize_osm(e, country, timestamp))]
-    if not rows:
-        raise ValueError("Empty country result requires review; prior snapshot retained")
     return rows
 
 

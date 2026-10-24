@@ -69,6 +69,13 @@ class CollectorTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 c.public_url("http://localhost/test")
 
+    def test_resolved_empty_country_can_advance(self):
+        with patch.object(c, "fetch", return_value=(json.dumps({"elements": [{"type": "area", "id": 1}]}), "")):
+            self.assertEqual(c.discover("VA", ""), [])
+        with patch.object(c, "fetch", return_value=(json.dumps({"elements": []}), "")):
+            with self.assertRaises(ValueError):
+                c.discover("VA", "")
+
     def test_csv_formula_injection_and_exports(self):
         self.assertEqual(c.csv_safe("=HYPERLINK(\"evil\")"), "'=HYPERLINK(\"evil\")")
         with tempfile.TemporaryDirectory(dir=c.ROOT) as directory:
