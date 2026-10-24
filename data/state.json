@@ -1,0 +1,19 @@
+{
+  "next_country_index": 1,
+  "runs": [
+    {
+      "country": "DE",
+      "started": "2026-10-24T23:28:47+00:00",
+      "finished": "2026-10-24T23:28:47+00:00",
+      "status": "failed",
+      "error": "[Errno 11001] getaddrinfo failed"
+    },
+    {
+      "country": "DE",
+      "started": "2026-10-24T23:29:41+00:00",
+      "finished": "2026-10-24T23:32:09+00:00",
+      "status": "success",
+      "hotels": 24902
+    }
+  ]
+}

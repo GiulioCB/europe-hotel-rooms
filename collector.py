@@ -56,15 +56,21 @@ def public_url(url):
 class Redirects(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         public_url(newurl)
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
+        if getattr(req, "same_host", False) and urllib.parse.urlsplit(req.full_url).netloc != urllib.parse.urlsplit(newurl).netloc:
+            raise ValueError("Cross-host redirect requires a separate robots review")
+        redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if redirected:
+            redirected.same_host = getattr(req, "same_host", False)
+        return redirected
 
 
 OPENER = urllib.request.build_opener(Redirects())
 
 
-def fetch(url, data=None, limit=6000000, timeout=30):
+def fetch(url, data=None, limit=6000000, timeout=30, same_host=False):
     public_url(url)
     request = urllib.request.Request(url, data=data, headers={"User-Agent": AGENT, "Accept": "text/html,application/json,text/plain"})
+    request.same_host = same_host
     with OPENER.open(request, timeout=timeout) as response:
         body = response.read(limit + 1)
         if len(body) > limit:
@@ -214,7 +220,7 @@ def enrich(row, delay=5):
     robots_url = urllib.parse.urlunsplit((origin.scheme, origin.netloc, "/robots.txt", "", ""))
     robot = urllib.robotparser.RobotFileParser()
     try:
-        robots, _ = fetch(robots_url, limit=1000000)
+        robots, _ = fetch(robots_url, limit=1000000, same_host=True)
         robot.parse(robots.splitlines())
     except urllib.error.HTTPError as exc:
         if exc.code not in (404, 410):
@@ -234,7 +240,7 @@ def enrich(row, delay=5):
             row["website_check_status"] = "robots_disallowed"
             continue
         time.sleep(wait)
-        text, final = fetch(current)
+        text, final = fetch(current, same_host=True)
         # A redirect to another host needs a separate robots check on a future run.
         if urllib.parse.urlsplit(final).netloc != origin.netloc:
             row["website_check_status"] = "redirect_requires_review"

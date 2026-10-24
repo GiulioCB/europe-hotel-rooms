@@ -3,6 +3,15 @@ on:
   schedule:
     - cron: '23 2 * * 0'
   workflow_dispatch:
+    inputs:
+      enrich_limit:
+        description: Maximum hotel websites to research this run
+        type: choice
+        default: '200'
+        options:
+          - '200'
+          - '20'
+          - '0'
 permissions:
   contents: write
 concurrency:
@@ -22,7 +31,9 @@ jobs:
       - name: Collect the next country and research room totals
         id: collect
         continue-on-error: true
-        run: python collector.py --enrich-limit 200 --minutes 35
+        env:
+          ENRICH_LIMIT: ${{ inputs.enrich_limit || '200' }}
+        run: python collector.py --enrich-limit "$ENRICH_LIMIT" --minutes 35
       - name: Save data and checkpoints even after source failures
         if: always()
         run: |
