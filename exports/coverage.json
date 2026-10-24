@@ -1,0 +1,238 @@
+{
+  "updated_at": "2026-10-24T23:34:18+00:00",
+  "rows": 24902,
+  "with_rooms": 3629,
+  "duplicate_candidates": 256,
+  "countries": {
+    "DE": {
+      "hotels": 24902,
+      "with_rooms": 3629
+    },
+    "AT": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "CH": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "FR": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "BE": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "NL": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "LU": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "DK": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "PL": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "CZ": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "IT": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "ES": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "PT": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "GB": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "IE": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "NO": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "SE": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "FI": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "IS": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "EE": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "LV": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "LT": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "SK": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "HU": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "SI": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "HR": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "BA": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "RS": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "ME": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "XK": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "AL": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "MK": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "GR": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "BG": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "RO": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "MD": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "UA": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "BY": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "MT": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "CY": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "AD": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "LI": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "MC": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "SM": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "VA": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "FO": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "AX": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "GI": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "GG": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "JE": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "IM": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "GE": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "AM": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "AZ": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "TR": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "RU": {
+      "hotels": 0,
+      "with_rooms": 0
+    },
+    "KZ": {
+      "hotels": 0,
+      "with_rooms": 0
+    }
+  },
+  "complete_europe_census": false,
+  "license": "OSM-derived database: ODbL 1.0; website assertions retain source rights"
+}
