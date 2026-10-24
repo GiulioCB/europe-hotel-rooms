@@ -1,5 +1,5 @@
 {
-  "next_country_index": 1,
+  "next_country_index": 2,
   "runs": [
     {
       "country": "DE",
@@ -14,6 +14,13 @@
       "finished": "2026-10-24T23:32:09+00:00",
       "status": "success",
       "hotels": 24902
+    },
+    {
+      "country": "AT",
+      "started": "2026-10-24T23:39:26+00:00",
+      "finished": "2026-10-24T23:40:21+00:00",
+      "status": "success",
+      "hotels": 6498
     }
   ]
 }

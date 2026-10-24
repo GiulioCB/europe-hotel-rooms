@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-10-24T23:34:18+00:00",
-  "rows": 24902,
-  "with_rooms": 3629,
-  "duplicate_candidates": 256,
+  "updated_at": "2026-10-24T23:40:22+00:00",
+  "rows": 31400,
+  "with_rooms": 3985,
+  "duplicate_candidates": 330,
   "countries": {
     "DE": {
       "hotels": 24902,
       "with_rooms": 3629
     },
     "AT": {
-      "hotels": 0,
-      "with_rooms": 0
+      "hotels": 6498,
+      "with_rooms": 356
     },
     "CH": {
       "hotels": 0,
