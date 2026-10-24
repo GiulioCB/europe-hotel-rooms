@@ -54,15 +54,30 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(merged["rooms_evidence"], "Hotel total")
         self.assertEqual(merged["first_seen"], "2020-01-01")
 
-    def test_failure_preserves_country_and_cursor(self):
+    def test_failure_preserves_country_and_continues_full_pass(self):
         with tempfile.TemporaryDirectory(dir=c.ROOT) as directory:
             root = Path(directory)
             c.atomic_json(root / "data/countries/DE.json", [hotel(rooms="20")])
             args = argparse.Namespace(root=root, export_only=False, country=None, endpoint="", minutes=0, enrich_limit=0, delay=5, database=False)
-            with patch.object(c, "discover", side_effect=ValueError("source timeout")):
+            args.country_delay = 0
+            with patch.dict(c.SCOPE, countries=["DE", "AT"]), patch.object(c, "discover", side_effect=[ValueError("source timeout"), []]) as discover:
                 self.assertEqual(c.run(args), 1)
-            self.assertEqual(json.loads((root / "data/state.json").read_text())["next_country_index"], 0)
+            self.assertEqual([call.args[0] for call in discover.call_args_list], ["DE", "AT"])
+            report = json.loads((root / "data/state.json").read_text())["latest_pass"]
+            self.assertEqual(report["succeeded"], ["AT"])
+            self.assertEqual(report["failed"], ["DE"])
+            self.assertFalse(report["complete"])
             self.assertEqual(json.loads((root / "data/countries/DE.json").read_text())[0]["rooms"], 20)
+
+    def test_default_pass_visits_every_country_from_germany(self):
+        with tempfile.TemporaryDirectory(dir=c.ROOT) as directory:
+            args = argparse.Namespace(root=Path(directory), export_only=False, country=None, endpoint="", minutes=0, enrich_limit=0, delay=5, country_delay=0, database=False)
+            with patch.object(c, "discover", return_value=[]) as discover:
+                self.assertEqual(c.run(args), 0)
+            self.assertEqual([call.args[0] for call in discover.call_args_list], c.SCOPE["countries"])
+            report = json.loads((args.root / "data/state.json").read_text())["latest_pass"]
+            self.assertTrue(report["complete"])
+            self.assertEqual(len(report["succeeded"]), 57)
 
     def test_public_url_blocks_private_addresses(self):
         with patch.object(c.socket, "getaddrinfo", return_value=[(2, 1, 6, "", ("127.0.0.1", 80))]):

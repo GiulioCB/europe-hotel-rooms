@@ -4,6 +4,7 @@ import csv
 from contextlib import closing
 import datetime as dt
 import difflib
+import gzip
 import hashlib
 import html
 from html.parser import HTMLParser
@@ -267,6 +268,16 @@ def csv_safe(value):
     return value
 
 
+def write_csv(path, rows, compressed=False):
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    opener = gzip.open if compressed else open
+    with opener(tmp, "wt", newline="", encoding="utf-8-sig") as file:
+        writer = csv.DictWriter(file, FIELDS, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows({k: csv_safe(r.get(k)) for k in FIELDS} for r in rows)
+    os.replace(tmp, path)
+
+
 def export(root):
     rows = []
     for file in sorted((root / "data/countries").glob("*.json")):
@@ -285,18 +296,32 @@ def export(root):
     out = root / "exports"
     out.mkdir(exist_ok=True)
     for filename, subset in (("hotels.csv", rows), ("hotels-with-rooms.csv", [r for r in rows if r.get("rooms")])):
-        tmp = out / (filename + ".tmp")
-        with tmp.open("w", newline="", encoding="utf-8-sig") as file:
-            writer = csv.DictWriter(file, FIELDS, extrasaction="ignore")
-            writer.writeheader()
-            writer.writerows({k: csv_safe(r.get(k)) for k in FIELDS} for r in subset)
-        os.replace(tmp, out / filename)
+        write_csv(out / filename, subset)
+        write_csv(out / (filename + ".gz"), subset, compressed=True)
+        # GitHub rejects files over 100 MiB. Keep the full compressed download
+        # and country parts when an uncompressed combined file grows too large.
+        if (out / filename).stat().st_size > 85 * 1024 * 1024:
+            (out / filename).unlink()
+    parts = out / "countries"
+    parts.mkdir(exist_ok=True)
+    part_names = set()
     counts = {}
     for country in SCOPE["countries"]:
         subset = [r for r in rows if r["country"] == country]
-        counts[country] = {"hotels": len(subset), "with_rooms": sum(bool(r.get("rooms")) for r in subset)}
+        for start in range(0, len(subset), 10000):
+            filename = f"{country}-{start // 10000 + 1:03d}.csv"
+            write_csv(parts / filename, subset[start:start + 10000])
+            part_names.add(filename)
+        counts[country] = {"hotels": len(subset), "with_rooms": sum(bool(r.get("rooms")) for r in subset),
+                           "source_last_seen": max((r.get("last_seen", "") for r in subset), default=None)}
+    for file in parts.glob("*.csv"):
+        if file.name not in part_names:
+            file.unlink()
+    state_path = root / "data/state.json"
+    state = json.loads(state_path.read_text()) if state_path.exists() else {}
     atomic_json(out / "coverage.json", {"updated_at": now(), "rows": len(rows), "with_rooms": sum(bool(r.get("rooms")) for r in rows),
                 "duplicate_candidates": sum(bool(r.get("duplicate_candidate")) for r in rows), "countries": counts,
+                "latest_pass": state.get("latest_pass"), "combined_csv_available": (out / "hotels.csv").exists(),
                 "complete_europe_census": False, "license": "OSM-derived database: ODbL 1.0; website assertions retain source rights"})
     # Database and GeoJSON are local on-demand exports to avoid binary Git history growth.
     return rows
@@ -317,31 +342,41 @@ def run(args):
     root = args.root
     (root / "data/countries").mkdir(parents=True, exist_ok=True)
     state_file = root / "data/state.json"
-    state = json.loads(state_file.read_text()) if state_file.exists() else {"next_country_index": 0, "runs": []}
+    state = json.loads(state_file.read_text()) if state_file.exists() else {"runs": []}
     failed = False
     if not args.export_only:
-        country = args.country or SCOPE["countries"][state["next_country_index"] % len(SCOPE["countries"]) ]
-        path = root / f"data/countries/{country}.json"
-        started = now()
-        try:
-            incoming = discover(country, args.endpoint)
-            previous = {r["hotel_id"]: r for r in json.loads(path.read_text(encoding="utf-8"))} if path.exists() else {}
-            rows = [merge(previous[r["hotel_id"]], r) if r["hotel_id"] in previous else r for r in incoming]
-            # Missing source records are retained and marked for review, never silently closed.
-            present = {r["hotel_id"] for r in incoming}
-            rows.extend({**r, "website_check_status": "not_in_latest_osm_snapshot"} for key, r in previous.items() if key not in present)
-            atomic_json(path, rows)
-            if not args.country:
-                state["next_country_index"] = (state["next_country_index"] + 1) % len(SCOPE["countries"])
-            state["runs"].append({"country": country, "started": started, "finished": now(), "status": "success", "hotels": len(incoming)})
-            print(f"{country}: {len(incoming)} hotels collected", flush=True)
-        except Exception as exc:
-            failed = True
-            state["runs"].append({"country": country, "started": started, "finished": now(), "status": "failed", "error": str(exc)[:500]})
-            print(f"{country}: discovery failed; cursor and prior data retained: {exc}", flush=True)
-        state["runs"] = state["runs"][-200:]
+        countries = [args.country] if args.country else SCOPE["countries"]
+        state.pop("next_country_index", None)
+        report = {"started": now(), "scope": "single_country" if args.country else "all_europe",
+                  "expected_countries": countries, "succeeded": [], "failed": [], "pending": list(countries), "complete": False}
+        state["latest_pass"] = report
         atomic_json(state_file, state)
-        # Fair global queue, so Germany can still gain room counts while later countries are collected.
+        for index, country in enumerate(countries):
+            if index:
+                time.sleep(getattr(args, "country_delay", 15))
+            path = root / f"data/countries/{country}.json"
+            started = now()
+            try:
+                incoming = discover(country, args.endpoint)
+                previous = {r["hotel_id"]: r for r in json.loads(path.read_text(encoding="utf-8"))} if path.exists() else {}
+                rows = [merge(previous[r["hotel_id"]], r) if r["hotel_id"] in previous else r for r in incoming]
+                present = {r["hotel_id"] for r in incoming}
+                rows.extend({**r, "website_check_status": "not_in_latest_osm_snapshot"} for key, r in previous.items() if key not in present)
+                atomic_json(path, rows)
+                report["succeeded"].append(country)
+                state["runs"].append({"country": country, "started": started, "finished": now(), "status": "success", "hotels": len(incoming)})
+                print(f"{country}: {len(incoming)} hotels collected ({index + 1}/{len(countries)})", flush=True)
+            except Exception as exc:
+                failed = True
+                report["failed"].append(country)
+                state["runs"].append({"country": country, "started": started, "finished": now(), "status": "failed", "error": str(exc)[:500]})
+                print(f"{country}: discovery failed; prior data retained; continuing with remaining countries: {exc}", flush=True)
+            report["pending"].remove(country)
+            state["runs"] = state["runs"][-200:]
+            atomic_json(state_file, state)
+        report.update(finished=now(), complete=not failed)
+        atomic_json(state_file, state)
+        # Fair website queue is separate from the weekly refresh of every country.
         files = {}
         for file in sorted((root / "data/countries").glob("*.json")):
             files[file] = json.loads(file.read_text(encoding="utf-8"))
@@ -373,6 +408,7 @@ if __name__ == "__main__":
     parser.add_argument("--enrich-limit", type=int, default=200)
     parser.add_argument("--minutes", type=float, default=35)
     parser.add_argument("--delay", type=float, default=5)
+    parser.add_argument("--country-delay", type=float, default=15)
     parser.add_argument("--export-only", action="store_true")
     parser.add_argument("--database", action="store_true")
     raise SystemExit(run(parser.parse_args()))
