@@ -129741,8 +129741,8 @@
     "source_updated_at": "2026-03-14T22:01:37Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:44:58+00:00",
+    "website_check_status": "error: HTTP Error 403: Forbidden",
     "duplicate_candidate": ""
   },
   {
@@ -129770,8 +129770,8 @@
     "source_updated_at": "2025-08-14T11:22:15Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:45:06+00:00",
+    "website_check_status": "error: HTTP Error 503: Service Unavailable",
     "duplicate_candidate": ""
   },
   {
@@ -349706,8 +349706,8 @@
     "source_updated_at": "2023-06-03T16:17:54Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:42:28+00:00",
+    "website_check_status": "no_matching_structured_total",
     "duplicate_candidate": ""
   },
   {
@@ -349735,8 +349735,8 @@
     "source_updated_at": "2026-06-28T14:10:24Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:43:55+00:00",
+    "website_check_status": "no_matching_structured_total",
     "duplicate_candidate": ""
   },
   {
@@ -349793,8 +349793,8 @@
     "source_updated_at": "2025-02-19T12:00:33Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:44:45+00:00",
+    "website_check_status": "error: Cross-host redirect requires a separate robots review",
     "duplicate_candidate": ""
   },
   {
@@ -349851,8 +349851,8 @@
     "source_updated_at": "2026-07-06T10:56:25Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:45:06+00:00",
+    "website_check_status": "error: HTTP Error 403: Forbidden",
     "duplicate_candidate": ""
   },
   {
@@ -349880,8 +349880,8 @@
     "source_updated_at": "2022-09-09T11:09:21Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:45:49+00:00",
+    "website_check_status": "no_matching_structured_total",
     "duplicate_candidate": ""
   },
   {
@@ -349909,8 +349909,8 @@
     "source_updated_at": "2025-09-02T18:33:34Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:46:47+00:00",
+    "website_check_status": "error: Cross-host redirect requires a separate robots review",
     "duplicate_candidate": ""
   },
   {
@@ -349938,8 +349938,8 @@
     "source_updated_at": "2026-01-08T15:17:51Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:47:09+00:00",
+    "website_check_status": "no_matching_structured_total",
     "duplicate_candidate": ""
   },
   {
@@ -349967,8 +349967,8 @@
     "source_updated_at": "2024-05-03T20:20:58Z",
     "first_seen": "2026-10-24T23:32:08+00:00",
     "last_seen": "2026-10-24T23:51:42+00:00",
-    "last_website_check": "",
-    "website_check_status": "",
+    "last_website_check": "2026-10-25T01:47:17+00:00",
+    "website_check_status": "no_matching_structured_total",
     "duplicate_candidate": ""
   },
   {
