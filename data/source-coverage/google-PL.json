@@ -1,0 +1,16 @@
+{
+  "country": "PL",
+  "started_at": "2026-10-25T10:09:58+00:00",
+  "finished_at": "2026-10-25T12:55:09+00:00",
+  "planned_locality_queries": 3787,
+  "new_observations": 3208,
+  "retained_records": 3208,
+  "process_exit_code": 1,
+  "time_budget_reached": true,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": false,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
