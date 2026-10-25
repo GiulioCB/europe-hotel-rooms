@@ -62,15 +62,20 @@ def parse(text,url,platform,countries):
  if record.get('rooms'):record.update(roomsSourceUrl=url,roomsObservedAt=p.now(),roomsStatus='platform_reported')
  return record
 class PublicHTTP:
- def __init__(self,hosts,delay=3):self.hosts=set(hosts);self.last={};self.rules={};self.delay=delay
+ def __init__(self,hosts,delay=3):self.hosts=set(hosts);self.domains={h.removeprefix('www.').removeprefix('hotels.').removeprefix('hotel.') for h in hosts};self.last={};self.rules={};self.delay=delay
+ def allowed(self,host):return bool(host) and any(host==d or host.endswith('.'+d) for d in self.domains)
  def raw(self,url,limit=20_000_000,truncate=False):
   u=urllib.parse.urlparse(url)
-  if u.scheme!='https' or u.hostname not in self.hosts:raise ValueError('Host outside configured public source')
+  if u.scheme!='https' or not self.allowed(u.hostname):raise ValueError('Host outside configured public source')
   time.sleep(max(0,self.delay-(time.monotonic()-self.last.get(u.hostname,0))));self.last[u.hostname]=time.monotonic()
   with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':AGENT,'Accept-Language':'en'}),timeout=25) as r:
-   if urllib.parse.urlparse(r.url).hostname not in self.hosts:raise ValueError('Redirected outside public source')
+   if not self.allowed(urllib.parse.urlparse(r.url).hostname):raise ValueError('Redirected outside public source')
    b=r.read(limit+1)
   if len(b)>limit and not truncate:raise ValueError('Published page exceeds bounded size')
+  if b[:2]==b'\x1f\x8b':
+   import zlib
+   b=zlib.decompressobj(16+zlib.MAX_WBITS).decompress(b,limit+1)
+   if len(b)>limit and not truncate:raise ValueError('Expanded public page exceeds size limit')
   return b.decode('utf-8','replace')
  def robots(self,host):
   if host in self.rules:return self.rules[host]
@@ -113,7 +118,9 @@ def collect(root,platform,minutes=15,limit=100,sitemap_limit=8,delay=3):
  report={'source':platform,'updatedAt':p.now(),'complete':False,'saved':len(records),'failures':[],'detailPagesAttempted':0,'discoveredPropertyUrls':0,'status':'attempting public collection'}
  try:
   robot,_=http.robots(host)
-  maps=re.findall(r'(?im)^sitemap:\s*(https://\S+)',robot)[:sitemap_limit] or ['https://'+host+'/sitemap.xml']
+  maps=re.findall(r'(?im)^sitemap:\s*(https://\S+)',robot) or ['https://'+host+'/sitemap.xml']
+  def priority(u):return (2 if re.search(r'review|image|blog|attraction|themed|post-',u,re.I) else 0 if re.search(r'hotel|apartment|property|detail',u,re.I) else 1,u)
+  maps=sorted(maps,key=priority)[:sitemap_limit]
   if platform=='TheSqua.re':maps=['https://www.thesqua.re/corporate/europe/detail-sitemap.xml','https://www.thesqua.re/corporate/london-uk/detail-sitemap.xml']
   if platform=='The Apartment Network':maps=['https://www.theapartmentnetwork.com/apartments-sitemap'+('' if i==1 else str(i))+'.xml' for i in range(1,7)]
   if platform=='Agoda':maps=['https://www.agoda.com/sitemaps-wl_1_lang_1_pagetype_7_page_'+str(i)+'.xml' for i in range(1,3)]
@@ -132,10 +139,10 @@ def collect(root,platform,minutes=15,limit=100,sitemap_limit=8,delay=3):
    visited.add(u)
    try:
     index,links=locations(http.get(u,sitemap=True))
-    if index:maps.extend(x for x in links if re.search('hotel|apartment|detail|sitemap',x,re.I) and not re.search('blog|image|post-',x,re.I))
+    if index:maps[0:0]=sorted((x for x in links if re.search('hotel|apartment|detail|sitemap',x,re.I) and not re.search('blog|image|post-|review|attraction',x,re.I)),key=priority)
     else:
      for x in links:
-      if x in seen or not re.search(r'/hotel/|hotel-detail|/apartments/[^/]+|/serviced-apartments/[^/]+|Hotel-Information|/ho\d+|/hi/',x):continue
+      if x in seen or not re.search(r'(?i)/hotel/|hotel-detail|/apartments/[^/]+|/serviced-apartments/[^/]+|Hotel-Information|/ho\d+|/hi/|\.ksp$|/rooms/\d+|/HOTEL/\d+',x):continue
       if platform in ['Ostrovok','ZenHotels'] and not re.search(r'/mid\d+/',x):continue
       if platform=='Agoda' and not re.search(r'-(?:'+ '|'.join(c.lower() for c in europe)+r')\.html$',x):continue
       seen.add(x);queue.append(x)

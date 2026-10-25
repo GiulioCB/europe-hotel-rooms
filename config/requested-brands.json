@@ -2718,7 +2718,10 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "nameMatchCountries": [
+        "BR"
+      ]
     },
     {
       "id": "requested:brit-hotel",

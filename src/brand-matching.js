@@ -24,7 +24,7 @@ export function createBrandMatcher(catalogue){
   const fullName=foldBrand(h.name);for(const hit of han)if(fullName.includes(hit.alias))hits.push({...hit,backed:false,score:hit.alias.length});
   for(let start=0;start<words.length;start++){let node=trie;
    for(let end=start;end<words.length&&node.has(words[end]);end++){node=node.get(words[end]);
-    for(const hit of node.get('')||[]){const backed=websiteSupports(h,hit.entry),distinctive=hit.entry.nameMatchingAllowed&&hit.alias.length>=4;
+    for(const hit of node.get('')||[]){if(hit.entry.nameMatchCountries&&!hit.entry.nameMatchCountries.includes(h.country))continue;const backed=websiteSupports(h,hit.entry),distinctive=hit.entry.nameMatchingAllowed&&hit.alias.length>=4;
      if(distinctive||backed)hits.push({...hit,backed,score:hit.alias.length});}
    }
   }
