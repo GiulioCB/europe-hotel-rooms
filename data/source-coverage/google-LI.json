@@ -1,13 +1,16 @@
 {
   "country": "LI",
+  "started_at": "2026-10-25T00:27:45+00:00",
+  "finished_at": "2026-10-25T00:30:25+00:00",
+  "planned_locality_queries": 14,
+  "new_observations": 25,
+  "retained_records": 25,
+  "process_exit_code": 0,
+  "time_budget_reached": false,
   "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-  "checked_at": "2026-10-25T00:05:32+00:00",
-  "queries": [
-    "hotels in Vaduz Liechtenstein"
-  ],
-  "listing_results": 22,
-  "hotel_rows": 15,
   "paid_api": false,
   "paid_proxy": false,
-  "complete_hotel_census": false
+  "complete_hotel_census": false,
+  "all_queries_completed": null,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
 }
