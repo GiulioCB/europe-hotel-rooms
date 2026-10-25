@@ -5,9 +5,10 @@ const HOSTS={marriott:'marriott.com',hilton:'hilton.com',ihg:'ihg.com',accor:'ac
 const validCoordinates=h=>Number.isFinite(h.lat)&&Number.isFinite(h.lon)&&Math.abs(h.lat)<=90&&Math.abs(h.lon)<=180;
 const scalar=v=>typeof v==='string'||typeof v==='number'?String(v):'';
 export function createBrandMatcher(catalogue){
- const exact=new Map(),trie=new Map(),entries=catalogue.brands||[];
+ const exact=new Map(),trie=new Map(),han=[],entries=catalogue.brands||[];
  for(const entry of entries)for(const alias of entry.aliases||[entry.name]){
   const key=foldBrand(alias);if(!key)continue;
+  if(/\p{Script=Han}/u.test(key)&&key.length>=3)han.push({entry,alias:key});
   if(!exact.has(key))exact.set(key,[]);if(!exact.get(key).some(e=>e.id===entry.id))exact.get(key).push(entry);
   let node=trie;for(const token of key.split(' ')){if(!node.has(token))node.set(token,new Map());node=node.get(token)}
   const hits=node.get('');if(hits){if(!hits.some(e=>e.entry.id===entry.id))hits.push({entry,alias:key})}else node.set('',[{entry,alias:key}]);
@@ -20,6 +21,7 @@ export function createBrandMatcher(catalogue){
   const explicit=exact.get(foldBrand(reported));
   if(explicit?.length===1&&!h.brandNameInferred)return {entry:explicit[0],basis:'Source reports brand',status:'source_brand',evidence:scalar(reported)};
   const words=foldBrand(h.name).split(' '),hits=[];
+  const fullName=foldBrand(h.name);for(const hit of han)if(fullName.includes(hit.alias))hits.push({...hit,backed:false,score:hit.alias.length});
   for(let start=0;start<words.length;start++){let node=trie;
    for(let end=start;end<words.length&&node.has(words[end]);end++){node=node.get(words[end]);
     for(const hit of node.get('')||[]){const backed=websiteSupports(h,hit.entry),distinctive=hit.entry.nameMatchingAllowed&&hit.alias.length>=4;
@@ -52,9 +54,11 @@ export function mergeHotelObservations(base,additional,{append=true,cloneBase=tr
    });if(candidates.length===1)match=candidates[0];}
   if(!match){if(append){const h={...incoming};records.push(h);ids.set(h.id,h);index(h)}continue}
   ids.set(incoming.id,match);
+  if(incoming.platforms)match.platforms=[...new Set([...(match.platforms||[]),...incoming.platforms])];
+  if(incoming.platformUrls)match.platformUrls={...match.platformUrls,...incoming.platformUrls};
   match.otherDirectoryListings=[...(match.otherDirectoryListings||[]),{id:incoming.id,source:incoming.source,url:incoming.sourceUrl}].filter((v,i,a)=>a.findIndex(x=>x.id===v.id&&x.url===v.url)===i);
   if(!validCoordinates(match)&&validCoordinates(incoming)){match.lat=incoming.lat;match.lon=incoming.lon;match.fieldEvidence={...match.fieldEvidence,coordinates:{source:incoming.source,sourceUrl:incoming.sourceUrl,collectedAt:incoming.collectedAt}};}
-  for(const field of ['rooms','parkingSpaces','city','region','address','website','operator','postcode'])if((match[field]===null||match[field]===undefined||match[field]==='')&&incoming[field]!==null&&incoming[field]!==undefined&&incoming[field]!==''){
+  for(const field of ['rooms','units','unitsType','unitsSourceUrl','unitsEvidence','parkingSpaces','city','region','address','website','operator','postcode'])if((match[field]===null||match[field]===undefined||match[field]==='')&&incoming[field]!==null&&incoming[field]!==undefined&&incoming[field]!==''){
    match[field]=incoming[field];match.fieldEvidence={...match.fieldEvidence,[field]:{source:incoming.source,sourceUrl:incoming.roomsSourceUrl&&field==='rooms'?incoming.roomsSourceUrl:incoming.sourceUrl,collectedAt:incoming.collectedAt}};
    if(field==='rooms')for(const key of ['roomsSourceUrl','roomsEvidence','roomsObservedAt','roomsStatus'])if(incoming[key])match[key]=incoming[key];
   }

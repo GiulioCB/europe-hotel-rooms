@@ -1,0 +1,930 @@
+{
+  "schemaVersion": 1,
+  "countries": [
+    {
+      "code": "DE",
+      "name": "Germany",
+      "slug": "germany",
+      "region": "Europe"
+    },
+    {
+      "code": "CN",
+      "name": "China",
+      "slug": "china",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "slug": "united-kingdom",
+      "region": "Europe"
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "slug": "japan",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "slug": "france",
+      "region": "Europe"
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "slug": "singapore",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "slug": "spain",
+      "region": "Europe"
+    },
+    {
+      "code": "TH",
+      "name": "Thailand",
+      "slug": "thailand",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "slug": "italy",
+      "region": "Europe"
+    },
+    {
+      "code": "KR",
+      "name": "South Korea",
+      "slug": "south-korea",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "AT",
+      "name": "Austria",
+      "slug": "austria",
+      "region": "Europe"
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong SAR China",
+      "slug": "hong-kong",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "CH",
+      "name": "Switzerland",
+      "slug": "switzerland",
+      "region": "Europe"
+    },
+    {
+      "code": "MY",
+      "name": "Malaysia",
+      "slug": "malaysia",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "slug": "netherlands",
+      "region": "Europe"
+    },
+    {
+      "code": "ID",
+      "name": "Indonesia",
+      "slug": "indonesia",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "BE",
+      "name": "Belgium",
+      "slug": "belgium",
+      "region": "Europe"
+    },
+    {
+      "code": "VN",
+      "name": "Vietnam",
+      "slug": "vietnam",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "PT",
+      "name": "Portugal",
+      "slug": "portugal",
+      "region": "Europe"
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "slug": "india",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "DK",
+      "name": "Denmark",
+      "slug": "denmark",
+      "region": "Europe"
+    },
+    {
+      "code": "AU",
+      "name": "Australia",
+      "slug": "australia",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "LU",
+      "name": "Luxembourg",
+      "slug": "luxembourg",
+      "region": "Europe"
+    },
+    {
+      "code": "PL",
+      "name": "Poland",
+      "slug": "poland",
+      "region": "Europe"
+    },
+    {
+      "code": "CZ",
+      "name": "Czechia",
+      "slug": "czech-republic",
+      "region": "Europe"
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "slug": "ireland",
+      "region": "Europe"
+    },
+    {
+      "code": "NO",
+      "name": "Norway",
+      "slug": "norway",
+      "region": "Europe"
+    },
+    {
+      "code": "SE",
+      "name": "Sweden",
+      "slug": "sweden",
+      "region": "Europe"
+    },
+    {
+      "code": "FI",
+      "name": "Finland",
+      "slug": "finland",
+      "region": "Europe"
+    },
+    {
+      "code": "IS",
+      "name": "Iceland",
+      "slug": "iceland",
+      "region": "Europe"
+    },
+    {
+      "code": "EE",
+      "name": "Estonia",
+      "slug": "estonia",
+      "region": "Europe"
+    },
+    {
+      "code": "LV",
+      "name": "Latvia",
+      "slug": "latvia",
+      "region": "Europe"
+    },
+    {
+      "code": "LT",
+      "name": "Lithuania",
+      "slug": "lithuania",
+      "region": "Europe"
+    },
+    {
+      "code": "SK",
+      "name": "Slovakia",
+      "slug": "slovakia",
+      "region": "Europe"
+    },
+    {
+      "code": "HU",
+      "name": "Hungary",
+      "slug": "hungary",
+      "region": "Europe"
+    },
+    {
+      "code": "SI",
+      "name": "Slovenia",
+      "slug": "slovenia",
+      "region": "Europe"
+    },
+    {
+      "code": "HR",
+      "name": "Croatia",
+      "slug": "croatia",
+      "region": "Europe"
+    },
+    {
+      "code": "BA",
+      "name": "Bosnia & Herzegovina",
+      "slug": "bosnia-and-herzegovina",
+      "region": "Europe"
+    },
+    {
+      "code": "RS",
+      "name": "Serbia",
+      "slug": "serbia",
+      "region": "Europe"
+    },
+    {
+      "code": "ME",
+      "name": "Montenegro",
+      "slug": "montenegro",
+      "region": "Europe"
+    },
+    {
+      "code": "XK",
+      "name": "Kosovo",
+      "slug": "kosovo",
+      "region": "Europe"
+    },
+    {
+      "code": "AL",
+      "name": "Albania",
+      "slug": "albania",
+      "region": "Europe"
+    },
+    {
+      "code": "MK",
+      "name": "North Macedonia",
+      "slug": "north-macedonia",
+      "region": "Europe"
+    },
+    {
+      "code": "GR",
+      "name": "Greece",
+      "slug": "greece",
+      "region": "Europe"
+    },
+    {
+      "code": "BG",
+      "name": "Bulgaria",
+      "slug": "bulgaria",
+      "region": "Europe"
+    },
+    {
+      "code": "RO",
+      "name": "Romania",
+      "slug": "romania",
+      "region": "Europe"
+    },
+    {
+      "code": "MD",
+      "name": "Moldova",
+      "slug": "moldova",
+      "region": "Europe"
+    },
+    {
+      "code": "UA",
+      "name": "Ukraine",
+      "slug": "ukraine",
+      "region": "Europe"
+    },
+    {
+      "code": "BY",
+      "name": "Belarus",
+      "slug": "belarus",
+      "region": "Europe"
+    },
+    {
+      "code": "MT",
+      "name": "Malta",
+      "slug": "malta",
+      "region": "Europe"
+    },
+    {
+      "code": "CY",
+      "name": "Cyprus",
+      "slug": "cyprus",
+      "region": "Europe"
+    },
+    {
+      "code": "AD",
+      "name": "Andorra",
+      "slug": "andorra",
+      "region": "Europe"
+    },
+    {
+      "code": "LI",
+      "name": "Liechtenstein",
+      "slug": "liechtenstein",
+      "region": "Europe"
+    },
+    {
+      "code": "MC",
+      "name": "Monaco",
+      "slug": "monaco",
+      "region": "Europe"
+    },
+    {
+      "code": "SM",
+      "name": "San Marino",
+      "slug": "san-marino",
+      "region": "Europe"
+    },
+    {
+      "code": "VA",
+      "name": "Vatican City",
+      "slug": "vatican-city",
+      "region": "Europe"
+    },
+    {
+      "code": "FO",
+      "name": "Faroe Islands",
+      "slug": "faroe-islands",
+      "region": "Europe"
+    },
+    {
+      "code": "AX",
+      "name": "Åland Islands",
+      "slug": "aland-islands",
+      "region": "Europe"
+    },
+    {
+      "code": "GI",
+      "name": "Gibraltar",
+      "slug": "gibraltar",
+      "region": "Europe"
+    },
+    {
+      "code": "GG",
+      "name": "Guernsey",
+      "slug": "guernsey",
+      "region": "Europe"
+    },
+    {
+      "code": "JE",
+      "name": "Jersey",
+      "slug": "jersey",
+      "region": "Europe"
+    },
+    {
+      "code": "IM",
+      "name": "Isle of Man",
+      "slug": "isle-of-man",
+      "region": "Europe"
+    },
+    {
+      "code": "GE",
+      "name": "Georgia",
+      "slug": "georgia",
+      "region": "Europe"
+    },
+    {
+      "code": "AM",
+      "name": "Armenia",
+      "slug": "armenia",
+      "region": "Europe"
+    },
+    {
+      "code": "AZ",
+      "name": "Azerbaijan",
+      "slug": "azerbaijan",
+      "region": "Europe"
+    },
+    {
+      "code": "TR",
+      "name": "Türkiye",
+      "slug": "turkey",
+      "region": "Europe"
+    },
+    {
+      "code": "RU",
+      "name": "Russia",
+      "slug": "russia",
+      "region": "Europe"
+    },
+    {
+      "code": "KZ",
+      "name": "Kazakhstan",
+      "slug": "kazakhstan",
+      "region": "Europe"
+    },
+    {
+      "code": "MO",
+      "name": "Macao SAR China",
+      "slug": "macau",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan",
+      "slug": "taiwan",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "PH",
+      "name": "Philippines",
+      "slug": "philippines",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "slug": "new-zealand",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "slug": "united-arab-emirates",
+      "region": "Other"
+    },
+    {
+      "code": "SA",
+      "name": "Saudi Arabia",
+      "slug": "saudi-arabia",
+      "region": "Other"
+    },
+    {
+      "code": "QA",
+      "name": "Qatar",
+      "slug": "qatar",
+      "region": "Other"
+    },
+    {
+      "code": "OM",
+      "name": "Oman",
+      "slug": "oman",
+      "region": "Other"
+    },
+    {
+      "code": "BH",
+      "name": "Bahrain",
+      "slug": "bahrain",
+      "region": "Other"
+    },
+    {
+      "code": "KW",
+      "name": "Kuwait",
+      "slug": "kuwait",
+      "region": "Other"
+    },
+    {
+      "code": "LA",
+      "name": "Laos",
+      "slug": "laos",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "KH",
+      "name": "Cambodia",
+      "slug": "cambodia",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "MV",
+      "name": "Maldives",
+      "slug": "maldives",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "NP",
+      "name": "Nepal",
+      "slug": "nepal",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "LK",
+      "name": "Sri Lanka",
+      "slug": "sri-lanka",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "BD",
+      "name": "Bangladesh",
+      "slug": "bangladesh",
+      "region": "Asia Pacific"
+    },
+    {
+      "code": "MX",
+      "name": "Mexico",
+      "slug": "mexico",
+      "region": "Other"
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "slug": "united-states",
+      "region": "Other"
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "slug": "canada",
+      "region": "Other"
+    },
+    {
+      "code": "BR",
+      "name": "Brazil",
+      "slug": "brazil",
+      "region": "Other"
+    },
+    {
+      "code": "AR",
+      "name": "Argentina",
+      "slug": "argentina",
+      "region": "Other"
+    },
+    {
+      "code": "CL",
+      "name": "Chile",
+      "slug": "chile",
+      "region": "Other"
+    },
+    {
+      "code": "CO",
+      "name": "Colombia",
+      "slug": "colombia",
+      "region": "Other"
+    },
+    {
+      "code": "PE",
+      "name": "Peru",
+      "slug": "peru",
+      "region": "Other"
+    },
+    {
+      "code": "EG",
+      "name": "Egypt",
+      "slug": "egypt",
+      "region": "Other"
+    },
+    {
+      "code": "MA",
+      "name": "Morocco",
+      "slug": "morocco",
+      "region": "Other"
+    },
+    {
+      "code": "ZA",
+      "name": "South Africa",
+      "slug": "south-africa",
+      "region": "Other"
+    },
+    {
+      "code": "KE",
+      "name": "Kenya",
+      "slug": "kenya",
+      "region": "Other"
+    },
+    {
+      "code": "TZ",
+      "name": "Tanzania",
+      "slug": "tanzania",
+      "region": "Other"
+    },
+    {
+      "code": "MU",
+      "name": "Mauritius",
+      "slug": "mauritius",
+      "region": "Other"
+    },
+    {
+      "code": "SC",
+      "name": "Seychelles",
+      "slug": "seychelles",
+      "region": "Other"
+    },
+    {
+      "code": "FJ",
+      "name": "Fiji",
+      "slug": "fiji",
+      "region": "Asia Pacific"
+    }
+  ],
+  "countryCodes": {
+    "Andorra": "AD",
+    "United Arab Emirates": "AE",
+    "Afghanistan": "AF",
+    "Antigua & Barbuda": "AG",
+    "Anguilla": "AI",
+    "Albania": "AL",
+    "Armenia": "AM",
+    "Angola": "AO",
+    "Antarctica": "AQ",
+    "Argentina": "AR",
+    "American Samoa": "AS",
+    "Austria": "AT",
+    "Australia": "AU",
+    "Aruba": "AW",
+    "Åland Islands": "AX",
+    "Azerbaijan": "AZ",
+    "Bosnia & Herzegovina": "BA",
+    "Barbados": "BB",
+    "Bangladesh": "BD",
+    "Belgium": "BE",
+    "Burkina Faso": "BF",
+    "Bulgaria": "BG",
+    "Bahrain": "BH",
+    "Burundi": "BI",
+    "Benin": "BJ",
+    "St. Barthélemy": "BL",
+    "Bermuda": "BM",
+    "Brunei": "BN",
+    "Bolivia": "BO",
+    "Caribbean Netherlands": "BQ",
+    "Brazil": "BR",
+    "Bahamas": "BS",
+    "Bhutan": "BT",
+    "Bouvet Island": "BV",
+    "Botswana": "BW",
+    "Belarus": "BY",
+    "Belize": "BZ",
+    "Canada": "CA",
+    "Cocos (Keeling) Islands": "CC",
+    "Congo - Kinshasa": "CD",
+    "Central African Republic": "CF",
+    "Congo - Brazzaville": "CG",
+    "Switzerland": "CH",
+    "Côte d’Ivoire": "CI",
+    "Cook Islands": "CK",
+    "Chile": "CL",
+    "Cameroon": "CM",
+    "China": "CN",
+    "Colombia": "CO",
+    "Costa Rica": "CR",
+    "Cuba": "CU",
+    "Cape Verde": "CV",
+    "Curaçao": "CW",
+    "Christmas Island": "CX",
+    "Cyprus": "CY",
+    "Czechia": "CZ",
+    "Germany": "DE",
+    "Djibouti": "DJ",
+    "Denmark": "DK",
+    "Dominica": "DM",
+    "Dominican Republic": "DO",
+    "Algeria": "DZ",
+    "Ecuador": "EC",
+    "Estonia": "EE",
+    "Egypt": "EG",
+    "Western Sahara": "EH",
+    "Eritrea": "ER",
+    "Spain": "ES",
+    "Ethiopia": "ET",
+    "Finland": "FI",
+    "Fiji": "FJ",
+    "Falkland Islands": "FK",
+    "Micronesia": "FM",
+    "Faroe Islands": "FO",
+    "France": "FR",
+    "Gabon": "GA",
+    "United Kingdom": "GB",
+    "Grenada": "GD",
+    "Georgia": "GE",
+    "French Guiana": "GF",
+    "Guernsey": "GG",
+    "Ghana": "GH",
+    "Gibraltar": "GI",
+    "Greenland": "GL",
+    "Gambia": "GM",
+    "Guinea": "GN",
+    "Guadeloupe": "GP",
+    "Equatorial Guinea": "GQ",
+    "Greece": "GR",
+    "South Georgia & South Sandwich Islands": "GS",
+    "Guatemala": "GT",
+    "Guam": "GU",
+    "Guinea-Bissau": "GW",
+    "Guyana": "GY",
+    "Hong Kong SAR China": "HK",
+    "Heard & McDonald Islands": "HM",
+    "Honduras": "HN",
+    "Croatia": "HR",
+    "Haiti": "HT",
+    "Hungary": "HU",
+    "Indonesia": "ID",
+    "Ireland": "IE",
+    "Israel": "IL",
+    "Isle of Man": "IM",
+    "India": "IN",
+    "British Indian Ocean Territory": "IO",
+    "Iraq": "IQ",
+    "Iran": "IR",
+    "Iceland": "IS",
+    "Italy": "IT",
+    "Jersey": "JE",
+    "Jamaica": "JM",
+    "Jordan": "JO",
+    "Japan": "JP",
+    "Kenya": "KE",
+    "Kyrgyzstan": "KG",
+    "Cambodia": "KH",
+    "Kiribati": "KI",
+    "Comoros": "KM",
+    "St. Kitts & Nevis": "KN",
+    "North Korea": "KP",
+    "South Korea": "KR",
+    "Kuwait": "KW",
+    "Cayman Islands": "KY",
+    "Kazakhstan": "KZ",
+    "Laos": "LA",
+    "Lebanon": "LB",
+    "St. Lucia": "LC",
+    "Liechtenstein": "LI",
+    "Sri Lanka": "LK",
+    "Liberia": "LR",
+    "Lesotho": "LS",
+    "Lithuania": "LT",
+    "Luxembourg": "LU",
+    "Latvia": "LV",
+    "Libya": "LY",
+    "Morocco": "MA",
+    "Monaco": "MC",
+    "Moldova": "MD",
+    "Montenegro": "ME",
+    "St. Martin": "MF",
+    "Madagascar": "MG",
+    "Marshall Islands": "MH",
+    "North Macedonia": "MK",
+    "Mali": "ML",
+    "Myanmar (Burma)": "MM",
+    "Mongolia": "MN",
+    "Macao SAR China": "MO",
+    "Northern Mariana Islands": "MP",
+    "Martinique": "MQ",
+    "Mauritania": "MR",
+    "Montserrat": "MS",
+    "Malta": "MT",
+    "Mauritius": "MU",
+    "Maldives": "MV",
+    "Malawi": "MW",
+    "Mexico": "MX",
+    "Malaysia": "MY",
+    "Mozambique": "MZ",
+    "Namibia": "NA",
+    "New Caledonia": "NC",
+    "Niger": "NE",
+    "Norfolk Island": "NF",
+    "Nigeria": "NG",
+    "Nicaragua": "NI",
+    "Netherlands": "NL",
+    "Norway": "NO",
+    "Nepal": "NP",
+    "Nauru": "NR",
+    "Niue": "NU",
+    "New Zealand": "NZ",
+    "Oman": "OM",
+    "Panama": "PA",
+    "Peru": "PE",
+    "French Polynesia": "PF",
+    "Papua New Guinea": "PG",
+    "Philippines": "PH",
+    "Pakistan": "PK",
+    "Poland": "PL",
+    "St. Pierre & Miquelon": "PM",
+    "Pitcairn Islands": "PN",
+    "Puerto Rico": "PR",
+    "Palestinian Territories": "PS",
+    "Portugal": "PT",
+    "Palau": "PW",
+    "Paraguay": "PY",
+    "Qatar": "QA",
+    "Réunion": "RE",
+    "Romania": "RO",
+    "Serbia": "RS",
+    "Russia": "RU",
+    "Rwanda": "RW",
+    "Saudi Arabia": "SA",
+    "Solomon Islands": "SB",
+    "Seychelles": "SC",
+    "Sudan": "SD",
+    "Sweden": "SE",
+    "Singapore": "SG",
+    "St. Helena": "SH",
+    "Slovenia": "SI",
+    "Svalbard & Jan Mayen": "SJ",
+    "Slovakia": "SK",
+    "Sierra Leone": "SL",
+    "San Marino": "SM",
+    "Senegal": "SN",
+    "Somalia": "SO",
+    "Suriname": "SR",
+    "South Sudan": "SS",
+    "São Tomé & Príncipe": "ST",
+    "El Salvador": "SV",
+    "Sint Maarten": "SX",
+    "Syria": "SY",
+    "Eswatini": "SZ",
+    "Turks & Caicos Islands": "TC",
+    "Chad": "TD",
+    "French Southern Territories": "TF",
+    "Togo": "TG",
+    "Thailand": "TH",
+    "Tajikistan": "TJ",
+    "Tokelau": "TK",
+    "Timor-Leste": "TL",
+    "Turkmenistan": "TM",
+    "Tunisia": "TN",
+    "Tonga": "TO",
+    "Türkiye": "TR",
+    "Trinidad & Tobago": "TT",
+    "Tuvalu": "TV",
+    "Taiwan": "TW",
+    "Tanzania": "TZ",
+    "Ukraine": "UA",
+    "Uganda": "UG",
+    "U.S. Outlying Islands": "UM",
+    "United States": "US",
+    "Uruguay": "UY",
+    "Uzbekistan": "UZ",
+    "Vatican City": "VA",
+    "St. Vincent & Grenadines": "VC",
+    "Venezuela": "VE",
+    "British Virgin Islands": "VG",
+    "U.S. Virgin Islands": "VI",
+    "Vietnam": "VN",
+    "Vanuatu": "VU",
+    "Wallis & Futuna": "WF",
+    "Samoa": "WS",
+    "Kosovo": "XK",
+    "Yemen": "YE",
+    "Mayotte": "YT",
+    "South Africa": "ZA",
+    "Zambia": "ZM",
+    "Zimbabwe": "ZW"
+  },
+  "europeCountries": [
+    "DE",
+    "AT",
+    "CH",
+    "FR",
+    "BE",
+    "NL",
+    "LU",
+    "DK",
+    "PL",
+    "CZ",
+    "IT",
+    "ES",
+    "PT",
+    "GB",
+    "IE",
+    "NO",
+    "SE",
+    "FI",
+    "IS",
+    "EE",
+    "LV",
+    "LT",
+    "SK",
+    "HU",
+    "SI",
+    "HR",
+    "BA",
+    "RS",
+    "ME",
+    "XK",
+    "AL",
+    "MK",
+    "GR",
+    "BG",
+    "RO",
+    "MD",
+    "UA",
+    "BY",
+    "MT",
+    "CY",
+    "AD",
+    "LI",
+    "MC",
+    "SM",
+    "VA",
+    "FO",
+    "AX",
+    "GI",
+    "GG",
+    "JE",
+    "IM",
+    "GE",
+    "AM",
+    "AZ",
+    "TR",
+    "RU",
+    "KZ"
+  ],
+  "cities": [
+    {
+      "country": "GB",
+      "url": "https://www.trip.com/hotels/london-hotels-list-338/"
+    },
+    {
+      "country": "CN",
+      "url": "https://www.trip.com/hotels/shanghai-hotels-list-2/"
+    },
+    {
+      "country": "JP",
+      "url": "https://www.trip.com/hotels/tokyo-hotels-list-228/"
+    }
+  ]
+}

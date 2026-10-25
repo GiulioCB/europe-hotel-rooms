@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "User supplied worldwide brand inventory, 25 October 2026, reconciled with previous European list",
   "sourceSha256": "74bb0b7c92f9bcbf4b3b3a9c5783f247e3a714bf976bf8d3e3f93281ff3d4bd1",
-  "mappingBasis": "User supplied parent-group mapping; not independently verified ownership or operation",
+  "mappingBasis": "Supplied research plus sourced official portfolio corrections; property ownership is not established by brand or platform affiliation.",
   "brands": [
     {
       "id": "requested:1-hotels",
@@ -24,7 +24,7 @@
       "id": "requested:21c-museum-hotels",
       "name": "21c Museum Hotels",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [],
       "aliases": [
@@ -41,7 +41,7 @@
       "id": "requested:25hours",
       "name": "25hours",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore",
@@ -66,7 +66,10 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "7 Days Inn"
+        "7 Days Inn",
+        "7Days Inn",
+        "7天酒店",
+        "7天连锁酒店"
       ],
       "origins": [
         "worldwide"
@@ -272,7 +275,7 @@
       "id": "requested:adagio",
       "name": "Adagio",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -291,7 +294,7 @@
       "id": "requested:adagio-access",
       "name": "Adagio Access",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -310,7 +313,7 @@
       "id": "requested:adagio-premium",
       "name": "Adagio Premium",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -829,7 +832,7 @@
       "id": "requested:americinn",
       "name": "AmericInn",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -1236,7 +1239,7 @@
       "id": "requested:art-series",
       "name": "Art Series",
       "parents": [
-        "Accor Pacific"
+        "Accor"
       ],
       "previousCategories": [],
       "aliases": [
@@ -1301,7 +1304,7 @@
       "id": "requested:ascend-hotel-collection",
       "name": "Ascend Hotel Collection",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [
         "Choice Hotels International"
@@ -1325,13 +1328,16 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "Ascott"
+        "Ascott",
+        "雅诗阁"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:aston",
@@ -1412,7 +1418,8 @@
       "previousCategories": [],
       "aliases": [
         "Atour Hotel",
-        "Atour"
+        "Atour",
+        "亚朵酒店"
       ],
       "origins": [
         "worldwide"
@@ -1428,7 +1435,8 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "Atour Light"
+        "Atour Light",
+        "轻居酒店"
       ],
       "origins": [
         "worldwide"
@@ -1461,7 +1469,8 @@
       "previousCategories": [],
       "aliases": [
         "Atour S Hotel",
-        "Atour S"
+        "Atour S",
+        "亚朵S酒店"
       ],
       "origins": [
         "worldwide"
@@ -1489,7 +1498,7 @@
       "id": "requested:atwell-suites",
       "name": "Atwell Suites",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -1618,7 +1627,7 @@
       "id": "requested:avid",
       "name": "avid",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -1771,7 +1780,7 @@
       "id": "requested:b-and-b-hotels",
       "name": "B&B Hotels",
       "parents": [
-        "B&B Austria/Germany"
+        "B&B Hotels"
       ],
       "previousCategories": [
         "B&B Austria/Germany",
@@ -1970,7 +1979,7 @@
       "id": "requested:baymont",
       "name": "Baymont",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -2018,7 +2027,7 @@
       "id": "requested:beacon-hotels",
       "name": "Beacon Hotels",
       "parents": [
-        "Concept Hospitality"
+        "The Fern"
       ],
       "previousCategories": [],
       "aliases": [
@@ -2209,7 +2218,7 @@
       "id": "requested:best-western-and-sub-brands",
       "name": "Best Western and sub-brands",
       "parents": [
-        "Best Western"
+        "BWH Hotels"
       ],
       "previousCategories": [
         "Best Western"
@@ -2349,7 +2358,7 @@
       "id": "requested:blossom-house",
       "name": "Blossom House",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -2359,7 +2368,9 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:blu-hotels",
@@ -2557,7 +2568,7 @@
       "id": "requested:bourbon-hotels-and-resorts",
       "name": "Bourbon Hotels & Resorts",
       "parents": [
-        "Bourbon Hotels"
+        "Rede Bourbon"
       ],
       "previousCategories": [],
       "aliases": [
@@ -2611,7 +2622,7 @@
       "id": "requested:breakfree",
       "name": "BreakFree",
       "parents": [
-        "Accor Pacific"
+        "Accor"
       ],
       "previousCategories": [],
       "aliases": [
@@ -2627,8 +2638,7 @@
       "id": "requested:breathless",
       "name": "Breathless",
       "parents": [
-        "Hyatt",
-        "AMResorts / Hyatt Inclusive"
+        "Hyatt"
       ],
       "previousCategories": [],
       "aliases": [
@@ -2921,7 +2931,7 @@
       "id": "requested:cambria",
       "name": "Cambria",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -2953,14 +2963,15 @@
       "id": "requested:campanile",
       "name": "Campanile",
       "parents": [
-        "Louvre Hotels",
+        "Louvre Hotels Group",
         "Jin Jiang International"
       ],
       "previousCategories": [
         "Louvre Hotels Group"
       ],
       "aliases": [
-        "Campanile"
+        "Campanile",
+        "康铂酒店"
       ],
       "origins": [
         "worldwide",
@@ -3022,7 +3033,7 @@
       "id": "requested:candlewood-suites",
       "name": "Candlewood Suites",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -3087,7 +3098,9 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:caption-by-hyatt",
@@ -3525,20 +3538,23 @@
         "Serviced apartments"
       ],
       "aliases": [
-        "Citadines"
+        "Citadines",
+        "馨乐庭"
       ],
       "origins": [
         "worldwide",
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:citadines-connect",
       "name": "Citadines Connect",
       "parents": [
-        "Ascott"
+        "The Ascott Limited"
       ],
       "previousCategories": [
         "Ascott"
@@ -3550,13 +3566,15 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:citigo",
       "name": "CitiGO",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -3566,7 +3584,9 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:citizenm",
@@ -3640,7 +3660,7 @@
       "id": "requested:city-express",
       "name": "City Express",
       "parents": [
-        "City Express / Marriott"
+        "Marriott International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -3672,7 +3692,7 @@
       "id": "requested:city-express-junior",
       "name": "City Express Junior",
       "parents": [
-        "City Express / Marriott"
+        "Marriott International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -3688,7 +3708,7 @@
       "id": "requested:city-express-plus",
       "name": "City Express Plus",
       "parents": [
-        "City Express / Marriott"
+        "Marriott International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -3704,7 +3724,7 @@
       "id": "requested:city-express-suites",
       "name": "City Express Suites",
       "parents": [
-        "City Express / Marriott"
+        "Marriott International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -3805,7 +3825,7 @@
       "id": "requested:clarion",
       "name": "Clarion",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [
         "Choice Hotels International"
@@ -3880,7 +3900,7 @@
       "id": "requested:clarion-pointe",
       "name": "Clarion Pointe",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -4099,7 +4119,7 @@
       "id": "requested:comfort",
       "name": "Comfort",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [
         "Choice Hotels International"
@@ -4136,7 +4156,7 @@
       "id": "requested:comfort-suites",
       "name": "Comfort Suites",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [
         "Choice Hotels International"
@@ -4287,9 +4307,7 @@
       "id": "requested:copthorne",
       "name": "Copthorne",
       "parents": [
-        "Millennium & Copthorne",
-        "Millennium Middle East",
-        "Millennium"
+        "Millennium & Copthorne"
       ],
       "previousCategories": [],
       "aliases": [
@@ -4394,7 +4412,7 @@
       "id": "requested:country-inn-and-suites",
       "name": "Country Inn & Suites",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -4533,7 +4551,7 @@
       "id": "requested:crowne-plaza",
       "name": "Crowne Plaza",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -4570,7 +4588,7 @@
       "id": "requested:crystal-orange",
       "name": "Crystal Orange",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -4844,7 +4862,7 @@
       "id": "requested:days-inn",
       "name": "Days Inn",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -4863,7 +4881,7 @@
       "id": "requested:dazzler",
       "name": "Dazzler",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -4949,7 +4967,7 @@
       "id": "requested:delano",
       "name": "Delano",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -5152,7 +5170,7 @@
       "id": "requested:dolce",
       "name": "Dolce",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -5319,8 +5337,7 @@
       "id": "requested:dreams",
       "name": "Dreams",
       "parents": [
-        "Hyatt",
-        "AMResorts / Hyatt Inclusive"
+        "Hyatt"
       ],
       "previousCategories": [
         "Hyatt"
@@ -5622,7 +5639,7 @@
       "id": "requested:econo-lodge",
       "name": "Econo Lodge",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [
         "Choice Hotels International"
@@ -5727,7 +5744,7 @@
       "id": "requested:elan",
       "name": "Elan",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -5922,7 +5939,7 @@
       "id": "requested:emblems-collection",
       "name": "Emblems Collection",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -5994,7 +6011,7 @@
       "id": "requested:esplendor",
       "name": "Esplendor",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -6100,7 +6117,7 @@
       "id": "requested:even-hotels",
       "name": "EVEN Hotels",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -6116,7 +6133,7 @@
       "id": "requested:everhome-suites",
       "name": "Everhome Suites",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -6354,7 +6371,7 @@
       "id": "requested:fairmont",
       "name": "Fairmont",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -6787,7 +6804,7 @@
       "id": "requested:fox-hotels",
       "name": "Fox Hotels",
       "parents": [
-        "Tauzia / Ascott"
+        "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
@@ -6797,7 +6814,9 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": false
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:fragrance-hotel",
@@ -6830,7 +6849,9 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:fraser-residence",
@@ -6846,7 +6867,9 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:fraser-suites",
@@ -6862,7 +6885,9 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:fuller-s-hotels",
@@ -7005,7 +7030,7 @@
       "id": "requested:garner",
       "name": "Garner",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -7278,7 +7303,7 @@
       "id": "requested:golden-tulip",
       "name": "Golden Tulip",
       "parents": [
-        "Louvre Hotels",
+        "Louvre Hotels Group",
         "Jin Jiang International",
         "Golden Tulip Africa"
       ],
@@ -7318,8 +7343,7 @@
       "id": "requested:graduate-by-hilton",
       "name": "Graduate by Hilton",
       "parents": [
-        "Hilton",
-        "Graduate / Hilton"
+        "Hilton"
       ],
       "previousCategories": [],
       "aliases": [
@@ -7421,7 +7445,7 @@
       "id": "requested:grand-mercure",
       "name": "Grand Mercure",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -7664,7 +7688,8 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "GreenTree Inn"
+        "GreenTree Inn",
+        "格林豪泰"
       ],
       "origins": [
         "worldwide"
@@ -7676,7 +7701,7 @@
       "id": "requested:greet",
       "name": "greet",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -7895,7 +7920,7 @@
       "id": "requested:handwritten-collection",
       "name": "Handwritten Collection",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -7907,22 +7932,6 @@
       "origins": [
         "worldwide",
         "europe"
-      ],
-      "eligibilityVerified": false,
-      "nameMatchingAllowed": true
-    },
-    {
-      "id": "requested:hanting",
-      "name": "Hanting",
-      "parents": [
-        "H World / Huazhu"
-      ],
-      "previousCategories": [],
-      "aliases": [
-        "Hanting"
-      ],
-      "origins": [
-        "worldwide"
       ],
       "eligibilityVerified": false,
       "nameMatchingAllowed": true
@@ -8014,37 +8023,24 @@
       "nameMatchingAllowed": true
     },
     {
-      "id": "requested:harris",
-      "name": "Harris",
+      "id": "requested:harris-hotels",
+      "name": "HARRIS Hotels",
       "parents": [
-        "The Ascott Limited",
-        "Tauzia / Ascott"
+        "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
+        "HARRIS Hotels",
+        "HARRIS",
         "Harris"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": false
-    },
-    {
-      "id": "requested:harris-hotels",
-      "name": "HARRIS Hotels",
-      "parents": [
-        "HARRIS"
-      ],
-      "previousCategories": [],
-      "aliases": [
-        "HARRIS Hotels"
-      ],
-      "origins": [
-        "worldwide"
-      ],
-      "eligibilityVerified": false,
-      "nameMatchingAllowed": false
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:harry-s-home-hotels",
@@ -8088,7 +8084,7 @@
       "id": "requested:hawthorn-suites",
       "name": "Hawthorn Suites",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -8180,17 +8176,20 @@
       "id": "requested:hi-inn",
       "name": "Hi Inn",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
-        "Hi Inn"
+        "Hi Inn",
+        "海友酒店"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:hideaway-at-royalton",
@@ -8321,7 +8320,7 @@
       "id": "requested:holiday-inn",
       "name": "Holiday Inn",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -8340,7 +8339,7 @@
       "id": "requested:holiday-inn-club-vacations",
       "name": "Holiday Inn Club Vacations",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -8356,7 +8355,7 @@
       "id": "requested:holiday-inn-express",
       "name": "Holiday Inn Express",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -8375,7 +8374,7 @@
       "id": "requested:holiday-inn-resort",
       "name": "Holiday Inn Resort",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -8391,7 +8390,7 @@
       "id": "requested:holiday-inn-the-niu",
       "name": "Holiday Inn – the niu",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -8432,7 +8431,9 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "Home Inn"
+        "Home Inn",
+        "Homeinn",
+        "如家酒店"
       ],
       "origins": [
         "worldwide"
@@ -8464,7 +8465,8 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "Home Inn Plus"
+        "Home Inn Plus",
+        "如家精选"
       ],
       "origins": [
         "worldwide"
@@ -8480,7 +8482,8 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "Home Inn Selected"
+        "Home Inn Selected",
+        "如家商旅"
       ],
       "origins": [
         "worldwide"
@@ -8632,7 +8635,7 @@
       "id": "requested:hosho",
       "name": "Hosho",
       "parents": [
-        "Louvre Hotels"
+        "Louvre Hotels Group"
       ],
       "previousCategories": [
         "Louvre Hotels Group"
@@ -8667,7 +8670,7 @@
       "id": "requested:hotel-du-vin",
       "name": "Hotel du Vin",
       "parents": [
-        "Malmaison / Hotel du Vin"
+        "Frasers Hospitality"
       ],
       "previousCategories": [
         "Malmaison / Hotel du Vin"
@@ -8679,7 +8682,9 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:hotel-epinard",
@@ -8766,7 +8771,7 @@
       "id": "requested:hotel-indigo",
       "name": "Hotel Indigo",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -8983,7 +8988,7 @@
       "id": "requested:hotelf1",
       "name": "hotelF1",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -9059,7 +9064,7 @@
       "id": "requested:howard-johnson",
       "name": "Howard Johnson",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -9093,7 +9098,7 @@
       "id": "requested:hualuxe",
       "name": "HUALUXE",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -9292,7 +9297,7 @@
       "id": "requested:hyde",
       "name": "Hyde",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -9348,7 +9353,7 @@
       "id": "requested:iberostar-beachfront-resorts",
       "name": "Iberostar Beachfront Resorts",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -9405,8 +9410,7 @@
       "id": "requested:ibis",
       "name": "ibis",
       "parents": [
-        "Accor / Ennismore",
-        "Accor Pacific"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -9425,7 +9429,7 @@
       "id": "requested:ibis-budget",
       "name": "ibis budget",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -9444,7 +9448,7 @@
       "id": "requested:ibis-styles",
       "name": "ibis Styles",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -9677,7 +9681,7 @@
       "id": "requested:intercityhotel",
       "name": "IntercityHotel",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [
         "Deutsche Hospitality"
@@ -9692,13 +9696,15 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:intercontinental",
       "name": "InterContinental",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -9823,7 +9829,8 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "James Joyce Coffetel"
+        "James Joyce Coffetel",
+        "喆啡酒店"
       ],
       "origins": [
         "worldwide"
@@ -9888,17 +9895,21 @@
       "id": "requested:ji-hotel",
       "name": "JI Hotel",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
-        "JI Hotel"
+        "JI Hotel",
+        "Ji Hotels",
+        "全季酒店"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:jianguo-hotels",
@@ -9959,7 +9970,9 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "Jinjiang Inn"
+        "Jinjiang Inn",
+        "Jin Jiang Inn",
+        "锦江之星"
       ],
       "origins": [
         "worldwide"
@@ -9987,7 +10000,7 @@
       "id": "requested:jo-and-joe",
       "name": "JO&JOE",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore",
@@ -10042,7 +10055,7 @@
       "id": "requested:joya",
       "name": "Joya",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -10160,7 +10173,7 @@
       "id": "requested:jun-hotels",
       "name": "Jun Hotels",
       "parents": [
-        "Sunmei / Thank Inn"
+        "Sunmei Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -10315,7 +10328,7 @@
       "id": "requested:keys-prima",
       "name": "Keys Prima",
       "parents": [
-        "Keys / Lemon Tree"
+        "Lemon Tree"
       ],
       "previousCategories": [],
       "aliases": [
@@ -10331,7 +10344,7 @@
       "id": "requested:keys-select",
       "name": "Keys Select",
       "parents": [
-        "Keys / Lemon Tree"
+        "Lemon Tree"
       ],
       "previousCategories": [],
       "aliases": [
@@ -10363,7 +10376,7 @@
       "id": "requested:kimpton",
       "name": "Kimpton",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -10382,7 +10395,7 @@
       "id": "requested:kimpton-hotels",
       "name": "Kimpton Hotels",
       "parents": [
-        "Kimpton / IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -10464,7 +10477,7 @@
       "id": "requested:kyriad",
       "name": "Kyriad",
       "parents": [
-        "Louvre Hotels",
+        "Louvre Hotels Group",
         "Jin Jiang International",
         "Artotel Group"
       ],
@@ -10473,7 +10486,8 @@
       ],
       "aliases": [
         "Kyriad",
-        "KYRIAD"
+        "KYRIAD",
+        "凯里亚德酒店"
       ],
       "origins": [
         "worldwide",
@@ -10486,7 +10500,7 @@
       "id": "requested:kyriad-direct",
       "name": "Kyriad Direct",
       "parents": [
-        "Louvre Hotels"
+        "Louvre Hotels Group"
       ],
       "previousCategories": [
         "Louvre Hotels Group"
@@ -10521,7 +10535,7 @@
       "id": "requested:la-quinta",
       "name": "La Quinta",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -10724,7 +10738,7 @@
       "id": "requested:lanou",
       "name": "Lanou",
       "parents": [
-        "Sunmei / Thank Inn"
+        "Sunmei Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -10795,7 +10809,10 @@
       ],
       "previousCategories": [],
       "aliases": [
-        "Lavande"
+        "Lavande",
+        "Lavande Hotels",
+        "麗枫酒店",
+        "丽枫酒店"
       ],
       "origins": [
         "worldwide"
@@ -11092,8 +11109,7 @@
       "id": "requested:live-by-loews",
       "name": "Live! by Loews",
       "parents": [
-        "Loews Hotels",
-        "Loews"
+        "Loews Hotels"
       ],
       "previousCategories": [],
       "aliases": [
@@ -11163,8 +11179,7 @@
       "id": "requested:loews-hotels",
       "name": "Loews Hotels",
       "parents": [
-        "Loews Hotels",
-        "Loews"
+        "Loews Hotels"
       ],
       "previousCategories": [],
       "aliases": [
@@ -11337,7 +11352,9 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": false
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:m-social",
@@ -11378,7 +11395,7 @@
       "id": "requested:madison",
       "name": "Madison",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -11388,7 +11405,7 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": false
     },
     {
       "id": "requested:magic-hotels-and-resorts",
@@ -11429,7 +11446,7 @@
       "id": "requested:mainstay-suites",
       "name": "MainStay Suites",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -11519,7 +11536,7 @@
       "id": "requested:malmaison",
       "name": "Malmaison",
       "parents": [
-        "Malmaison / Hotel du Vin"
+        "Frasers Hospitality"
       ],
       "previousCategories": [
         "Malmaison / Hotel du Vin"
@@ -11531,13 +11548,15 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:mama-shelter",
       "name": "Mama Shelter",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore",
@@ -11609,7 +11628,7 @@
       "id": "requested:mantra",
       "name": "Mantra",
       "parents": [
-        "Accor Pacific"
+        "Accor"
       ],
       "previousCategories": [],
       "aliases": [
@@ -11625,7 +11644,7 @@
       "id": "requested:manxin",
       "name": "Manxin",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -11784,7 +11803,7 @@
       "id": "requested:maxx",
       "name": "MAXX",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [
         "Deutsche Hospitality"
@@ -11798,7 +11817,9 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:maxx-royal-resorts",
@@ -11934,8 +11955,7 @@
       "id": "requested:mercure",
       "name": "Mercure",
       "parents": [
-        "Accor / Ennismore",
-        "Accor Pacific"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -11970,7 +11990,7 @@
       "id": "requested:mgallery",
       "name": "MGallery",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -11989,7 +12009,7 @@
       "id": "requested:microtel",
       "name": "Microtel",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -12021,7 +12041,7 @@
       "id": "requested:millennium",
       "name": "Millennium",
       "parents": [
-        "Millennium Middle East"
+        "Millennium & Copthorne"
       ],
       "previousCategories": [],
       "aliases": [
@@ -12037,8 +12057,7 @@
       "id": "requested:millennium-hotels",
       "name": "Millennium Hotels",
       "parents": [
-        "Millennium & Copthorne",
-        "Millennium"
+        "Millennium & Copthorne"
       ],
       "previousCategories": [],
       "aliases": [
@@ -12188,13 +12207,15 @@
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:mondrian",
       "name": "Mondrian",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -12302,7 +12323,7 @@
       "id": "requested:movenpick",
       "name": "Mövenpick",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -12647,7 +12668,7 @@
       "id": "requested:ni-hao",
       "name": "Ni Hao",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -12828,8 +12849,7 @@
       "id": "requested:novotel",
       "name": "Novotel",
       "parents": [
-        "Accor / Ennismore",
-        "Accor Pacific"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -12848,7 +12868,7 @@
       "id": "requested:novotel-suites",
       "name": "Novotel Suites",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -12961,24 +12981,26 @@
       "id": "requested:oakwood",
       "name": "Oakwood",
       "parents": [
-        "The Ascott Limited",
-        "Oakwood / Ascott"
+        "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
-        "Oakwood"
+        "Oakwood",
+        "奥克伍德"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:oakwood-premier",
       "name": "Oakwood Premier",
       "parents": [
-        "Oakwood / Ascott"
+        "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
@@ -12994,7 +13016,7 @@
       "id": "requested:oakwood-residence",
       "name": "Oakwood Residence",
       "parents": [
-        "Oakwood / Ascott"
+        "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
@@ -13204,8 +13226,7 @@
       "id": "requested:omni-hotels-and-resorts",
       "name": "Omni Hotels & Resorts",
       "parents": [
-        "Omni Hotels & Resorts",
-        "Omni"
+        "Omni Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -13324,18 +13345,21 @@
       "id": "requested:orange-hotel",
       "name": "Orange Hotel",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
         "Orange Hotel",
-        "Orange"
+        "Orange",
+        "桔子酒店"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:orea-hotels-and-resorts",
@@ -13359,7 +13383,7 @@
       "id": "requested:orient-express",
       "name": "Orient Express",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -13621,7 +13645,7 @@
       "id": "requested:park-inn-by-radisson",
       "name": "Park Inn by Radisson",
       "parents": [
-        "Choice Hotels",
+        "Choice Hotels International",
         "Radisson Hotel Group"
       ],
       "previousCategories": [
@@ -13762,7 +13786,7 @@
       "id": "requested:peppers",
       "name": "Peppers",
       "parents": [
-        "Accor Pacific"
+        "Accor"
       ],
       "previousCategories": [],
       "aliases": [
@@ -14048,17 +14072,20 @@
       "id": "requested:pop-hotels",
       "name": "POP! Hotels",
       "parents": [
-        "Tauzia / Ascott"
+        "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
-        "POP! Hotels"
+        "POP! Hotels",
+        "POP! Hotel"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:portobay-hotels-and-resorts",
@@ -14186,7 +14213,7 @@
       "id": "requested:premiere-classe",
       "name": "Première Classe",
       "parents": [
-        "Louvre Hotels",
+        "Louvre Hotels Group",
         "Jin Jiang International"
       ],
       "previousCategories": [
@@ -14392,8 +14419,7 @@
       "id": "requested:protea-hotels",
       "name": "Protea Hotels",
       "parents": [
-        "Marriott International",
-        "Protea Hotels / Marriott"
+        "Marriott International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -14410,7 +14436,7 @@
       "id": "requested:pullman",
       "name": "Pullman",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -14501,7 +14527,7 @@
       "id": "requested:quality-inn",
       "name": "Quality Inn",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -14553,18 +14579,21 @@
       "id": "requested:quest-apartment-hotels",
       "name": "Quest Apartment Hotels",
       "parents": [
-        "Quest"
+        "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
         "Quest Apartment Hotels",
-        "Quest Apartment"
+        "Quest Apartment",
+        "Quest Apartments"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:quincy",
@@ -14619,7 +14648,7 @@
       "id": "requested:radisson",
       "name": "Radisson",
       "parents": [
-        "Choice Hotels",
+        "Choice Hotels International",
         "Radisson Hotel Group"
       ],
       "previousCategories": [
@@ -14639,7 +14668,7 @@
       "id": "requested:radisson-blu",
       "name": "Radisson Blu",
       "parents": [
-        "Choice Hotels",
+        "Choice Hotels International",
         "Radisson Hotel Group"
       ],
       "previousCategories": [
@@ -14680,7 +14709,7 @@
       "id": "requested:radisson-individuals",
       "name": "Radisson Individuals",
       "parents": [
-        "Choice Hotels",
+        "Choice Hotels International",
         "Radisson Hotel Group"
       ],
       "previousCategories": [
@@ -14718,7 +14747,7 @@
       "id": "requested:radisson-red",
       "name": "Radisson RED",
       "parents": [
-        "Choice Hotels",
+        "Choice Hotels International",
         "Radisson Hotel Group"
       ],
       "previousCategories": [
@@ -14738,7 +14767,7 @@
       "id": "requested:raffles",
       "name": "Raffles",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -14757,7 +14786,7 @@
       "id": "requested:ramada",
       "name": "Ramada",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts",
@@ -14778,7 +14807,7 @@
       "id": "requested:ramada-encore",
       "name": "Ramada Encore",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -15011,7 +15040,7 @@
       "id": "requested:regent",
       "name": "Regent",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -15096,7 +15125,7 @@
       "id": "requested:registry-collection",
       "name": "Registry Collection",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -15410,7 +15439,7 @@
       "id": "requested:rixos",
       "name": "Rixos",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -15483,7 +15512,7 @@
       "id": "requested:rodeway-inn",
       "name": "Rodeway Inn",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -15724,7 +15753,7 @@
       "id": "requested:royal-tulip",
       "name": "Royal Tulip",
       "parents": [
-        "Louvre Hotels",
+        "Louvre Hotels Group",
         "Royal Tulip / regional"
       ],
       "previousCategories": [
@@ -15792,7 +15821,7 @@
       "id": "requested:ruby",
       "name": "Ruby",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts",
@@ -16102,7 +16131,7 @@
       "id": "requested:scenic-hotels",
       "name": "Scenic Hotels",
       "parents": [
-        "Scenic Group"
+        "Scenic Hotel Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -16119,8 +16148,7 @@
       "id": "requested:secrets",
       "name": "Secrets",
       "parents": [
-        "Hyatt",
-        "AMResorts / Hyatt Inclusive"
+        "Hyatt"
       ],
       "previousCategories": [
         "Hyatt"
@@ -16295,7 +16323,7 @@
       "id": "requested:shell",
       "name": "Shell",
       "parents": [
-        "Sunmei / Thank Inn"
+        "Sunmei Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -16464,7 +16492,7 @@
       "id": "requested:six-senses",
       "name": "Six Senses",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -16499,7 +16527,7 @@
       "id": "requested:sleep-inn",
       "name": "Sleep Inn",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [
         "Choice Hotels International"
@@ -16553,7 +16581,7 @@
       "id": "requested:sls",
       "name": "SLS",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -16640,7 +16668,7 @@
       "id": "requested:so",
       "name": "SO/",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -16659,7 +16687,7 @@
       "id": "requested:sofitel",
       "name": "Sofitel",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -16678,7 +16706,7 @@
       "id": "requested:sofitel-legend",
       "name": "Sofitel Legend",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [],
       "aliases": [
@@ -16774,14 +16802,17 @@
         "Ascott"
       ],
       "aliases": [
-        "Somerset"
+        "Somerset",
+        "盛捷"
       ],
       "origins": [
         "worldwide",
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:sonesta-es-suites",
@@ -17112,7 +17143,7 @@
       "id": "requested:standardx",
       "name": "StandardX",
       "parents": [
-        "Standard International / Hyatt"
+        "Hyatt"
       ],
       "previousCategories": [],
       "aliases": [
@@ -17164,7 +17195,7 @@
       "id": "requested:starway",
       "name": "Starway",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -17180,7 +17211,7 @@
       "id": "requested:staybridge-suites",
       "name": "Staybridge Suites",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -17233,7 +17264,7 @@
       "id": "requested:steigenberger",
       "name": "Steigenberger",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [
         "Deutsche Hospitality"
@@ -17247,13 +17278,15 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:steigenberger-icons",
       "name": "Steigenberger Icons",
       "parents": [
-        "Deutsche Hospitality"
+        "H World Group"
       ],
       "previousCategories": [
         "Deutsche Hospitality"
@@ -17265,7 +17298,9 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:sterling-holiday-resorts",
@@ -17319,8 +17354,7 @@
       "id": "requested:studio-m",
       "name": "Studio M",
       "parents": [
-        "Millennium & Copthorne",
-        "Millennium Middle East"
+        "Millennium & Copthorne"
       ],
       "previousCategories": [],
       "aliases": [
@@ -17354,7 +17388,7 @@
       "id": "requested:suburban-studios",
       "name": "Suburban Studios",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -17439,8 +17473,7 @@
       "id": "requested:sunscape",
       "name": "Sunscape",
       "parents": [
-        "Hyatt",
-        "AMResorts / Hyatt Inclusive"
+        "Hyatt"
       ],
       "previousCategories": [],
       "aliases": [
@@ -17492,7 +17525,7 @@
       "id": "requested:super-8",
       "name": "Super 8",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -17746,7 +17779,7 @@
       "id": "requested:swissotel",
       "name": "Swissôtel",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -17927,11 +17960,12 @@
       "id": "requested:thank-inn",
       "name": "Thank Inn",
       "parents": [
-        "Sunmei / Thank Inn"
+        "Sunmei Group"
       ],
       "previousCategories": [],
       "aliases": [
-        "Thank Inn"
+        "Thank Inn",
+        "尚客优酒店"
       ],
       "origins": [
         "worldwide"
@@ -17943,7 +17977,7 @@
       "id": "requested:thank-inn-plus",
       "name": "Thank Inn Plus",
       "parents": [
-        "Sunmei / Thank Inn"
+        "Sunmei Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -18108,7 +18142,9 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:the-doyle-collection",
@@ -18168,7 +18204,7 @@
       "id": "requested:the-fern",
       "name": "The Fern",
       "parents": [
-        "Concept Hospitality"
+        "The Fern"
       ],
       "previousCategories": [],
       "aliases": [
@@ -18236,7 +18272,7 @@
       "id": "requested:the-hoxton",
       "name": "The Hoxton",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore",
@@ -18659,7 +18695,7 @@
       "id": "requested:the-standard",
       "name": "The Standard",
       "parents": [
-        "Standard International / Hyatt"
+        "Hyatt"
       ],
       "previousCategories": [],
       "aliases": [
@@ -18960,7 +18996,7 @@
       "id": "requested:trademark-collection",
       "name": "Trademark Collection",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -19050,7 +19086,7 @@
       "id": "requested:travelodge-by-wyndham",
       "name": "Travelodge by Wyndham",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -19133,7 +19169,7 @@
       "id": "requested:tribe",
       "name": "TRIBE",
       "parents": [
-        "Accor / Ennismore"
+        "Accor"
       ],
       "previousCategories": [
         "Accor / Ennismore"
@@ -19242,7 +19278,7 @@
       "id": "requested:tryp",
       "name": "TRYP",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -19352,7 +19388,7 @@
       "id": "requested:tulip-inn",
       "name": "Tulip Inn",
       "parents": [
-        "Louvre Hotels"
+        "Louvre Hotels Group"
       ],
       "previousCategories": [
         "Louvre Hotels Group"
@@ -19801,7 +19837,7 @@
       "id": "requested:vienna-house",
       "name": "Vienna House",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts",
@@ -19822,7 +19858,7 @@
       "id": "requested:vienna-house-easy",
       "name": "Vienna House Easy",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts",
@@ -19859,7 +19895,7 @@
       "id": "requested:vignette-collection",
       "name": "Vignette Collection",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -20019,7 +20055,7 @@
       "id": "requested:voco",
       "name": "voco",
       "parents": [
-        "IHG"
+        "IHG Hotels & Resorts"
       ],
       "previousCategories": [
         "IHG Hotels & Resorts"
@@ -20436,7 +20472,7 @@
       "id": "requested:wingate",
       "name": "Wingate",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [],
       "aliases": [
@@ -20468,7 +20504,7 @@
       "id": "requested:woodspring-suites",
       "name": "WoodSpring Suites",
       "parents": [
-        "Choice Hotels"
+        "Choice Hotels International"
       ],
       "previousCategories": [],
       "aliases": [
@@ -20576,7 +20612,7 @@
       "id": "requested:wyndham",
       "name": "Wyndham",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -20595,7 +20631,7 @@
       "id": "requested:wyndham-garden",
       "name": "Wyndham Garden",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -20614,7 +20650,7 @@
       "id": "requested:wyndham-grand",
       "name": "Wyndham Grand",
       "parents": [
-        "Wyndham"
+        "Wyndham Hotels & Resorts"
       ],
       "previousCategories": [
         "Wyndham Hotels & Resorts"
@@ -20662,36 +20698,24 @@
       "nameMatchingAllowed": true
     },
     {
-      "id": "requested:yello",
-      "name": "Yello",
+      "id": "requested:yello-hotels",
+      "name": "Yello Hotels",
       "parents": [
         "The Ascott Limited"
       ],
       "previousCategories": [],
       "aliases": [
+        "Yello Hotels",
+        "YELLO Hotel",
         "Yello"
       ],
       "origins": [
         "worldwide"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": false
-    },
-    {
-      "id": "requested:yello-hotels",
-      "name": "Yello Hotels",
-      "parents": [
-        "Tauzia / Ascott"
-      ],
-      "previousCategories": [],
-      "aliases": [
-        "Yello Hotels"
-      ],
-      "origins": [
-        "worldwide"
-      ],
-      "eligibilityVerified": false,
-      "nameMatchingAllowed": false
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     },
     {
       "id": "requested:yggotel",
@@ -20958,7 +20982,7 @@
       "id": "requested:zleep",
       "name": "Zleep",
       "parents": [
-        "H World / Huazhu"
+        "H World Group"
       ],
       "previousCategories": [],
       "aliases": [
@@ -20974,7 +20998,7 @@
       "id": "requested:zleep-hotels",
       "name": "Zleep Hotels",
       "parents": [
-        "Zleep Hotels"
+        "H World Group"
       ],
       "previousCategories": [
         "Zleep Hotels"
@@ -20987,14 +21011,15 @@
         "europe"
       ],
       "eligibilityVerified": false,
-      "nameMatchingAllowed": true
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
     },
     {
       "id": "requested:zoetry",
       "name": "Zoëtry",
       "parents": [
-        "Hyatt",
-        "AMResorts / Hyatt Inclusive"
+        "Hyatt"
       ],
       "previousCategories": [],
       "aliases": [
@@ -21073,6 +21098,341 @@
       ],
       "eligibilityVerified": false,
       "nameMatchingAllowed": true
+    },
+    {
+      "id": "requested:hanting-hotel",
+      "name": "HanTing Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "HanTing Hotel",
+        "Hanting",
+        "Hanting Hotel",
+        "汉庭酒店",
+        "汉庭优佳"
+      ],
+      "origins": [
+        "official-expansion",
+        "worldwide"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:crystal-orange-hotel",
+      "name": "Crystal Orange Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Crystal Orange Hotel",
+        "桔子水晶酒店"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:grand-ji-hotel",
+      "name": "Grand JI Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Grand JI Hotel"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:ni-hao-hotel",
+      "name": "Ni Hao Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Ni Hao Hotel",
+        "你好酒店"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:elan-hotel",
+      "name": "Elan Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Elan Hotel",
+        "怡莱酒店"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:starway-hotel",
+      "name": "Starway Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Starway Hotel",
+        "星程酒店"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:manxin-hotel",
+      "name": "Manxin Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Manxin Hotel",
+        "漫心酒店"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:madison-hotel",
+      "name": "Madison Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Madison Hotel"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:joya-hotel",
+      "name": "Joya Hotel",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Joya Hotel",
+        "禧玥酒店"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:jaz-in-the-city",
+      "name": "Jaz in the City",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Jaz in the City"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:song-hotels",
+      "name": "Song Hotels",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "Song Hotels"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:house-of-beats",
+      "name": "House of Beats",
+      "parents": [
+        "H World Group"
+      ],
+      "aliases": [
+        "House of Beats"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://ir.hworld.com/",
+      "accommodationFamily": "Hotel"
+    },
+    {
+      "id": "requested:the-unlimited-collection",
+      "name": "The Unlimited Collection",
+      "parents": [
+        "The Ascott Limited"
+      ],
+      "aliases": [
+        "The Unlimited Collection"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
+    },
+    {
+      "id": "requested:adoor-apartment",
+      "name": "Adoor Apartment",
+      "parents": [
+        "The Ascott Limited"
+      ],
+      "aliases": [
+        "Adoor Apartment"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
+    },
+    {
+      "id": "requested:adoor-suites",
+      "name": "Adoor Suites",
+      "parents": [
+        "The Ascott Limited"
+      ],
+      "aliases": [
+        "Adoor Suites"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
+    },
+    {
+      "id": "requested:preference-hotels",
+      "name": "Preference Hotels",
+      "parents": [
+        "The Ascott Limited"
+      ],
+      "aliases": [
+        "Preference Hotels"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": false,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
+    },
+    {
+      "id": "requested:vertu-hotels",
+      "name": "Vertu Hotels",
+      "parents": [
+        "The Ascott Limited"
+      ],
+      "aliases": [
+        "Vertu Hotels"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
+    },
+    {
+      "id": "requested:synergy-global-housing",
+      "name": "Synergy Global Housing",
+      "parents": [
+        "The Ascott Limited"
+      ],
+      "aliases": [
+        "Synergy Global Housing"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.discoverasr.com/en/the-ascott-limited",
+      "accommodationFamily": "Serviced apartment / aparthotel"
+    },
+    {
+      "id": "requested:fraser-suites-reserve",
+      "name": "Fraser Suites Reserve",
+      "parents": [
+        "Frasers Hospitality"
+      ],
+      "aliases": [
+        "Fraser Suites Reserve"
+      ],
+      "origins": [
+        "official-expansion"
+      ],
+      "eligibilityVerified": false,
+      "nameMatchingAllowed": true,
+      "officialPortfolioSource": "https://www.frasershospitality.com/en/our-brands/",
+      "accommodationFamily": "Serviced apartment / aparthotel"
     }
-  ]
+  ],
+  "expansionDate": "2026-10-25"
 }

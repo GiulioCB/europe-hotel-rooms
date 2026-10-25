@@ -1,0 +1,70 @@
+name: Free global accommodation collection
+on:
+  schedule:
+    - cron: '41 0 * * 0'
+  push:
+    branches: [main]
+    paths:
+      - scripts/collect-platforms.py
+      - scripts/collect-accommodations.py
+      - config/platform-seeds.json
+      - .github/workflows/platforms.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: free-global-accommodation-collection
+  cancel-in-progress: false
+jobs:
+  trip:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test public-page parsers
+        run: python -m unittest discover -s tests -p 'test_platform_collectors.py' -v
+      - name: Visit European and Asia-Pacific public directories
+        continue-on-error: true
+        run: python scripts/collect-platforms.py --minutes 140 --cities-per-country 8 --detail-limit 2200 --delay 2
+      - name: Retain source observations and coverage checkpoints
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/platforms data/source-coverage
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh Trip.com public accommodation observations'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 5
+            done
+          fi
+  serviced-stays:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Collect official residences and branded apartments, hostels and other stays
+        continue-on-error: true
+        run: python scripts/collect-accommodations.py --minutes 110 --details 80 --delay 3
+      - name: Retain apartment observations and source failures
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/platforms data/source-coverage
+          if ! git diff --cached --quiet; then
+            git commit -m 'Refresh serviced stays and other accommodation observations'
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 5
+            done
+          fi

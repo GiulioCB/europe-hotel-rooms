@@ -8,7 +8,7 @@ on:
       - scripts/brand-feed.mjs
       - .github/workflows/brand-feed.yml
   workflow_run:
-    workflows: [Weekly European hotel collection, Free Google hotel discovery across Europe]
+    workflows: [Weekly European hotel collection, Free Google hotel discovery across Europe, Free global accommodation collection]
     types: [completed]
   workflow_dispatch:
 permissions:
@@ -33,7 +33,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add exports/branded-hotels.json.gz
+          git add exports/branded-hotels.json.gz exports/platform-accommodations.csv exports/platform-accommodations.csv.gz
           if ! git diff --cached --quiet; then
             git commit -m 'Update requested-brand hotel observations'
             git pull --rebase origin main
