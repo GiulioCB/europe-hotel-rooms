@@ -1,0 +1,62 @@
+name: European public platform imports
+on:
+  schedule:
+    - cron: '17 1 * * 0'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [scripts/collect-public-listings.py, config/accommodation-platforms.json, .github/workflows/public-platforms.yml]
+permissions:
+  contents: write
+concurrency:
+  group: european-public-platform-imports
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      platforms: ${{ steps.plan.outputs.platforms }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: plan
+        run: |
+          python - <<'PY'
+          import json,os
+          data=json.load(open('config/accommodation-platforms.json'))
+          names=[p['name'] for p in data['platforms'] if p['name'] not in ['Trip.com','Google Maps','OpenStreetMap']]
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('platforms='+json.dumps(names)+'\n')
+          PY
+  collect:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        platform: ${{ fromJSON(needs.plan.outputs.platforms) }}
+    env:
+      PLATFORM: ${{ matrix.platform }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify property parsers
+        run: python -m unittest discover -s tests -p 'test_public_listings.py' -v
+      - name: Import public European property pages
+        run: python scripts/collect-public-listings.py --platform "$PLATFORM" --minutes 15 --limit 250
+      - name: Save actual observations and report unavailable sources
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/platforms data/source-coverage
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh public European listings from $PLATFORM"
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main && git push && break
+              if [ "$attempt" = 5 ]; then exit 1; fi
+              sleep $((attempt * 5))
+            done
+          fi

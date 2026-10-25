@@ -26,7 +26,18 @@ const roomAssertions=normalized.filter(h=>h.rooms!==null&&!match(h));
 const feed={schemaVersion:1,generatedAt:new Date().toISOString(),catalogueSourceSha256:catalogue.sourceSha256,
  sourceRecords:normalized.length+platformRows.length,hotels,roomAssertions,platformCoverage:await Promise.all((await readdir('data/source-coverage').catch(()=>[])).filter(f=>f.startsWith('platform-')&&f.endsWith('.json')).map(async f=>((r)=>({source:r.source,updatedAt:r.updatedAt,records:r.records??r.saved,newObservations:r.newObservations,complete:false,countriesAttempted:r.countries?.length,failedRequests:r.failures?.length??r.coverage?.filter(x=>x.status==='failed').length??r.countries?.filter(x=>x.status.startsWith('failed')).length??0}))(JSON.parse(await readFile('data/source-coverage/'+f,'utf8'))))),limitations:['Partial source coverage; not a complete hotel census.','Parent mappings are supplied research, not independently verified legal ownership.','Name-only brand matches require review.','Room assertions enrich matching collected properties; they do not establish brand membership.']};
 await mkdir('exports',{recursive:true});const target='exports/branded-hotels.json.gz';await writeFile(target+'.tmp',gzipSync(JSON.stringify(feed)));await rename(target+'.tmp',target);
-const fields=['id','name','country','city','region','address','brand','propertyType','rooms','units','unitsType','lat','lon','source','sourceUrl','roomsSourceUrl','roomsEvidence','collectedAt'];
+for(const h of platformRows){const mapped=match(h);h.parentCompanies=mapped?.entry.parents||[];h.parentMappingBasis=mapped?'Supplied research brand grouping; not verified property ownership':null;}
+const fields=['id','name','country','city','region','address','brand','parentCompanies','parentMappingBasis','propertyType','rooms','units','unitsType','lat','lon','source','sourceUrl','roomsSourceUrl','roomsEvidence','collectedAt'];
 
 const csv='\uFEFF'+[fields.join(','),...platformRows.map(h=>fields.map(f=>cell(h[f])).join(','))].join('\r\n');await writeFile('exports/platform-accommodations.csv',csv);await writeFile('exports/platform-accommodations.csv.gz',gzipSync(csv));
 console.log(JSON.stringify({sourceRecords:rows.length,matchedObservations:branded.length,hotels:hotels.length,roomAssertions:roomAssertions.length}));
+
+// Independent and otherwise unmapped European properties travel separately so
+// the small web server never has to decode the continent-sized inventory.
+const independent=mergeHotelObservations([],normalized.filter(h=>!match(h)));
+for(const h of independent){h.parentCompanies=[];h.ultimateParentCompanies=[];h.directParentCompanies=[];h.networks=[];h.platforms=[...(h.platforms||[]),...(/Google/i.test(h.source)||h.googleMapsUrl?['Google Maps']:[]),...(/OpenStreetMap|\\bOSM\\b/i.test(h.source)?['OpenStreetMap']:[])];}
+const independentFeed={schemaVersion:1,generatedAt:feed.generatedAt,sourceRecords:normalized.length,hotels:independent,limitations:['No verified brand affiliation does not establish independent ownership.','Missing room totals and parent companies remain unknown.','Partial European source coverage.']};
+await writeFile('exports/europe-independent.json.gz',gzipSync(JSON.stringify(independentFeed)));
+const independentCsv='\uFEFF'+[fields.join(','),...independent.map(h=>fields.map(f=>cell(h[f])).join(','))].join('\r\n');
+await writeFile('exports/europe-independent.csv.gz',gzipSync(independentCsv));
+console.log(JSON.stringify({independentProperties:independent.length,withRooms:independent.filter(h=>h.rooms>0).length,withAddress:independent.filter(h=>h.address).length}));

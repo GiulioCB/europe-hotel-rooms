@@ -1,0 +1,348 @@
+{
+  "schemaVersion": 1,
+  "definition": "Distribution platforms are separate from hotel brand parents. A platform listing does not establish property ownership. Catalogued sources have not been imported unless active records are shown.",
+  "platforms": [
+    {
+      "name": "Trip.com",
+      "organization": "Trip.com Group",
+      "region": "Asia Pacific",
+      "website": "https://www.trip.com/hotels/",
+      "collectionStatus": "active public-page collector",
+      "organizationSourceUrl": "https://group.trip.com/brands",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Ctrip",
+      "organization": "Trip.com Group",
+      "region": "Asia Pacific",
+      "website": "https://hotels.ctrip.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://group.trip.com/brands",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Qunar",
+      "organization": "Trip.com Group",
+      "region": "Asia Pacific",
+      "website": "https://hotel.qunar.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://group.trip.com/brands",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Skyscanner",
+      "organization": "Trip.com Group",
+      "region": "Global",
+      "website": "https://www.skyscanner.net/hotels",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://group.trip.com/brands",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Booking.com",
+      "organization": "Booking Holdings",
+      "region": "Global",
+      "website": "https://www.booking.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.bookingholdings.com/brands/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Agoda",
+      "organization": "Booking Holdings",
+      "region": "Asia Pacific",
+      "website": "https://www.agoda.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.bookingholdings.com/brands/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Priceline",
+      "organization": "Booking Holdings",
+      "region": "North America",
+      "website": "https://www.priceline.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.bookingholdings.com/brands/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "KAYAK",
+      "organization": "Booking Holdings",
+      "region": "Global",
+      "website": "https://www.kayak.com/hotels",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.bookingholdings.com/brands/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Expedia",
+      "organization": "Expedia Group",
+      "region": "Global",
+      "website": "https://www.expedia.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.expediagroup.com/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Hotels.com",
+      "organization": "Expedia Group",
+      "region": "Global",
+      "website": "https://www.hotels.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.expediagroup.com/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Vrbo",
+      "organization": "Expedia Group",
+      "region": "Global",
+      "website": "https://www.vrbo.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.expediagroup.com/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Travelocity",
+      "organization": "Expedia Group",
+      "region": "North America",
+      "website": "https://www.travelocity.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.expediagroup.com/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Orbitz",
+      "organization": "Expedia Group",
+      "region": "North America",
+      "website": "https://www.orbitz.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.expediagroup.com/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Wotif",
+      "organization": "Expedia Group",
+      "region": "Asia Pacific",
+      "website": "https://www.wotif.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.expediagroup.com/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Traveloka",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.traveloka.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Rakuten Travel",
+      "organization": "Rakuten Group",
+      "region": "Asia Pacific",
+      "website": "https://travel.rakuten.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://global.rakuten.com/corp/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Jalan",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.jalan.net/en/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "MakeMyTrip",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.makemytrip.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Goibibo",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.goibibo.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Fliggy",
+      "organization": "Alibaba Group",
+      "region": "Asia Pacific",
+      "website": "https://www.fliggy.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.alibabagroup.com/en-US/about-alibaba-businesses-1752789467896217600",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Meituan",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.meituan.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Tongcheng Travel",
+      "organization": "Tongcheng Travel",
+      "region": "Asia Pacific",
+      "website": "https://www.ly.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://www.tongchengir.com/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "eLong",
+      "organization": "Tongcheng Travel",
+      "region": "Asia Pacific",
+      "website": "https://www.elong.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": "https://tcelir-umb.azurewebsites.net/en/about-tongcheng-travel/milestone/",
+      "mappingStatus": "Corporate portfolio reference; not hotel ownership"
+    },
+    {
+      "name": "Tujia",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.tujia.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Klook",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.klook.com/hotels/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Yanolja",
+      "organization": null,
+      "region": "Asia Pacific",
+      "website": "https://www.yanolja.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Airbnb",
+      "organization": null,
+      "region": "Global",
+      "website": "https://www.airbnb.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "HomeToGo",
+      "organization": null,
+      "region": "Europe",
+      "website": "https://www.hometogo.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "HRS",
+      "organization": null,
+      "region": "Europe",
+      "website": "https://www.hrs.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "HolidayCheck",
+      "organization": null,
+      "region": "Europe",
+      "website": "https://www.holidaycheck.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Ostrovok",
+      "organization": null,
+      "region": "Europe",
+      "website": "https://ostrovok.ru/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "ZenHotels",
+      "organization": null,
+      "region": "Global",
+      "website": "https://www.zenhotels.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "SilverDoor",
+      "organization": null,
+      "region": "Global",
+      "website": "https://www.silverdoor.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "TheSqua.re",
+      "organization": null,
+      "region": "Global",
+      "website": "https://www.thesqua.re/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "The Apartment Network",
+      "organization": null,
+      "region": "Global",
+      "website": "https://www.theapartmentnetwork.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Homelike",
+      "organization": null,
+      "region": "Europe",
+      "website": "https://www.thehomelike.com/",
+      "collectionStatus": "catalogued; no direct import yet",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "Google Maps",
+      "organization": null,
+      "region": "Global",
+      "website": "https://maps.google.com/",
+      "collectionStatus": "active free European discovery",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    },
+    {
+      "name": "OpenStreetMap",
+      "organization": null,
+      "region": "Global",
+      "website": "https://www.openstreetmap.org/",
+      "collectionStatus": "active public-data collector",
+      "organizationSourceUrl": null,
+      "mappingStatus": "Corporate parent not verified"
+    }
+  ]
+}
