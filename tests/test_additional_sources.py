@@ -49,6 +49,14 @@ class AdditionalSourcesTests(unittest.TestCase):
         page.feed('<h1>Vaduzerhof</h1><p>Number of beds: 68. 3 meeting rooms.</p>')
         self.assertIsNone(c.extract_text_total(page, {"name": "Hotel Vaduzerhof"}))
 
+    def test_registry_street_number_order_matches_osm(self):
+        row = dict.fromkeys(c.FIELDS, "")
+        row.update(hotel_id="osm:node:1", name="Example Hotel", country="FR", street="Rue Exemple", house_number="1", postcode="75001", rooms=None)
+        official = {**row, "hotel_id": "atout:1", "street": "1 Rue Exemple", "house_number": "", "rooms": 37, "rooms_status": "registry_reported"}
+        result = c.merge_sources([row, official])
+        self.assertEqual(len(result), 1)
+        self.assertEqual(result[0]["rooms"], 37)
+
     def test_no_coordinates_keeps_registry_in_csv_but_not_map(self):
         with tempfile.TemporaryDirectory(dir=c.ROOT) as directory:
             root = Path(directory)

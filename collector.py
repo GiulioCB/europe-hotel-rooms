@@ -318,7 +318,8 @@ def merge_sources(rows):
             if row["hotel_id"].split(":", 1)[0] == previous["hotel_id"].split(":", 1)[0]:
                 continue
             near = has_coordinates(row) and has_coordinates(previous) and abs(row["latitude"] - previous["latitude"]) < .0007 and abs(row["longitude"] - previous["longitude"]) < .0007
-            street_match = row.get("street") and row.get("postcode") and normalized(row["street"]) == normalized(previous.get("street")) and row["postcode"] == previous.get("postcode")
+            street_tokens = lambda r: sorted(normalized(str(r.get("street") or "") + " " + str(r.get("house_number") or "")).split())
+            street_match = row.get("street") and row.get("postcode") and street_tokens(row) == street_tokens(previous) and row["postcode"] == previous.get("postcode")
             if near or street_match:
                 match = previous
                 break

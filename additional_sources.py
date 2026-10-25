@@ -213,6 +213,9 @@ def google(country, root=ROOT, minutes=22, city=None, binary=None):
               "complete_hotel_census": False, "all_queries_completed": False if timed_out or code else None,
               "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."}
     atomic_json(root / f"data/source-coverage/google-{country}.json", report)
+    if code or not collected:
+        log_tail = (working / "run.log").read_text(encoding="utf-8", errors="replace").splitlines()[-20:]
+        print("Scraper diagnostic tail:\n" + "\n".join(log_tail)[-6000:], flush=True)
     print(json.dumps(report), flush=True)
     return 0 if collected else 1
 
