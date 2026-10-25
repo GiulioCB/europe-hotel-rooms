@@ -28,6 +28,10 @@ jobs:
           python-version: '3.12'
       - name: Test extraction and data handling
         run: python -m unittest discover -s tests -v
+      - name: Refresh free French register with published room totals
+        id: register
+        continue-on-error: true
+        run: python additional_sources.py france
       - name: Refresh every European country and research room totals
         id: collect
         continue-on-error: true
@@ -42,8 +46,9 @@ jobs:
           git add data exports
           if ! git diff --cached --quiet; then
             git commit -m 'Update hotel observations and collection progress'
+            git pull --rebase origin "${{ github.ref_name }}"
             git push
           fi
       - name: Report an incomplete European refresh
-        if: steps.collect.outcome == 'failure'
+        if: steps.collect.outcome == 'failure' || steps.register.outcome == 'failure'
         run: exit 1

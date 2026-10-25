@@ -1,0 +1,112 @@
+name: Free Google hotel discovery across Europe
+on:
+  schedule:
+    - cron: '17 9 * * 0'
+  workflow_dispatch:
+    inputs:
+      country:
+        description: Country ISO code or ALL for every European country
+        default: 'LI'
+      city:
+        description: Optional locality for a small validation run
+        default: ''
+      minutes:
+        description: Scraping time budget per country
+        type: choice
+        default: '5'
+        options: ['5', '30', '165']
+permissions:
+  contents: write
+concurrency:
+  group: google-hotels
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      countries: ${{ steps.scope.outputs.countries }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m unittest discover -s tests
+      - id: scope
+        env:
+          SELECTED_COUNTRY: ${{ inputs.country || 'ALL' }}
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          countries = json.load(open('scope.json'))['countries']
+          selected = os.environ['SELECTED_COUNTRY'].upper()
+          if selected != 'ALL' and selected not in countries:
+              raise SystemExit('Unsupported country')
+          print('countries=' + json.dumps(countries if selected == 'ALL' else [selected]))
+          PY
+  google:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        country: ${{ fromJSON(needs.plan.outputs.countries) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Discover hotel listings without paid APIs or proxies
+        id: maps
+        continue-on-error: true
+        env:
+          HOTEL_COUNTRY: ${{ matrix.country }}
+          HOTEL_CITY: ${{ inputs.city }}
+          HOTEL_MINUTES: ${{ inputs.minutes || '165' }}
+          PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.cache/browsers
+        run: |
+          python additional_sources.py google --country "$HOTEL_COUNTRY" --city "$HOTEL_CITY" --minutes "$HOTEL_MINUTES"
+      - name: Commit only source records and coverage
+        if: always()
+        env:
+          HOTEL_COUNTRY: ${{ matrix.country }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/google/ data/source-coverage/ || true
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Google hotel observations for $HOTEL_COUNTRY"
+            for attempt in 1 2 3; do
+              git pull --rebase origin "${{ github.ref_name }}" && git push && break
+              if [ "$attempt" = 3 ]; then exit 1; fi
+              sleep 5
+            done
+          fi
+      - name: Report missing results
+        if: steps.maps.outcome == 'failure'
+        run: exit 1
+  export:
+    needs: google
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python collector.py --export-only
+      - name: Publish combined hotel downloads
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exports
+          if ! git diff --cached --quiet; then
+            git commit -m 'Combine Google, registry and OSM hotel exports'
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push
+          fi

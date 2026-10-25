@@ -1,0 +1,13 @@
+{
+  "country": "LI",
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "checked_at": "2026-10-25T00:05:32+00:00",
+  "queries": [
+    "hotels in Vaduz Liechtenstein"
+  ],
+  "listing_results": 22,
+  "hotel_rows": 15,
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false
+}

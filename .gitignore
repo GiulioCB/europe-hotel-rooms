@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 *.tmp
 *.sqlite*
+research/
+tools/
+.cache/

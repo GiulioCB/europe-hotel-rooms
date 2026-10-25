@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parent
 SCOPE = json.loads((ROOT / "scope.json").read_text())
 AGENT = "EuropeHotelRooms/1.0 (+https://github.com/GiulioCB/europe-hotel-rooms)"
 FIELDS = "hotel_id name country country_scope brand operator street house_number postcode city region address latitude longitude rooms rooms_status rooms_source_url rooms_evidence rooms_observed_at website source_url source_updated_at first_seen last_seen last_website_check website_check_status duplicate_candidate".split()
+FIELDS += "source google_maps_url country_basis source_urls rooms_conflict".split()
 
 
 def now():
@@ -129,7 +130,7 @@ def merge(old, incoming):
     result = dict(incoming)
     for key in ("first_seen", "last_website_check", "website_check_status"):
         result[key] = old.get(key) or result.get(key, "")
-    if old.get("rooms_status") == "website_structured_reported":
+    if old.get("rooms_status", "").startswith("website_"):
         for key in ("rooms", "rooms_status", "rooms_source_url", "rooms_evidence", "rooms_observed_at"):
             result[key] = old.get(key, "")
     return result
@@ -212,6 +213,27 @@ def extract_rooms(page, row):
     return None
 
 
+def extract_text_total(page, row):
+    text = " ".join(" ".join(page.text).split())
+    identity = re.sub(r"^(?:hotel|hôtel)\s+", "", normalized(row.get("name")), flags=re.I)
+    if len(identity) < 8 or identity not in normalized(text[:6000]):
+        return None
+    patterns = [r"(?:total number of rooms|number of guest rooms|anzahl (?:der )?zimmer|nombre total de chambres)\s*[:|]?\s*(\d{1,5})\b",
+                r"(?:our hotel|the hotel)\s+(?:has|offers|features|comprises)\s+(\d{1,5})\s+(?:guest\s+)?rooms\b",
+                r"unser hotel\s+verfügt über\s+(\d{1,5})\s+zimmer\b",
+                r"\b(\d{1,5})\s+(?:rooms|zimmer|chambres)\s+(?:in|at|im|dans)\s+" + re.escape(identity)]
+    found = []
+    for pattern in patterns:
+        for match in re.finditer(pattern, text, re.I):
+            excerpt = text[max(0, match.start() - 60):match.end() + 60]
+            if re.search(r"conference|meeting|event|banquet|konferenz|tagungs", excerpt, re.I):
+                continue
+            count = positive_int(match.group(1))
+            if count:
+                found.append((count, excerpt))
+    return found[0] if len({r[0] for r in found}) == 1 else None
+
+
 def enrich(row, delay=5):
     url = row["website"]
     if not urllib.parse.urlsplit(url).scheme:
@@ -249,9 +271,13 @@ def enrich(row, delay=5):
         page = Page()
         page.feed(text)
         found = extract_rooms(page, row)
+        status = "website_structured_reported"
+        if not found:
+            found = extract_text_total(page, row)
+            status = "website_text_reported"
         if found:
             count, evidence = found
-            row.update(rooms=count, rooms_status="website_structured_reported", rooms_source_url=final,
+            row.update(rooms=count, rooms_status=status, rooms_source_url=final,
                        rooms_evidence=evidence, rooms_observed_at=now(), website_check_status="rooms_found")
             return
         for link in page.links:
@@ -278,10 +304,59 @@ def write_csv(path, rows, compressed=False):
     os.replace(tmp, path)
 
 
+def has_coordinates(row):
+    return isinstance(row.get("latitude"), (int, float)) and isinstance(row.get("longitude"), (int, float))
+
+
+def merge_sources(rows):
+    """Link exact property names only when coordinates or street/postcode agree."""
+    groups, merged = {}, []
+    for row in rows:
+        key = (row["country"], normalized(row["name"]))
+        match = None
+        for previous in groups.get(key, []):
+            if row["hotel_id"].split(":", 1)[0] == previous["hotel_id"].split(":", 1)[0]:
+                continue
+            near = has_coordinates(row) and has_coordinates(previous) and abs(row["latitude"] - previous["latitude"]) < .0007 and abs(row["longitude"] - previous["longitude"]) < .0007
+            street_match = row.get("street") and row.get("postcode") and normalized(row["street"]) == normalized(previous.get("street")) and row["postcode"] == previous.get("postcode")
+            if near or street_match:
+                match = previous
+                break
+        if match is None or not row["name"]:
+            row["source_urls"] = row.get("source_urls") or row.get("source_url", "")
+            groups.setdefault(key, []).append(row)
+            merged.append(row)
+            continue
+        links = set(filter(None, (match.get("source_urls", "") + " | " + row.get("source_url", "")).split(" | ")))
+        match["source_urls"] = " | ".join(sorted(links))
+        for field in ("google_maps_url", "website", "brand", "street", "city", "postcode", "address"):
+            if not match.get(field) and row.get(field):
+                match[field] = row[field]
+        if not has_coordinates(match) and has_coordinates(row):
+            match["latitude"], match["longitude"] = row["latitude"], row["longitude"]
+        if row.get("rooms") and match.get("rooms") and row["rooms"] != match["rooms"]:
+            match["rooms_conflict"] = f"{match['rooms']} ({match.get('rooms_source_url')}) versus {row['rooms']} ({row.get('rooms_source_url')}); review required"
+        if row.get("rooms") and not match.get("rooms"):
+            for field in ("rooms", "rooms_status", "rooms_source_url", "rooms_evidence", "rooms_observed_at"):
+                match[field] = row.get(field)
+    return merged
+
+
 def export(root):
     rows = []
     for file in sorted((root / "data/countries").glob("*.json")):
         rows.extend(json.loads(file.read_text(encoding="utf-8")))
+    for source in ("google", "registries"):
+        for file in sorted((root / "data" / source).glob("*.json")):
+            rows.extend(json.loads(file.read_text(encoding="utf-8")))
+    identities = {}
+    for row in rows:
+        old = identities.get(row["hotel_id"])
+        quality = lambda r: (r.get("country_scope") != "query_country_unverified", r.get("source_updated_at", ""), r.get("last_seen", ""))
+        if old is None or quality(row) > quality(old):
+            identities[row["hotel_id"]] = row
+    rows = list(identities.values())
+    rows = merge_sources(rows)
     rows.sort(key=lambda r: (r["country"], r["name"], r["hotel_id"]))
     # Flag likely duplicate OSM objects, preserving all source identities for review.
     buckets = {}
@@ -289,7 +364,7 @@ def export(root):
         key = (row["country"], normalized(row["name"]))
         if row["name"]:
             for other in buckets.get(key, []):
-                if abs(row["latitude"] - other["latitude"]) < .0005 and abs(row["longitude"] - other["longitude"]) < .0005:
+                if has_coordinates(row) and has_coordinates(other) and abs(row["latitude"] - other["latitude"]) < .0005 and abs(row["longitude"] - other["longitude"]) < .0005:
                     row["duplicate_candidate"] = other["hotel_id"]
                     break
             buckets.setdefault(key, []).append(row)
@@ -322,7 +397,8 @@ def export(root):
     atomic_json(out / "coverage.json", {"updated_at": now(), "rows": len(rows), "with_rooms": sum(bool(r.get("rooms")) for r in rows),
                 "duplicate_candidates": sum(bool(r.get("duplicate_candidate")) for r in rows), "countries": counts,
                 "latest_pass": state.get("latest_pass"), "combined_csv_available": (out / "hotels.csv").exists(),
-                "complete_europe_census": False, "license": "OSM-derived database: ODbL 1.0; website assertions retain source rights"})
+                "additional_sources": [json.loads(file.read_text(encoding="utf-8")) for file in sorted((root / "data/source-coverage").glob("*.json"))],
+                "complete_europe_census": False, "license": "OSM: ODbL; Atout France: Licence Ouverte; Google and website assertions retain source rights"})
     # Database and GeoJSON are local on-demand exports to avoid binary Git history growth.
     return rows
 
@@ -335,7 +411,7 @@ def database_export(root, rows):
         db.executemany("INSERT INTO hotels VALUES(" + ",".join("?" for _ in FIELDS) + ")", [[r.get(k) for k in FIELDS] for r in rows])
         db.execute("CREATE INDEX hotel_country ON hotels(country)")
         db.execute("CREATE INDEX hotel_rooms ON hotels(rooms)")
-    atomic_json(root / "exports/hotels.geojson", {"type": "FeatureCollection", "features": [{"type": "Feature", "id": r["hotel_id"], "geometry": {"type": "Point", "coordinates": [r["longitude"], r["latitude"]]}, "properties": r} for r in rows]})
+    atomic_json(root / "exports/hotels.geojson", {"type": "FeatureCollection", "features": [{"type": "Feature", "id": r["hotel_id"], "geometry": {"type": "Point", "coordinates": [r["longitude"], r["latitude"]]}, "properties": r} for r in rows if has_coordinates(r)]})
 
 
 def run(args):
@@ -347,8 +423,13 @@ def run(args):
     if not args.export_only:
         countries = [args.country] if args.country else SCOPE["countries"]
         state.pop("next_country_index", None)
+        previous_pass = state.get("latest_pass", {})
+        resume = not args.country and previous_pass.get("scope") == "all_europe" and previous_pass.get("pending") and (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(previous_pass["started"])).total_seconds() < 86400
+        if resume:
+            countries = list(dict.fromkeys(previous_pass["pending"] + previous_pass.get("failed", [])))
         report = {"started": now(), "scope": "single_country" if args.country else "all_europe",
-                  "expected_countries": countries, "succeeded": [], "failed": [], "pending": list(countries), "complete": False}
+                  "expected_countries": [args.country] if args.country else SCOPE["countries"],
+                  "succeeded": list(previous_pass.get("succeeded", [])) if resume else [], "failed": [], "pending": list(countries), "complete": False}
         state["latest_pass"] = report
         atomic_json(state_file, state)
         for index, country in enumerate(countries):
@@ -378,9 +459,10 @@ def run(args):
         atomic_json(state_file, state)
         # Fair website queue is separate from the weekly refresh of every country.
         files = {}
-        for file in sorted((root / "data/countries").glob("*.json")):
-            files[file] = json.loads(file.read_text(encoding="utf-8"))
-        queue = [(file, row) for file, rows in files.items() for row in rows if row.get("website") and (not row.get("last_website_check") or (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(row["last_website_check"])).days >= 90)]
+        for source in ("countries", "google", "registries"):
+            for file in sorted((root / "data" / source).glob("*.json")):
+                files[file] = json.loads(file.read_text(encoding="utf-8"))
+        queue = [(file, row) for file, rows in files.items() for row in rows if row.get("website") and (not row.get("last_website_check") or (dt.datetime.now(dt.timezone.utc) - dt.datetime.fromisoformat(row["last_website_check"])).days >= 7)]
         queue.sort(key=lambda item: (item[1].get("last_website_check", ""), item[1]["country"] != country, bool(item[1].get("rooms")), item[1]["hotel_id"]))
         deadline = time.monotonic() + args.minutes * 60
         for file, row in queue[:args.enrich_limit]:
