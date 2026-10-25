@@ -426,10 +426,409 @@
       "finished": "2026-10-25T01:24:35+00:00",
       "status": "success",
       "hotels": 207
+    },
+    {
+      "country": "DE",
+      "started": "2026-10-25T07:42:55+00:00",
+      "finished": "2026-10-25T07:45:26+00:00",
+      "status": "success",
+      "hotels": 24901
+    },
+    {
+      "country": "AT",
+      "started": "2026-10-25T07:45:41+00:00",
+      "finished": "2026-10-25T07:45:41+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "CH",
+      "started": "2026-10-25T07:45:56+00:00",
+      "finished": "2026-10-25T07:46:58+00:00",
+      "status": "success",
+      "hotels": 3986
+    },
+    {
+      "country": "FR",
+      "started": "2026-10-25T07:47:13+00:00",
+      "finished": "2026-10-25T07:49:30+00:00",
+      "status": "success",
+      "hotels": 19437
+    },
+    {
+      "country": "BE",
+      "started": "2026-10-25T07:49:45+00:00",
+      "finished": "2026-10-25T07:50:39+00:00",
+      "status": "success",
+      "hotels": 1532
+    },
+    {
+      "country": "NL",
+      "started": "2026-10-25T07:50:54+00:00",
+      "finished": "2026-10-25T07:52:15+00:00",
+      "status": "success",
+      "hotels": 2767
+    },
+    {
+      "country": "LU",
+      "started": "2026-10-25T07:52:30+00:00",
+      "finished": "2026-10-25T07:53:00+00:00",
+      "status": "success",
+      "hotels": 207
+    },
+    {
+      "country": "DK",
+      "started": "2026-10-25T07:53:15+00:00",
+      "finished": "2026-10-25T07:53:53+00:00",
+      "status": "success",
+      "hotels": 863
+    },
+    {
+      "country": "PL",
+      "started": "2026-10-25T07:54:08+00:00",
+      "finished": "2026-10-25T07:54:08+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "CZ",
+      "started": "2026-10-25T07:54:23+00:00",
+      "finished": "2026-10-25T07:55:19+00:00",
+      "status": "success",
+      "hotels": 3375
+    },
+    {
+      "country": "IT",
+      "started": "2026-10-25T07:55:34+00:00",
+      "finished": "2026-10-25T07:57:08+00:00",
+      "status": "success",
+      "hotels": 23604
+    },
+    {
+      "country": "ES",
+      "started": "2026-10-25T07:57:23+00:00",
+      "finished": "2026-10-25T07:59:05+00:00",
+      "status": "success",
+      "hotels": 15001
+    },
+    {
+      "country": "PT",
+      "started": "2026-10-25T07:59:20+00:00",
+      "finished": "2026-10-25T08:00:06+00:00",
+      "status": "success",
+      "hotels": 3104
+    },
+    {
+      "country": "GB",
+      "started": "2026-10-25T08:00:21+00:00",
+      "finished": "2026-10-25T08:00:22+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "IE",
+      "started": "2026-10-25T08:00:37+00:00",
+      "finished": "2026-10-25T08:01:30+00:00",
+      "status": "success",
+      "hotels": 1086
+    },
+    {
+      "country": "NO",
+      "started": "2026-10-25T08:01:45+00:00",
+      "finished": "2026-10-25T08:02:58+00:00",
+      "status": "success",
+      "hotels": 1105
+    },
+    {
+      "country": "SE",
+      "started": "2026-10-25T08:03:13+00:00",
+      "finished": "2026-10-25T08:04:16+00:00",
+      "status": "success",
+      "hotels": 1762
+    },
+    {
+      "country": "FI",
+      "started": "2026-10-25T08:04:31+00:00",
+      "finished": "2026-10-25T08:05:43+00:00",
+      "status": "success",
+      "hotels": 922
+    },
+    {
+      "country": "IS",
+      "started": "2026-10-25T08:05:58+00:00",
+      "finished": "2026-10-25T08:06:40+00:00",
+      "status": "success",
+      "hotels": 317
+    },
+    {
+      "country": "EE",
+      "started": "2026-10-25T08:06:55+00:00",
+      "finished": "2026-10-25T08:07:37+00:00",
+      "status": "success",
+      "hotels": 299
+    },
+    {
+      "country": "LV",
+      "started": "2026-10-25T08:07:52+00:00",
+      "finished": "2026-10-25T08:08:47+00:00",
+      "status": "success",
+      "hotels": 388
+    },
+    {
+      "country": "LT",
+      "started": "2026-10-25T08:09:02+00:00",
+      "finished": "2026-10-25T08:09:48+00:00",
+      "status": "success",
+      "hotels": 402
+    },
+    {
+      "country": "SK",
+      "started": "2026-10-25T08:10:03+00:00",
+      "finished": "2026-10-25T08:10:54+00:00",
+      "status": "success",
+      "hotels": 1112
+    },
+    {
+      "country": "HU",
+      "started": "2026-10-25T08:11:09+00:00",
+      "finished": "2026-10-25T08:11:52+00:00",
+      "status": "success",
+      "hotels": 1682
+    },
+    {
+      "country": "SI",
+      "started": "2026-10-25T08:12:07+00:00",
+      "finished": "2026-10-25T08:12:51+00:00",
+      "status": "success",
+      "hotels": 527
+    },
+    {
+      "country": "HR",
+      "started": "2026-10-25T08:13:06+00:00",
+      "finished": "2026-10-25T08:13:50+00:00",
+      "status": "success",
+      "hotels": 1276
+    },
+    {
+      "country": "BA",
+      "started": "2026-10-25T08:14:05+00:00",
+      "finished": "2026-10-25T08:14:50+00:00",
+      "status": "success",
+      "hotels": 577
+    },
+    {
+      "country": "RS",
+      "started": "2026-10-25T08:15:05+00:00",
+      "finished": "2026-10-25T08:15:06+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "ME",
+      "started": "2026-10-25T08:15:21+00:00",
+      "finished": "2026-10-25T08:15:21+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "XK",
+      "started": "2026-10-25T08:15:36+00:00",
+      "finished": "2026-10-25T08:16:41+00:00",
+      "status": "success",
+      "hotels": 272
+    },
+    {
+      "country": "AL",
+      "started": "2026-10-25T08:16:56+00:00",
+      "finished": "2026-10-25T08:17:23+00:00",
+      "status": "success",
+      "hotels": 1698
+    },
+    {
+      "country": "MK",
+      "started": "2026-10-25T08:17:38+00:00",
+      "finished": "2026-10-25T08:18:15+00:00",
+      "status": "success",
+      "hotels": 359
+    },
+    {
+      "country": "GR",
+      "started": "2026-10-25T08:18:30+00:00",
+      "finished": "2026-10-25T08:18:30+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "BG",
+      "started": "2026-10-25T08:18:45+00:00",
+      "finished": "2026-10-25T08:19:21+00:00",
+      "status": "success",
+      "hotels": 3526
+    },
+    {
+      "country": "RO",
+      "started": "2026-10-25T08:19:36+00:00",
+      "finished": "2026-10-25T08:19:36+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "MD",
+      "started": "2026-10-25T08:19:51+00:00",
+      "finished": "2026-10-25T08:20:20+00:00",
+      "status": "success",
+      "hotels": 196
+    },
+    {
+      "country": "UA",
+      "started": "2026-10-25T08:20:35+00:00",
+      "finished": "2026-10-25T08:20:35+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "BY",
+      "started": "2026-10-25T08:20:50+00:00",
+      "finished": "2026-10-25T08:21:25+00:00",
+      "status": "success",
+      "hotels": 789
+    },
+    {
+      "country": "MT",
+      "started": "2026-10-25T08:21:40+00:00",
+      "finished": "2026-10-25T08:21:41+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "CY",
+      "started": "2026-10-25T08:21:56+00:00",
+      "finished": "2026-10-25T08:22:48+00:00",
+      "status": "success",
+      "hotels": 739
+    },
+    {
+      "country": "AD",
+      "started": "2026-10-25T08:23:03+00:00",
+      "finished": "2026-10-25T08:23:50+00:00",
+      "status": "success",
+      "hotels": 171
+    },
+    {
+      "country": "LI",
+      "started": "2026-10-25T08:24:05+00:00",
+      "finished": "2026-10-25T08:24:05+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "MC",
+      "started": "2026-10-25T08:24:20+00:00",
+      "finished": "2026-10-25T08:24:20+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "SM",
+      "started": "2026-10-25T08:24:35+00:00",
+      "finished": "2026-10-25T08:25:04+00:00",
+      "status": "success",
+      "hotels": 16
+    },
+    {
+      "country": "VA",
+      "started": "2026-10-25T08:25:19+00:00",
+      "finished": "2026-10-25T08:25:54+00:00",
+      "status": "success",
+      "hotels": 0
+    },
+    {
+      "country": "FO",
+      "started": "2026-10-25T08:26:09+00:00",
+      "finished": "2026-10-25T08:26:52+00:00",
+      "status": "success",
+      "hotels": 22
+    },
+    {
+      "country": "AX",
+      "started": "2026-10-25T08:27:07+00:00",
+      "finished": "2026-10-25T08:27:50+00:00",
+      "status": "success",
+      "hotels": 18
+    },
+    {
+      "country": "GI",
+      "started": "2026-10-25T08:28:05+00:00",
+      "finished": "2026-10-25T08:28:40+00:00",
+      "status": "success",
+      "hotels": 8
+    },
+    {
+      "country": "GG",
+      "started": "2026-10-25T08:28:55+00:00",
+      "finished": "2026-10-25T08:29:21+00:00",
+      "status": "success",
+      "hotels": 60
+    },
+    {
+      "country": "JE",
+      "started": "2026-10-25T08:29:36+00:00",
+      "finished": "2026-10-25T08:30:13+00:00",
+      "status": "success",
+      "hotels": 63
+    },
+    {
+      "country": "IM",
+      "started": "2026-10-25T08:30:28+00:00",
+      "finished": "2026-10-25T08:31:14+00:00",
+      "status": "success",
+      "hotels": 52
+    },
+    {
+      "country": "GE",
+      "started": "2026-10-25T08:31:29+00:00",
+      "finished": "2026-10-25T08:31:29+00:00",
+      "status": "failed",
+      "error": "HTTP Error 502: Bad Gateway"
+    },
+    {
+      "country": "AM",
+      "started": "2026-10-25T08:31:44+00:00",
+      "finished": "2026-10-25T08:32:14+00:00",
+      "status": "success",
+      "hotels": 646
+    },
+    {
+      "country": "AZ",
+      "started": "2026-10-25T08:32:29+00:00",
+      "finished": "2026-10-25T08:33:03+00:00",
+      "status": "success",
+      "hotels": 632
+    },
+    {
+      "country": "TR",
+      "started": "2026-10-25T08:33:18+00:00",
+      "finished": "2026-10-25T08:34:13+00:00",
+      "status": "success",
+      "hotels": 8620
+    },
+    {
+      "country": "RU",
+      "started": "2026-10-25T08:34:28+00:00",
+      "finished": "2026-10-25T08:35:57+00:00",
+      "status": "success",
+      "hotels": 17175
+    },
+    {
+      "country": "KZ",
+      "started": "2026-10-25T08:36:12+00:00",
+      "finished": "2026-10-25T08:36:48+00:00",
+      "status": "success",
+      "hotels": 1458
     }
   ],
   "latest_pass": {
-    "started": "2026-10-25T00:38:04+00:00",
+    "started": "2026-10-25T07:42:55+00:00",
     "scope": "all_europe",
     "expected_countries": [
       "DE",
@@ -492,41 +891,37 @@
     ],
     "succeeded": [
       "DE",
-      "AT",
       "CH",
       "FR",
       "BE",
       "NL",
+      "LU",
       "DK",
-      "PL",
+      "CZ",
       "IT",
       "ES",
       "PT",
-      "GB",
       "IE",
       "NO",
       "SE",
+      "FI",
       "IS",
       "EE",
+      "LV",
       "LT",
       "SK",
       "HU",
       "SI",
       "HR",
       "BA",
-      "RS",
-      "ME",
+      "XK",
       "AL",
       "MK",
-      "RO",
+      "BG",
       "MD",
-      "UA",
       "BY",
-      "MT",
       "CY",
       "AD",
-      "LI",
-      "MC",
       "SM",
       "VA",
       "FO",
@@ -535,24 +930,28 @@
       "GG",
       "JE",
       "IM",
-      "GE",
       "AM",
       "AZ",
       "TR",
       "RU",
-      "KZ",
-      "LU"
+      "KZ"
     ],
     "failed": [
-      "CZ",
-      "FI",
-      "LV",
-      "XK",
+      "AT",
+      "PL",
+      "GB",
+      "RS",
+      "ME",
       "GR",
-      "BG"
+      "RO",
+      "UA",
+      "MT",
+      "LI",
+      "MC",
+      "GE"
     ],
     "pending": [],
     "complete": false,
-    "finished": "2026-10-25T01:24:35+00:00"
+    "finished": "2026-10-25T08:36:48+00:00"
   }
 }
