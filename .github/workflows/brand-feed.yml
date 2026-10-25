@@ -27,6 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Validate mapping CSV fields
+        run: node --test tests/accommodation-csv.test.js
       - name: Match the supplied brands and retain room evidence
         run: node scripts/brand-feed.mjs
       - name: Publish the map and list feed

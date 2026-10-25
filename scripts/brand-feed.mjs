@@ -1,3 +1,4 @@
+import {accommodationCsvCell as cell} from '../src/accommodation-csv.js';
 // Same free-source observations, reduced to requested brands for the website.
 import {readFile,writeFile,readdir,mkdir,rename} from 'node:fs/promises';
 import {gzipSync} from 'node:zlib';
@@ -26,6 +27,6 @@ const feed={schemaVersion:1,generatedAt:new Date().toISOString(),catalogueSource
  sourceRecords:normalized.length+platformRows.length,hotels,roomAssertions,platformCoverage:await Promise.all((await readdir('data/source-coverage').catch(()=>[])).filter(f=>f.startsWith('platform-')&&f.endsWith('.json')).map(async f=>((r)=>({source:r.source,updatedAt:r.updatedAt,records:r.records??r.saved,newObservations:r.newObservations,complete:false,countriesAttempted:r.countries?.length,failedRequests:r.failures?.length??r.coverage?.filter(x=>x.status==='failed').length??r.countries?.filter(x=>x.status.startsWith('failed')).length??0}))(JSON.parse(await readFile('data/source-coverage/'+f,'utf8'))))),limitations:['Partial source coverage; not a complete hotel census.','Parent mappings are supplied research, not independently verified legal ownership.','Name-only brand matches require review.','Room assertions enrich matching collected properties; they do not establish brand membership.']};
 await mkdir('exports',{recursive:true});const target='exports/branded-hotels.json.gz';await writeFile(target+'.tmp',gzipSync(JSON.stringify(feed)));await rename(target+'.tmp',target);
 const fields=['id','name','country','city','region','address','brand','propertyType','rooms','units','unitsType','lat','lon','source','sourceUrl','roomsSourceUrl','roomsEvidence','collectedAt'];
-const cell=v=>'"'+String(v??'').replace(/^[=+@\-\t\r]/,"'$&").replace(/"/g,'""')+'"';
+
 const csv='\uFEFF'+[fields.join(','),...platformRows.map(h=>fields.map(f=>cell(h[f])).join(','))].join('\r\n');await writeFile('exports/platform-accommodations.csv',csv);await writeFile('exports/platform-accommodations.csv.gz',gzipSync(csv));
 console.log(JSON.stringify({sourceRecords:rows.length,matchedObservations:branded.length,hotels:hotels.length,roomAssertions:roomAssertions.length}));
