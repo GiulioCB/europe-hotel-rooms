@@ -1,238 +1,452 @@
 {
-  "updated_at": "2026-10-24T23:40:22+00:00",
-  "rows": 31400,
-  "with_rooms": 3985,
-  "duplicate_candidates": 330,
+  "updated_at": "2026-10-25T00:30:44+00:00",
+  "rows": 72213,
+  "with_rooms": 20835,
+  "duplicate_candidates": 645,
   "countries": {
     "DE": {
       "hotels": 24902,
-      "with_rooms": 3629
+      "with_rooms": 3629,
+      "source_last_seen": "2026-10-24T23:51:42+00:00"
     },
     "AT": {
       "hotels": 6498,
-      "with_rooms": 356
+      "with_rooms": 356,
+      "source_last_seen": "2026-10-24T23:52:40+00:00"
     },
     "CH": {
-      "hotels": 0,
-      "with_rooms": 0
+      "hotels": 3985,
+      "with_rooms": 461,
+      "source_last_seen": "2026-10-24T23:56:06+00:00"
     },
     "FR": {
-      "hotels": 0,
-      "with_rooms": 0
+      "hotels": 32504,
+      "with_rooms": 15823,
+      "source_last_seen": "2026-10-25T00:05:00+00:00"
     },
     "BE": {
-      "hotels": 0,
-      "with_rooms": 0
+      "hotels": 1532,
+      "with_rooms": 262,
+      "source_last_seen": "2026-10-25T00:02:27+00:00"
     },
     "NL": {
-      "hotels": 0,
-      "with_rooms": 0
+      "hotels": 2767,
+      "with_rooms": 303,
+      "source_last_seen": "2026-10-25T00:06:01+00:00"
     },
     "LU": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "DK": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "PL": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "CZ": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "IT": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "ES": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "PT": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "GB": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "IE": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "NO": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "SE": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "FI": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "IS": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "EE": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "LV": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "LT": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "SK": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "HU": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "SI": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "HR": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "BA": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "RS": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "ME": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "XK": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "AL": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "MK": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "GR": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "BG": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "RO": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "MD": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "UA": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "BY": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "MT": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "CY": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "AD": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "LI": {
-      "hotels": 0,
-      "with_rooms": 0
+      "hotels": 25,
+      "with_rooms": 1,
+      "source_last_seen": "2026-10-25T00:27:45+00:00"
     },
     "MC": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "SM": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "VA": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "FO": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "AX": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "GI": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "GG": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "JE": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "IM": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "GE": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "AM": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "AZ": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "TR": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "RU": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     },
     "KZ": {
       "hotels": 0,
-      "with_rooms": 0
+      "with_rooms": 0,
+      "source_last_seen": null
     }
   },
+  "latest_pass": {
+    "started": "2026-10-24T23:47:21+00:00",
+    "scope": "all_europe",
+    "expected_countries": [
+      "DE",
+      "AT",
+      "CH",
+      "FR",
+      "BE",
+      "NL",
+      "LU",
+      "DK",
+      "PL",
+      "CZ",
+      "IT",
+      "ES",
+      "PT",
+      "GB",
+      "IE",
+      "NO",
+      "SE",
+      "FI",
+      "IS",
+      "EE",
+      "LV",
+      "LT",
+      "SK",
+      "HU",
+      "SI",
+      "HR",
+      "BA",
+      "RS",
+      "ME",
+      "XK",
+      "AL",
+      "MK",
+      "GR",
+      "BG",
+      "RO",
+      "MD",
+      "UA",
+      "BY",
+      "MT",
+      "CY",
+      "AD",
+      "LI",
+      "MC",
+      "SM",
+      "VA",
+      "FO",
+      "AX",
+      "GI",
+      "GG",
+      "JE",
+      "IM",
+      "GE",
+      "AM",
+      "AZ",
+      "TR",
+      "RU",
+      "KZ"
+    ],
+    "succeeded": [
+      "DE",
+      "AT",
+      "CH",
+      "FR",
+      "BE",
+      "NL"
+    ],
+    "failed": [
+      "LU"
+    ],
+    "pending": [
+      "DK",
+      "PL",
+      "CZ",
+      "IT",
+      "ES",
+      "PT",
+      "GB",
+      "IE",
+      "NO",
+      "SE",
+      "FI",
+      "IS",
+      "EE",
+      "LV",
+      "LT",
+      "SK",
+      "HU",
+      "SI",
+      "HR",
+      "BA",
+      "RS",
+      "ME",
+      "XK",
+      "AL",
+      "MK",
+      "GR",
+      "BG",
+      "RO",
+      "MD",
+      "UA",
+      "BY",
+      "MT",
+      "CY",
+      "AD",
+      "LI",
+      "MC",
+      "SM",
+      "VA",
+      "FO",
+      "AX",
+      "GI",
+      "GG",
+      "JE",
+      "IM",
+      "GE",
+      "AM",
+      "AZ",
+      "TR",
+      "RU",
+      "KZ"
+    ],
+    "complete": false
+  },
+  "combined_csv_available": true,
+  "additional_sources": [
+    {
+      "source": "https://www.data.gouv.fr/datasets/hebergements-touristiques-classes-en-france",
+      "checked_at": "2026-10-25T00:05:00+00:00",
+      "register_rows": 21368,
+      "hotel_rows": 13113,
+      "with_rooms": 13113,
+      "snapshot_download_complete": true,
+      "all_hotels_in_country": false,
+      "license": "Licence Ouverte 2.0",
+      "duplicate_register_rows": 3
+    },
+    {
+      "country": "LI",
+      "started_at": "2026-10-25T00:27:45+00:00",
+      "finished_at": "2026-10-25T00:30:25+00:00",
+      "planned_locality_queries": 14,
+      "new_observations": 25,
+      "retained_records": 25,
+      "process_exit_code": 0,
+      "time_budget_reached": false,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": null,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    }
+  ],
   "complete_europe_census": false,
-  "license": "OSM-derived database: ODbL 1.0; website assertions retain source rights"
+  "license": "OSM: ODbL; Atout France: Licence Ouverte; Google and website assertions retain source rights"
 }
