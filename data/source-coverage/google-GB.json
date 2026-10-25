@@ -1,0 +1,16 @@
+{
+  "country": "GB",
+  "started_at": "2026-10-25T16:41:17+00:00",
+  "finished_at": "2026-10-25T19:26:23+00:00",
+  "planned_locality_queries": 5667,
+  "new_observations": 4070,
+  "retained_records": 4070,
+  "process_exit_code": 0,
+  "time_budget_reached": true,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": false,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
