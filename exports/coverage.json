@@ -1,8 +1,8 @@
 {
-  "updated_at": "2026-10-25T00:30:44+00:00",
-  "rows": 72213,
-  "with_rooms": 20835,
-  "duplicate_candidates": 645,
+  "updated_at": "2026-10-25T01:49:51+00:00",
+  "rows": 186785,
+  "with_rooms": 30321,
+  "duplicate_candidates": 1776,
   "countries": {
     "DE": {
       "hotels": 24902,
@@ -20,9 +20,9 @@
       "source_last_seen": "2026-10-24T23:56:06+00:00"
     },
     "FR": {
-      "hotels": 32504,
-      "with_rooms": 15823,
-      "source_last_seen": "2026-10-25T00:05:00+00:00"
+      "hotels": 32093,
+      "with_rooms": 15709,
+      "source_last_seen": "2026-10-25T00:34:24+00:00"
     },
     "BE": {
       "hotels": 1532,
@@ -35,19 +35,19 @@
       "source_last_seen": "2026-10-25T00:06:01+00:00"
     },
     "LU": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 207,
+      "with_rooms": 24,
+      "source_last_seen": "2026-10-25T01:24:35+00:00"
     },
     "DK": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 863,
+      "with_rooms": 79,
+      "source_last_seen": "2026-10-25T00:38:52+00:00"
     },
     "PL": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 6297,
+      "with_rooms": 831,
+      "source_last_seen": "2026-10-25T00:40:29+00:00"
     },
     "CZ": {
       "hotels": 0,
@@ -55,39 +55,39 @@
       "source_last_seen": null
     },
     "IT": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 23604,
+      "with_rooms": 1659,
+      "source_last_seen": "2026-10-25T00:42:29+00:00"
     },
     "ES": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 15001,
+      "with_rooms": 2100,
+      "source_last_seen": "2026-10-25T00:44:07+00:00"
     },
     "PT": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 3104,
+      "with_rooms": 395,
+      "source_last_seen": "2026-10-25T00:45:23+00:00"
     },
     "GB": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 11600,
+      "with_rooms": 1205,
+      "source_last_seen": "2026-10-25T00:46:57+00:00"
     },
     "IE": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1086,
+      "with_rooms": 95,
+      "source_last_seen": "2026-10-25T00:47:50+00:00"
     },
     "NO": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1105,
+      "with_rooms": 114,
+      "source_last_seen": "2026-10-25T00:49:10+00:00"
     },
     "SE": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1762,
+      "with_rooms": 226,
+      "source_last_seen": "2026-10-25T00:50:18+00:00"
     },
     "FI": {
       "hotels": 0,
@@ -95,14 +95,14 @@
       "source_last_seen": null
     },
     "IS": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 317,
+      "with_rooms": 72,
+      "source_last_seen": "2026-10-25T00:51:22+00:00"
     },
     "EE": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 299,
+      "with_rooms": 38,
+      "source_last_seen": "2026-10-25T00:52:16+00:00"
     },
     "LV": {
       "hotels": 0,
@@ -110,44 +110,44 @@
       "source_last_seen": null
     },
     "LT": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 401,
+      "with_rooms": 57,
+      "source_last_seen": "2026-10-25T00:54:10+00:00"
     },
     "SK": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1112,
+      "with_rooms": 126,
+      "source_last_seen": "2026-10-25T00:54:52+00:00"
     },
     "HU": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1682,
+      "with_rooms": 209,
+      "source_last_seen": "2026-10-25T00:55:52+00:00"
     },
     "SI": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 527,
+      "with_rooms": 38,
+      "source_last_seen": "2026-10-25T00:57:04+00:00"
     },
     "HR": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1275,
+      "with_rooms": 85,
+      "source_last_seen": "2026-10-25T00:57:29+00:00"
     },
     "BA": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 577,
+      "with_rooms": 34,
+      "source_last_seen": "2026-10-25T00:58:27+00:00"
     },
     "RS": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1014,
+      "with_rooms": 82,
+      "source_last_seen": "2026-10-25T00:59:31+00:00"
     },
     "ME": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 610,
+      "with_rooms": 33,
+      "source_last_seen": "2026-10-25T00:59:52+00:00"
     },
     "XK": {
       "hotels": 0,
@@ -155,14 +155,14 @@
       "source_last_seen": null
     },
     "AL": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1698,
+      "with_rooms": 65,
+      "source_last_seen": "2026-10-25T01:00:53+00:00"
     },
     "MK": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 359,
+      "with_rooms": 25,
+      "source_last_seen": "2026-10-25T01:01:38+00:00"
     },
     "GR": {
       "hotels": 0,
@@ -175,54 +175,54 @@
       "source_last_seen": null
     },
     "RO": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 3241,
+      "with_rooms": 232,
+      "source_last_seen": "2026-10-25T01:04:06+00:00"
     },
     "MD": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 196,
+      "with_rooms": 9,
+      "source_last_seen": "2026-10-25T01:05:09+00:00"
     },
     "UA": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 3983,
+      "with_rooms": 131,
+      "source_last_seen": "2026-10-25T01:06:15+00:00"
     },
     "BY": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 789,
+      "with_rooms": 60,
+      "source_last_seen": "2026-10-25T01:07:06+00:00"
     },
     "MT": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 240,
+      "with_rooms": 13,
+      "source_last_seen": "2026-10-25T01:07:46+00:00"
     },
     "CY": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 739,
+      "with_rooms": 33,
+      "source_last_seen": "2026-10-25T01:08:34+00:00"
     },
     "AD": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 171,
+      "with_rooms": 15,
+      "source_last_seen": "2026-10-25T01:09:07+00:00"
     },
     "LI": {
-      "hotels": 25,
-      "with_rooms": 1,
-      "source_last_seen": "2026-10-25T00:27:45+00:00"
+      "hotels": 44,
+      "with_rooms": 7,
+      "source_last_seen": "2026-10-25T01:09:47+00:00"
     },
     "MC": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 15,
+      "with_rooms": 6,
+      "source_last_seen": "2026-10-25T01:10:25+00:00"
     },
     "SM": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 16,
+      "with_rooms": 2,
+      "source_last_seen": "2026-10-25T01:11:10+00:00"
     },
     "VA": {
       "hotels": 0,
@@ -230,68 +230,68 @@
       "source_last_seen": null
     },
     "FO": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 22,
+      "with_rooms": 4,
+      "source_last_seen": "2026-10-25T01:12:43+00:00"
     },
     "AX": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 18,
+      "with_rooms": 1,
+      "source_last_seen": "2026-10-25T01:13:39+00:00"
     },
     "GI": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 8,
+      "with_rooms": 1,
+      "source_last_seen": "2026-10-25T01:14:37+00:00"
     },
     "GG": {
-      "hotels": 0,
+      "hotels": 60,
       "with_rooms": 0,
-      "source_last_seen": null
+      "source_last_seen": "2026-10-25T01:15:19+00:00"
     },
     "JE": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 63,
+      "with_rooms": 10,
+      "source_last_seen": "2026-10-25T01:16:16+00:00"
     },
     "IM": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 52,
+      "with_rooms": 1,
+      "source_last_seen": "2026-10-25T01:17:11+00:00"
     },
     "GE": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 2321,
+      "with_rooms": 99,
+      "source_last_seen": "2026-10-25T01:18:14+00:00"
     },
     "AM": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 646,
+      "with_rooms": 53,
+      "source_last_seen": "2026-10-25T01:19:08+00:00"
     },
     "AZ": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 632,
+      "with_rooms": 24,
+      "source_last_seen": "2026-10-25T01:20:08+00:00"
     },
     "TR": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 8620,
+      "with_rooms": 454,
+      "source_last_seen": "2026-10-25T01:21:16+00:00"
     },
     "RU": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 17174,
+      "with_rooms": 794,
+      "source_last_seen": "2026-10-25T01:22:49+00:00"
     },
     "KZ": {
-      "hotels": 0,
-      "with_rooms": 0,
-      "source_last_seen": null
+      "hotels": 1458,
+      "with_rooms": 60,
+      "source_last_seen": "2026-10-25T01:23:43+00:00"
     }
   },
   "latest_pass": {
-    "started": "2026-10-24T23:47:21+00:00",
+    "started": "2026-10-25T00:38:04+00:00",
     "scope": "all_europe",
     "expected_countries": [
       "DE",
@@ -358,15 +358,9 @@
       "CH",
       "FR",
       "BE",
-      "NL"
-    ],
-    "failed": [
-      "LU"
-    ],
-    "pending": [
+      "NL",
       "DK",
       "PL",
-      "CZ",
       "IT",
       "ES",
       "PT",
@@ -374,10 +368,8 @@
       "IE",
       "NO",
       "SE",
-      "FI",
       "IS",
       "EE",
-      "LV",
       "LT",
       "SK",
       "HU",
@@ -386,11 +378,8 @@
       "BA",
       "RS",
       "ME",
-      "XK",
       "AL",
       "MK",
-      "GR",
-      "BG",
       "RO",
       "MD",
       "UA",
@@ -413,22 +402,32 @@
       "AZ",
       "TR",
       "RU",
-      "KZ"
+      "KZ",
+      "LU"
     ],
-    "complete": false
+    "failed": [
+      "CZ",
+      "FI",
+      "LV",
+      "XK",
+      "GR",
+      "BG"
+    ],
+    "pending": [],
+    "complete": false,
+    "finished": "2026-10-25T01:24:35+00:00"
   },
   "combined_csv_available": true,
   "additional_sources": [
     {
       "source": "https://www.data.gouv.fr/datasets/hebergements-touristiques-classes-en-france",
-      "checked_at": "2026-10-25T00:05:00+00:00",
+      "checked_at": "2026-10-25T00:34:24+00:00",
       "register_rows": 21368,
       "hotel_rows": 13113,
       "with_rooms": 13113,
       "snapshot_download_complete": true,
       "all_hotels_in_country": false,
-      "license": "Licence Ouverte 2.0",
-      "duplicate_register_rows": 3
+      "license": "Licence Ouverte 2.0"
     },
     {
       "country": "LI",
