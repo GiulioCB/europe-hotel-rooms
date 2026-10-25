@@ -107,7 +107,7 @@ def normalize_osm(element, country, timestamp):
                rooms_status="community_reported" if rooms else "unknown",
                rooms_source_url=source if rooms else "", rooms_evidence=f"OSM rooms={tags['rooms']}" if rooms else "",
                rooms_observed_at=timestamp if rooms else "", website=tags.get("website") or tags.get("contact:website", ""),
-               source_url=source, source_updated_at=element.get("timestamp", ""), first_seen=timestamp, last_seen=timestamp)
+               source_url=source, source="OpenStreetMap", country_basis="OSM country area membership", source_updated_at=element.get("timestamp", ""), first_seen=timestamp, last_seen=timestamp)
     row["address"] = ", ".join(filter(None, [" ".join(filter(None, [row["street"], row["house_number"]])), " ".join(filter(None, [row["postcode"], row["city"]])), country]))
     return row
 

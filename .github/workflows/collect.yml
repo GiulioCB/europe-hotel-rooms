@@ -43,12 +43,38 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data exports
+          git add data
           if ! git diff --cached --quiet; then
             git commit -m 'Update hotel observations and collection progress'
+            git stash push --include-untracked -- exports
             git pull --rebase origin "${{ github.ref_name }}"
             git push
           fi
       - name: Report an incomplete European refresh
         if: steps.collect.outcome == 'failure' || steps.register.outcome == 'failure'
         run: exit 1
+  publish:
+    needs: collect
+    if: always()
+    runs-on: ubuntu-latest
+    concurrency:
+      group: hotel-export-writer
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python collector.py --export-only
+      - name: Publish current combined exports
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add exports
+          if ! git diff --cached --quiet; then
+            git commit -m 'Publish combined weekly hotel exports'
+            git pull --rebase origin "${{ github.ref_name }}"
+            git push
+          fi
