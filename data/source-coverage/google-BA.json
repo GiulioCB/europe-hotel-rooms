@@ -1,0 +1,16 @@
+{
+  "country": "BA",
+  "started_at": "2026-10-26T07:27:37+00:00",
+  "finished_at": "2026-10-26T09:22:40+00:00",
+  "planned_locality_queries": 307,
+  "new_observations": 818,
+  "retained_records": 818,
+  "process_exit_code": 0,
+  "time_budget_reached": false,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": null,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
