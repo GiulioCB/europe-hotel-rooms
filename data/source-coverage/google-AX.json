@@ -1,0 +1,16 @@
+{
+  "country": "AX",
+  "started_at": "2026-10-26T20:54:43+00:00",
+  "finished_at": "2026-10-26T21:00:37+00:00",
+  "planned_locality_queries": 21,
+  "new_observations": 24,
+  "retained_records": 24,
+  "process_exit_code": 0,
+  "time_budget_reached": false,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": null,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
