@@ -1,0 +1,16 @@
+{
+  "country": "JE",
+  "started_at": "2026-10-26T21:03:43+00:00",
+  "finished_at": "2026-10-26T21:06:45+00:00",
+  "planned_locality_queries": 6,
+  "new_observations": 51,
+  "retained_records": 51,
+  "process_exit_code": 0,
+  "time_budget_reached": false,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": null,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
