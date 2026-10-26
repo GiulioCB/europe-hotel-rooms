@@ -14,6 +14,10 @@ An accumulating list of hotels across Europe, including independent and branded 
 
 CSV files are UTF-8 with a BOM for Excel. If Excel puts everything in one column, use Data → From Text/CSV and select comma. Formula-like text is prefixed with an apostrophe in CSV; original values remain in JSON. Room totals are integers; missing totals are blank, never zero. IDs and postcode text should be imported as text.
 
+## Brand discovery catalogue
+
+Hotelier.de brand, group, operator and cooperation names are available in the [review CSV](exports/brand-discovery.csv) and [structured discovery catalogue](data/brand-discovery/hotelier.json). Entries retain source links, exact name comparison results and an explicit unverified status. Candidates do not automatically change hotel affiliations or parent mappings. The bounded index refresh runs monthly or manually; see [verification and hosting details](docs/brand-discovery.md).
+
 ## Weekly collection
 
 GitHub Actions runs Sundays at **02:23 UTC** (03:23 Zurich winter time; 04:23 summer time). **Every weekly run attempts every one of the 57 countries and territories** in [scope.json](scope.json), serially, starting with Germany. There is a 15-second pause between countries. A failed request preserves that country's previous snapshot, records the failure and continues with the other countries. The job reports failure if any country could not be refreshed; it never labels that pass complete. Country source timestamps and the latest pass's successful, failed and pending countries are available in coverage and state files. A completed pass means the configured sources were refreshed, not that every real European hotel was discovered.
