@@ -1,0 +1,16 @@
+{
+  "country": "RS",
+  "started_at": "2026-10-26T08:30:37+00:00",
+  "finished_at": "2026-10-26T11:15:45+00:00",
+  "planned_locality_queries": 488,
+  "new_observations": 1270,
+  "retained_records": 1270,
+  "process_exit_code": 1,
+  "time_budget_reached": true,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": false,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
