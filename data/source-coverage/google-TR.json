@@ -1,0 +1,16 @@
+{
+  "country": "TR",
+  "started_at": "2026-10-27T00:06:01+00:00",
+  "finished_at": "2026-10-27T02:51:09+00:00",
+  "planned_locality_queries": 4232,
+  "new_observations": 5486,
+  "retained_records": 5486,
+  "process_exit_code": 1,
+  "time_budget_reached": true,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": false,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
