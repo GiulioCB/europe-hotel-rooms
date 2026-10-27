@@ -133,7 +133,7 @@ def google_record(item, expected_country, names, timestamp):
     reported = str(address.get("country") or "").strip()
     reverse = {normalized(v): k for k, v in names.items()}
     code = reported.upper() if len(reported) == 2 and reported.isalpha() else reverse.get(normalized(reported))
-    if code and code != expected_country:
+    if expected_country and code and code != expected_country:
         return None
     source_url = str(item.get("link") or "")
     if not source_url.startswith(("https://www.google.com/maps", "https://maps.google.com/")):
@@ -176,6 +176,7 @@ def google(country, root=ROOT, minutes=22, city=None, binary=None):
     working = root / ".cache/google" / country
     working.mkdir(parents=True, exist_ok=True)
     query_file, output = working / "queries.txt", working / "results.csv"
+    output.unlink(missing_ok=True)  # Never reuse results from an earlier run.
     query_file.write_text("\n".join(planned) + "\n", encoding="utf-8")
     binary = binary or install_scraper(root)
     cmd = [str(binary.resolve()), "-input", str(query_file.resolve()), "-results", str(output.resolve()),
@@ -194,10 +195,18 @@ def google(country, root=ROOT, minutes=22, city=None, binary=None):
                 process.kill()
                 code = process.wait()
     collected = {}
+    parsed_rows = outside_country_hotels = 0
     if output.exists():
         with output.open(encoding="utf-8-sig", newline="") as file:
             for item in csv.DictReader(file):
+                parsed_rows += 1
                 row = google_record(item, country, names, timestamp)
+                if not row:
+                    # A valid hotel explicitly assigned to another country is evidence
+                    # of an empty in-scope result, not a broken scraper.
+                    outside = google_record(item, None, names, timestamp)
+                    if outside and outside.get("country") and outside["country"] != country:
+                        outside_country_hotels += 1
                 if row:
                     collected[row["hotel_id"]] = row
     path = root / f"data/google/{country}.json"
@@ -207,7 +216,9 @@ def google(country, root=ROOT, minutes=22, city=None, binary=None):
         old[identity] = merge(old[identity], row) if identity in old else row
     if collected:
         atomic_json(path, list(old.values()))
-    report = {"country": country, "started_at": timestamp, "finished_at": now(), "planned_locality_queries": len(planned),
+    no_matches = not collected and code == 0 and not timed_out and parsed_rows > 0 and outside_country_hotels > 0
+    report = {"status": "no_matching_hotels" if no_matches else "observations_collected" if collected else "failed",
+              "parsed_rows": parsed_rows, "outside_country_hotels": outside_country_hotels, "country": country, "started_at": timestamp, "finished_at": now(), "planned_locality_queries": len(planned),
               "new_observations": len(collected), "retained_records": len(old), "process_exit_code": code, "time_budget_reached": timed_out,
               "source": "Google Maps via gosom/google-maps-scraper v1.18.1", "paid_api": False, "paid_proxy": False,
               "complete_hotel_census": False, "all_queries_completed": False if timed_out or code else None,
@@ -217,7 +228,9 @@ def google(country, root=ROOT, minutes=22, city=None, binary=None):
         log_tail = (working / "run.log").read_text(encoding="utf-8", errors="replace").splitlines()[-20:]
         print("Scraper diagnostic tail:\n" + "\n".join(log_tail)[-6000:], flush=True)
     print(json.dumps(report), flush=True)
-    return 0 if collected else 1
+    if no_matches:
+        print("::warning::No matching hotels retained; valid hotels outside the requested country were returned. Coverage remains unconfirmed.", flush=True)
+    return 0 if collected or no_matches else 1
 
 
 if __name__ == "__main__":
