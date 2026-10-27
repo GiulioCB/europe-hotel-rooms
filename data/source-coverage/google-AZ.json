@@ -1,0 +1,16 @@
+{
+  "country": "AZ",
+  "started_at": "2026-10-26T23:22:10+00:00",
+  "finished_at": "2026-10-27T00:42:52+00:00",
+  "planned_locality_queries": 246,
+  "new_observations": 1054,
+  "retained_records": 1054,
+  "process_exit_code": 0,
+  "time_budget_reached": false,
+  "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+  "paid_api": false,
+  "paid_proxy": false,
+  "complete_hotel_census": false,
+  "all_queries_completed": null,
+  "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+}
