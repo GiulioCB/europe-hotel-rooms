@@ -1,7 +1,10 @@
 {
+  "status": "no_matching_hotels",
+  "parsed_rows": 12,
+  "outside_country_hotels": 6,
   "country": "VA",
-  "started_at": "2026-10-26T20:46:50+00:00",
-  "finished_at": "2026-10-26T20:47:26+00:00",
+  "started_at": "2026-10-29T00:44:05+00:00",
+  "finished_at": "2026-10-29T00:44:35+00:00",
   "planned_locality_queries": 1,
   "new_observations": 0,
   "retained_records": 0,
