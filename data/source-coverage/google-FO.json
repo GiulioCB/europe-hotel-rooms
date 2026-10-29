@@ -1,7 +1,10 @@
 {
+  "status": "observations_collected",
+  "parsed_rows": 68,
+  "outside_country_hotels": 0,
   "country": "FO",
-  "started_at": "2026-10-26T20:48:23+00:00",
-  "finished_at": "2026-10-26T20:53:42+00:00",
+  "started_at": "2026-10-29T00:45:26+00:00",
+  "finished_at": "2026-10-29T00:51:15+00:00",
   "planned_locality_queries": 35,
   "new_observations": 32,
   "retained_records": 32,
