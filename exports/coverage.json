@@ -1,148 +1,148 @@
 {
-  "updated_at": "2026-10-27T04:31:02+00:00",
-  "rows": 271841,
-  "with_rooms": 31009,
-  "duplicate_candidates": 1892,
+  "updated_at": "2026-10-29T08:13:05+00:00",
+  "rows": 281731,
+  "with_rooms": 31005,
+  "duplicate_candidates": 1898,
   "countries": {
     "DE": {
-      "hotels": 28499,
+      "hotels": 29637,
       "with_rooms": 3629,
-      "source_last_seen": "2026-10-25T07:45:25+00:00"
+      "source_last_seen": "2026-10-27T04:32:54+00:00"
     },
     "AT": {
-      "hotels": 8428,
+      "hotels": 8618,
       "with_rooms": 356,
-      "source_last_seen": "2026-10-25T00:33:49+00:00"
+      "source_last_seen": "2026-10-27T04:32:55+00:00"
     },
     "CH": {
-      "hotels": 6010,
+      "hotels": 6210,
       "with_rooms": 461,
-      "source_last_seen": "2026-10-25T07:46:58+00:00"
+      "source_last_seen": "2026-10-27T07:18:56+00:00"
     },
     "FR": {
-      "hotels": 35977,
-      "with_rooms": 15688,
-      "source_last_seen": "2026-10-25T07:49:30+00:00"
+      "hotels": 36646,
+      "with_rooms": 15684,
+      "source_last_seen": "2026-10-27T07:19:04+00:00"
     },
     "BE": {
-      "hotels": 2860,
+      "hotels": 2953,
       "with_rooms": 262,
-      "source_last_seen": "2026-10-25T07:50:39+00:00"
+      "source_last_seen": "2026-10-27T10:05:09+00:00"
     },
     "NL": {
-      "hotels": 4881,
+      "hotels": 5013,
       "with_rooms": 303,
-      "source_last_seen": "2026-10-25T07:52:15+00:00"
+      "source_last_seen": "2026-10-27T10:05:07+00:00"
     },
     "LU": {
-      "hotels": 405,
+      "hotels": 407,
       "with_rooms": 24,
-      "source_last_seen": "2026-10-25T08:50:31+00:00"
+      "source_last_seen": "2026-10-27T12:51:03+00:00"
     },
     "DK": {
-      "hotels": 1647,
+      "hotels": 1733,
       "with_rooms": 79,
-      "source_last_seen": "2026-10-25T08:51:04+00:00"
+      "source_last_seen": "2026-10-27T12:51:15+00:00"
     },
     "PL": {
-      "hotels": 9006,
+      "hotels": 9390,
       "with_rooms": 831,
-      "source_last_seen": "2026-10-25T10:09:58+00:00"
+      "source_last_seen": "2026-10-27T14:09:43+00:00"
     },
     "CZ": {
-      "hotels": 5270,
+      "hotels": 5484,
       "with_rooms": 240,
-      "source_last_seen": "2026-10-25T11:09:13+00:00"
+      "source_last_seen": "2026-10-27T15:37:19+00:00"
     },
     "IT": {
-      "hotels": 25956,
+      "hotels": 27154,
       "with_rooms": 1659,
-      "source_last_seen": "2026-10-25T12:55:57+00:00"
+      "source_last_seen": "2026-10-27T16:55:54+00:00"
     },
     "ES": {
-      "hotels": 18786,
+      "hotels": 19093,
       "with_rooms": 2100,
-      "source_last_seen": "2026-10-25T13:55:20+00:00"
+      "source_last_seen": "2026-10-27T18:23:29+00:00"
     },
     "PT": {
-      "hotels": 5329,
+      "hotels": 5460,
       "with_rooms": 395,
-      "source_last_seen": "2026-10-25T15:42:06+00:00"
+      "source_last_seen": "2026-10-27T19:41:49+00:00"
     },
     "GB": {
-      "hotels": 14948,
+      "hotels": 15582,
       "with_rooms": 1205,
-      "source_last_seen": "2026-10-25T16:41:17+00:00"
+      "source_last_seen": "2026-10-27T21:09:44+00:00"
     },
     "IE": {
-      "hotels": 1932,
+      "hotels": 1957,
       "with_rooms": 95,
-      "source_last_seen": "2026-10-25T18:28:05+00:00"
+      "source_last_seen": "2026-10-27T22:27:55+00:00"
     },
     "NO": {
-      "hotels": 2210,
+      "hotels": 2220,
       "with_rooms": 114,
-      "source_last_seen": "2026-10-25T19:27:14+00:00"
+      "source_last_seen": "2026-10-27T23:55:49+00:00"
     },
     "SE": {
-      "hotels": 3423,
+      "hotels": 3588,
       "with_rooms": 226,
-      "source_last_seen": "2026-10-25T21:14:01+00:00"
+      "source_last_seen": "2026-10-28T01:12:07+00:00"
     },
     "FI": {
-      "hotels": 1754,
+      "hotels": 2037,
       "with_rooms": 155,
-      "source_last_seen": "2026-10-25T21:50:42+00:00"
+      "source_last_seen": "2026-10-28T02:15:02+00:00"
     },
     "IS": {
-      "hotels": 691,
+      "hotels": 834,
       "with_rooms": 72,
-      "source_last_seen": "2026-10-26T00:00:05+00:00"
+      "source_last_seen": "2026-10-28T03:58:09+00:00"
     },
     "EE": {
-      "hotels": 746,
+      "hotels": 748,
       "with_rooms": 38,
-      "source_last_seen": "2026-10-26T00:36:48+00:00"
+      "source_last_seen": "2026-10-28T04:28:30+00:00"
     },
     "LV": {
-      "hotels": 960,
+      "hotels": 1030,
       "with_rooms": 61,
-      "source_last_seen": "2026-10-26T00:39:29+00:00"
+      "source_last_seen": "2026-10-28T05:01:04+00:00"
     },
     "LT": {
-      "hotels": 1118,
+      "hotels": 1126,
       "with_rooms": 57,
-      "source_last_seen": "2026-10-26T01:49:11+00:00"
+      "source_last_seen": "2026-10-28T05:48:08+00:00"
     },
     "SK": {
-      "hotels": 2132,
+      "hotels": 2211,
       "with_rooms": 126,
-      "source_last_seen": "2026-10-26T01:55:53+00:00"
+      "source_last_seen": "2026-10-28T05:53:27+00:00"
     },
     "HU": {
-      "hotels": 3092,
+      "hotels": 3206,
       "with_rooms": 209,
-      "source_last_seen": "2026-10-26T02:58:47+00:00"
+      "source_last_seen": "2026-10-28T06:58:26+00:00"
     },
     "SI": {
-      "hotels": 1233,
+      "hotels": 1252,
       "with_rooms": 38,
-      "source_last_seen": "2026-10-26T04:41:47+00:00"
+      "source_last_seen": "2026-10-28T08:39:26+00:00"
     },
     "HR": {
-      "hotels": 2989,
+      "hotels": 3127,
       "with_rooms": 85,
-      "source_last_seen": "2026-10-26T05:44:43+00:00"
+      "source_last_seen": "2026-10-28T09:44:18+00:00"
     },
     "BA": {
-      "hotels": 1252,
+      "hotels": 1275,
       "with_rooms": 34,
-      "source_last_seen": "2026-10-26T07:27:37+00:00"
+      "source_last_seen": "2026-10-28T11:25:24+00:00"
     },
     "RS": {
-      "hotels": 1942,
+      "hotels": 1973,
       "with_rooms": 59,
-      "source_last_seen": "2026-10-26T08:30:37+00:00"
+      "source_last_seen": "2026-10-28T12:30:29+00:00"
     },
     "ME": {
       "hotels": 1517,
@@ -150,79 +150,79 @@
       "source_last_seen": "2026-10-26T09:23:24+00:00"
     },
     "XK": {
-      "hotels": 560,
+      "hotels": 563,
       "with_rooms": 23,
-      "source_last_seen": "2026-10-26T10:25:55+00:00"
+      "source_last_seen": "2026-10-28T14:11:26+00:00"
     },
     "AL": {
-      "hotels": 3504,
+      "hotels": 3753,
       "with_rooms": 65,
-      "source_last_seen": "2026-10-26T10:58:35+00:00"
+      "source_last_seen": "2026-10-28T14:42:02+00:00"
     },
     "MK": {
-      "hotels": 829,
+      "hotels": 845,
       "with_rooms": 25,
-      "source_last_seen": "2026-10-26T11:16:30+00:00"
+      "source_last_seen": "2026-10-28T15:16:36+00:00"
     },
     "GR": {
-      "hotels": 3908,
+      "hotels": 4228,
       "with_rooms": 0,
-      "source_last_seen": "2026-10-26T12:42:22+00:00"
+      "source_last_seen": "2026-10-28T16:44:32+00:00"
     },
     "BG": {
-      "hotels": 6404,
+      "hotels": 6699,
       "with_rooms": 253,
-      "source_last_seen": "2026-10-26T13:44:27+00:00"
+      "source_last_seen": "2026-10-28T17:28:20+00:00"
     },
     "RO": {
-      "hotels": 5151,
+      "hotels": 5587,
       "with_rooms": 232,
-      "source_last_seen": "2026-10-26T15:28:15+00:00"
+      "source_last_seen": "2026-10-28T19:30:59+00:00"
     },
     "MD": {
-      "hotels": 417,
+      "hotels": 425,
       "with_rooms": 9,
-      "source_last_seen": "2026-10-26T16:30:39+00:00"
+      "source_last_seen": "2026-10-28T20:14:34+00:00"
     },
     "UA": {
-      "hotels": 6971,
+      "hotels": 7204,
       "with_rooms": 131,
-      "source_last_seen": "2026-10-26T16:57:07+00:00"
+      "source_last_seen": "2026-10-28T20:41:18+00:00"
     },
     "BY": {
-      "hotels": 1438,
+      "hotels": 1445,
       "with_rooms": 60,
-      "source_last_seen": "2026-10-26T18:14:08+00:00"
+      "source_last_seen": "2026-10-28T22:16:58+00:00"
     },
     "MT": {
-      "hotels": 520,
+      "hotels": 528,
       "with_rooms": 13,
-      "source_last_seen": "2026-10-26T19:30:39+00:00"
+      "source_last_seen": "2026-10-28T23:23:51+00:00"
     },
     "CY": {
-      "hotels": 1620,
+      "hotels": 1679,
       "with_rooms": 33,
-      "source_last_seen": "2026-10-26T19:43:27+00:00"
+      "source_last_seen": "2026-10-28T23:27:24+00:00"
     },
     "AD": {
-      "hotels": 338,
+      "hotels": 340,
       "with_rooms": 15,
-      "source_last_seen": "2026-10-26T20:16:47+00:00"
+      "source_last_seen": "2026-10-29T00:11:12+00:00"
     },
     "LI": {
       "hotels": 44,
       "with_rooms": 7,
-      "source_last_seen": "2026-10-26T20:32:39+00:00"
+      "source_last_seen": "2026-10-29T00:25:17+00:00"
     },
     "MC": {
       "hotels": 25,
       "with_rooms": 6,
-      "source_last_seen": "2026-10-26T20:36:21+00:00"
+      "source_last_seen": "2026-10-29T00:29:11+00:00"
     },
     "SM": {
-      "hotels": 42,
+      "hotels": 62,
       "with_rooms": 2,
-      "source_last_seen": "2026-10-26T20:39:02+00:00"
+      "source_last_seen": "2026-10-29T00:31:57+00:00"
     },
     "VA": {
       "hotels": 0,
@@ -232,62 +232,62 @@
     "FO": {
       "hotels": 43,
       "with_rooms": 4,
-      "source_last_seen": "2026-10-26T20:48:23+00:00"
+      "source_last_seen": "2026-10-29T00:45:26+00:00"
     },
     "AX": {
       "hotels": 41,
       "with_rooms": 1,
-      "source_last_seen": "2026-10-26T20:54:43+00:00"
+      "source_last_seen": "2026-10-29T00:52:07+00:00"
     },
     "GI": {
-      "hotels": 22,
+      "hotels": 32,
       "with_rooms": 1,
-      "source_last_seen": "2026-10-26T21:01:35+00:00"
+      "source_last_seen": "2026-10-29T00:55:48+00:00"
     },
     "GG": {
       "hotels": 90,
       "with_rooms": 0,
-      "source_last_seen": "2026-10-26T21:03:27+00:00"
+      "source_last_seen": "2026-10-29T00:58:38+00:00"
     },
     "JE": {
-      "hotels": 106,
+      "hotels": 108,
       "with_rooms": 10,
-      "source_last_seen": "2026-10-26T21:03:43+00:00"
+      "source_last_seen": "2026-10-29T01:00:41+00:00"
     },
     "IM": {
       "hotels": 87,
       "with_rooms": 1,
-      "source_last_seen": "2026-10-26T21:07:35+00:00"
+      "source_last_seen": "2026-10-29T01:04:04+00:00"
     },
     "GE": {
-      "hotels": 3885,
+      "hotels": 3957,
       "with_rooms": 99,
-      "source_last_seen": "2026-10-26T21:09:04+00:00"
+      "source_last_seen": "2026-10-29T01:04:49+00:00"
     },
     "AM": {
-      "hotels": 1649,
+      "hotels": 1675,
       "with_rooms": 53,
-      "source_last_seen": "2026-10-26T21:19:49+00:00"
+      "source_last_seen": "2026-10-29T01:15:40+00:00"
     },
     "AZ": {
-      "hotels": 1629,
+      "hotels": 1658,
       "with_rooms": 24,
-      "source_last_seen": "2026-10-26T23:22:10+00:00"
+      "source_last_seen": "2026-10-29T03:08:03+00:00"
     },
     "TR": {
-      "hotels": 13613,
+      "hotels": 14754,
       "with_rooms": 454,
-      "source_last_seen": "2026-10-27T00:06:01+00:00"
+      "source_last_seen": "2026-10-29T04:01:42+00:00"
     },
     "RU": {
-      "hotels": 21252,
+      "hotels": 21658,
       "with_rooms": 794,
-      "source_last_seen": "2026-10-27T00:43:41+00:00"
+      "source_last_seen": "2026-10-29T04:38:23+00:00"
     },
     "KZ": {
-      "hotels": 2660,
+      "hotels": 2720,
       "with_rooms": 60,
-      "source_last_seen": "2026-10-27T02:51:58+00:00"
+      "source_last_seen": "2026-10-29T06:47:45+00:00"
     }
   },
   "latest_pass": {
@@ -430,12 +430,15 @@
       "license": "Licence Ouverte 2.0"
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 223,
+      "outside_country_hotels": 0,
       "country": "AD",
-      "started_at": "2026-10-26T20:16:47+00:00",
-      "finished_at": "2026-10-26T20:31:39+00:00",
+      "started_at": "2026-10-29T00:11:12+00:00",
+      "finished_at": "2026-10-29T00:24:18+00:00",
       "planned_locality_queries": 20,
-      "new_observations": 212,
-      "retained_records": 212,
+      "new_observations": 188,
+      "retained_records": 215,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -446,12 +449,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 3165,
+      "outside_country_hotels": 3,
       "country": "AL",
-      "started_at": "2026-10-26T10:58:35+00:00",
-      "finished_at": "2026-10-26T13:43:40+00:00",
+      "started_at": "2026-10-28T14:42:02+00:00",
+      "finished_at": "2026-10-28T17:27:09+00:00",
       "planned_locality_queries": 417,
-      "new_observations": 2029,
-      "retained_records": 2029,
+      "new_observations": 2142,
+      "retained_records": 2303,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -462,13 +468,16 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1846,
+      "outside_country_hotels": 40,
       "country": "AM",
-      "started_at": "2026-10-26T21:19:49+00:00",
-      "finished_at": "2026-10-27T00:05:08+00:00",
+      "started_at": "2026-10-29T01:15:40+00:00",
+      "finished_at": "2026-10-29T04:00:49+00:00",
       "planned_locality_queries": 618,
-      "new_observations": 1067,
-      "retained_records": 1067,
-      "process_exit_code": -9,
+      "new_observations": 1019,
+      "retained_records": 1095,
+      "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
@@ -479,11 +488,11 @@
     },
     {
       "country": "AT",
-      "started_at": "2026-10-25T00:33:49+00:00",
-      "finished_at": "2026-10-25T03:18:57+00:00",
+      "started_at": "2026-10-27T04:32:55+00:00",
+      "finished_at": "2026-10-27T07:18:05+00:00",
       "planned_locality_queries": 3011,
-      "new_observations": 2479,
-      "retained_records": 2479,
+      "new_observations": 2480,
+      "retained_records": 2721,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -494,9 +503,12 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 94,
+      "outside_country_hotels": 0,
       "country": "AX",
-      "started_at": "2026-10-26T20:54:43+00:00",
-      "finished_at": "2026-10-26T21:00:37+00:00",
+      "started_at": "2026-10-29T00:52:07+00:00",
+      "finished_at": "2026-10-29T00:57:47+00:00",
       "planned_locality_queries": 21,
       "new_observations": 24,
       "retained_records": 24,
@@ -510,155 +522,14 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1369,
+      "outside_country_hotels": 10,
       "country": "AZ",
-      "started_at": "2026-10-26T23:22:10+00:00",
-      "finished_at": "2026-10-27T00:42:52+00:00",
+      "started_at": "2026-10-29T03:08:03+00:00",
+      "finished_at": "2026-10-29T04:37:32+00:00",
       "planned_locality_queries": 246,
-      "new_observations": 1054,
-      "retained_records": 1054,
-      "process_exit_code": 0,
-      "time_budget_reached": false,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": null,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "BA",
-      "started_at": "2026-10-26T07:27:37+00:00",
-      "finished_at": "2026-10-26T09:22:40+00:00",
-      "planned_locality_queries": 307,
-      "new_observations": 818,
-      "retained_records": 818,
-      "process_exit_code": 0,
-      "time_budget_reached": false,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": null,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "BE",
-      "started_at": "2026-10-25T06:04:58+00:00",
-      "finished_at": "2026-10-25T08:50:06+00:00",
-      "planned_locality_queries": 2223,
-      "new_observations": 1620,
-      "retained_records": 1620,
-      "process_exit_code": 1,
-      "time_budget_reached": true,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": false,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "BG",
-      "started_at": "2026-10-26T13:44:27+00:00",
-      "finished_at": "2026-10-26T16:29:49+00:00",
-      "planned_locality_queries": 332,
-      "new_observations": 3041,
-      "retained_records": 3041,
-      "process_exit_code": -9,
-      "time_budget_reached": true,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": false,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "BY",
-      "started_at": "2026-10-26T18:14:08+00:00",
-      "finished_at": "2026-10-26T19:29:36+00:00",
-      "planned_locality_queries": 313,
-      "new_observations": 658,
-      "retained_records": 658,
-      "process_exit_code": 0,
-      "time_budget_reached": false,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": null,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "CH",
-      "started_at": "2026-10-25T03:19:26+00:00",
-      "finished_at": "2026-10-25T06:04:33+00:00",
-      "planned_locality_queries": 1897,
-      "new_observations": 2438,
-      "retained_records": 2438,
-      "process_exit_code": 1,
-      "time_budget_reached": true,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": false,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "CY",
-      "started_at": "2026-10-26T19:43:27+00:00",
-      "finished_at": "2026-10-26T21:02:34+00:00",
-      "planned_locality_queries": 132,
-      "new_observations": 1024,
-      "retained_records": 1024,
-      "process_exit_code": 0,
-      "time_budget_reached": false,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": null,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "CZ",
-      "started_at": "2026-10-25T11:09:13+00:00",
-      "finished_at": "2026-10-25T13:54:33+00:00",
-      "planned_locality_queries": 2742,
-      "new_observations": 2372,
-      "retained_records": 2372,
-      "process_exit_code": -9,
-      "time_budget_reached": true,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": false,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "DE",
-      "started_at": "2026-10-25T00:33:49+00:00",
-      "finished_at": "2026-10-25T03:19:11+00:00",
-      "planned_locality_queries": 11567,
-      "new_observations": 4986,
-      "retained_records": 4986,
-      "process_exit_code": -9,
-      "time_budget_reached": true,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": false,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "DK",
-      "started_at": "2026-10-25T08:51:04+00:00",
-      "finished_at": "2026-10-25T11:08:20+00:00",
-      "planned_locality_queries": 503,
-      "new_observations": 1084,
+      "new_observations": 1051,
       "retained_records": 1084,
       "process_exit_code": 0,
       "time_budget_reached": false,
@@ -670,12 +541,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
-      "country": "EE",
-      "started_at": "2026-10-26T00:36:48+00:00",
-      "finished_at": "2026-10-26T01:55:05+00:00",
-      "planned_locality_queries": 214,
-      "new_observations": 508,
-      "retained_records": 508,
+      "status": "observations_collected",
+      "parsed_rows": 2102,
+      "outside_country_hotels": 1,
+      "country": "BA",
+      "started_at": "2026-10-28T11:25:24+00:00",
+      "finished_at": "2026-10-28T13:13:14+00:00",
+      "planned_locality_queries": 307,
+      "new_observations": 809,
+      "retained_records": 843,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -686,12 +560,12 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
-      "country": "ES",
-      "started_at": "2026-10-25T13:55:20+00:00",
-      "finished_at": "2026-10-25T16:40:26+00:00",
-      "planned_locality_queries": 7414,
-      "new_observations": 4939,
-      "retained_records": 4939,
+      "country": "BE",
+      "started_at": "2026-10-27T10:05:09+00:00",
+      "finished_at": "2026-10-27T12:50:15+00:00",
+      "planned_locality_queries": 2223,
+      "new_observations": 1585,
+      "retained_records": 1725,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -702,12 +576,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
-      "country": "FI",
-      "started_at": "2026-10-25T21:50:42+00:00",
-      "finished_at": "2026-10-26T00:36:00+00:00",
-      "planned_locality_queries": 923,
-      "new_observations": 1127,
-      "retained_records": 1127,
+      "status": "observations_collected",
+      "parsed_rows": 5295,
+      "outside_country_hotels": 0,
+      "country": "BG",
+      "started_at": "2026-10-28T17:28:20+00:00",
+      "finished_at": "2026-10-28T20:13:40+00:00",
+      "planned_locality_queries": 332,
+      "new_observations": 3189,
+      "retained_records": 3349,
       "process_exit_code": -9,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -718,9 +595,174 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1666,
+      "outside_country_hotels": 22,
+      "country": "BY",
+      "started_at": "2026-10-28T22:16:58+00:00",
+      "finished_at": "2026-10-28T23:22:57+00:00",
+      "planned_locality_queries": 313,
+      "new_observations": 652,
+      "retained_records": 666,
+      "process_exit_code": 0,
+      "time_budget_reached": false,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": null,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "country": "CH",
+      "started_at": "2026-10-27T07:18:56+00:00",
+      "finished_at": "2026-10-27T10:04:16+00:00",
+      "planned_locality_queries": 1897,
+      "new_observations": 2506,
+      "retained_records": 2669,
+      "process_exit_code": -9,
+      "time_budget_reached": true,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": false,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "status": "observations_collected",
+      "parsed_rows": 1718,
+      "outside_country_hotels": 0,
+      "country": "CY",
+      "started_at": "2026-10-28T23:27:24+00:00",
+      "finished_at": "2026-10-29T00:54:56+00:00",
+      "planned_locality_queries": 132,
+      "new_observations": 936,
+      "retained_records": 1084,
+      "process_exit_code": 0,
+      "time_budget_reached": false,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": null,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "status": "observations_collected",
+      "parsed_rows": 5659,
+      "outside_country_hotels": 47,
+      "country": "CZ",
+      "started_at": "2026-10-27T15:37:19+00:00",
+      "finished_at": "2026-10-27T18:22:27+00:00",
+      "planned_locality_queries": 2742,
+      "new_observations": 2336,
+      "retained_records": 2641,
+      "process_exit_code": 1,
+      "time_budget_reached": true,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": false,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "country": "DE",
+      "started_at": "2026-10-27T04:32:54+00:00",
+      "finished_at": "2026-10-27T07:18:02+00:00",
+      "planned_locality_queries": 11571,
+      "new_observations": 4860,
+      "retained_records": 6481,
+      "process_exit_code": 1,
+      "time_budget_reached": true,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": false,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "country": "DK",
+      "started_at": "2026-10-27T12:51:15+00:00",
+      "finished_at": "2026-10-27T15:36:20+00:00",
+      "planned_locality_queries": 503,
+      "new_observations": 1125,
+      "retained_records": 1178,
+      "process_exit_code": 0,
+      "time_budget_reached": true,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": false,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "status": "observations_collected",
+      "parsed_rows": 1611,
+      "outside_country_hotels": 0,
+      "country": "EE",
+      "started_at": "2026-10-28T04:28:30+00:00",
+      "finished_at": "2026-10-28T05:52:37+00:00",
+      "planned_locality_queries": 214,
+      "new_observations": 504,
+      "retained_records": 510,
+      "process_exit_code": 0,
+      "time_budget_reached": false,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": null,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "status": "observations_collected",
+      "parsed_rows": 6156,
+      "outside_country_hotels": 0,
+      "country": "ES",
+      "started_at": "2026-10-27T18:23:29+00:00",
+      "finished_at": "2026-10-27T21:08:37+00:00",
+      "planned_locality_queries": 7414,
+      "new_observations": 4307,
+      "retained_records": 5323,
+      "process_exit_code": 1,
+      "time_budget_reached": true,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": false,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "status": "observations_collected",
+      "parsed_rows": 2788,
+      "outside_country_hotels": 64,
+      "country": "FI",
+      "started_at": "2026-10-28T02:15:02+00:00",
+      "finished_at": "2026-10-28T05:00:07+00:00",
+      "planned_locality_queries": 923,
+      "new_observations": 1260,
+      "retained_records": 1422,
+      "process_exit_code": 1,
+      "time_budget_reached": true,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": false,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "status": "observations_collected",
+      "parsed_rows": 68,
+      "outside_country_hotels": 0,
       "country": "FO",
-      "started_at": "2026-10-26T20:48:23+00:00",
-      "finished_at": "2026-10-26T20:53:42+00:00",
+      "started_at": "2026-10-29T00:45:26+00:00",
+      "finished_at": "2026-10-29T00:51:15+00:00",
       "planned_locality_queries": 35,
       "new_observations": 32,
       "retained_records": 32,
@@ -735,11 +777,11 @@
     },
     {
       "country": "FR",
-      "started_at": "2026-10-25T03:19:43+00:00",
-      "finished_at": "2026-10-25T06:04:50+00:00",
-      "planned_locality_queries": 15260,
-      "new_observations": 4895,
-      "retained_records": 4895,
+      "started_at": "2026-10-27T07:19:04+00:00",
+      "finished_at": "2026-10-27T10:04:11+00:00",
+      "planned_locality_queries": 15261,
+      "new_observations": 4555,
+      "retained_records": 5725,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -750,13 +792,16 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 7132,
+      "outside_country_hotels": 0,
       "country": "GB",
-      "started_at": "2026-10-25T16:41:17+00:00",
-      "finished_at": "2026-10-25T19:26:23+00:00",
+      "started_at": "2026-10-27T21:09:44+00:00",
+      "finished_at": "2026-10-27T23:54:51+00:00",
       "planned_locality_queries": 5667,
-      "new_observations": 4070,
-      "retained_records": 4070,
-      "process_exit_code": 0,
+      "new_observations": 4213,
+      "retained_records": 4883,
+      "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
@@ -766,12 +811,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 2625,
+      "outside_country_hotels": 413,
       "country": "GE",
-      "started_at": "2026-10-26T21:09:04+00:00",
-      "finished_at": "2026-10-26T23:21:18+00:00",
+      "started_at": "2026-10-29T01:04:49+00:00",
+      "finished_at": "2026-10-29T03:07:11+00:00",
       "planned_locality_queries": 217,
-      "new_observations": 1649,
-      "retained_records": 1649,
+      "new_observations": 1553,
+      "retained_records": 1725,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -782,9 +830,12 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 83,
+      "outside_country_hotels": 0,
       "country": "GG",
-      "started_at": "2026-10-26T21:03:27+00:00",
-      "finished_at": "2026-10-26T21:08:17+00:00",
+      "started_at": "2026-10-29T00:58:38+00:00",
+      "finished_at": "2026-10-29T01:03:49+00:00",
       "planned_locality_queries": 12,
       "new_observations": 42,
       "retained_records": 42,
@@ -798,12 +849,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 94,
+      "outside_country_hotels": 18,
       "country": "GI",
-      "started_at": "2026-10-26T21:01:35+00:00",
-      "finished_at": "2026-10-26T21:02:52+00:00",
+      "started_at": "2026-10-29T00:55:48+00:00",
+      "finished_at": "2026-10-29T00:59:49+00:00",
       "planned_locality_queries": 7,
-      "new_observations": 15,
-      "retained_records": 15,
+      "new_observations": 25,
+      "retained_records": 25,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -814,12 +868,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 5459,
+      "outside_country_hotels": 0,
       "country": "GR",
-      "started_at": "2026-10-26T12:42:22+00:00",
-      "finished_at": "2026-10-26T15:27:30+00:00",
+      "started_at": "2026-10-28T16:44:32+00:00",
+      "finished_at": "2026-10-28T19:29:39+00:00",
       "planned_locality_queries": 1959,
-      "new_observations": 3908,
-      "retained_records": 3908,
+      "new_observations": 3950,
+      "retained_records": 4228,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -830,13 +887,16 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 4927,
+      "outside_country_hotels": 18,
       "country": "HR",
-      "started_at": "2026-10-26T05:44:43+00:00",
-      "finished_at": "2026-10-26T08:29:51+00:00",
+      "started_at": "2026-10-28T09:44:18+00:00",
+      "finished_at": "2026-10-28T12:29:40+00:00",
       "planned_locality_queries": 1210,
-      "new_observations": 1940,
-      "retained_records": 1940,
-      "process_exit_code": 1,
+      "new_observations": 1886,
+      "retained_records": 2089,
+      "process_exit_code": -9,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
@@ -846,12 +906,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 5009,
+      "outside_country_hotels": 75,
       "country": "HU",
-      "started_at": "2026-10-26T02:58:47+00:00",
-      "finished_at": "2026-10-26T05:43:55+00:00",
+      "started_at": "2026-10-28T06:58:26+00:00",
+      "finished_at": "2026-10-28T09:43:33+00:00",
       "planned_locality_queries": 1240,
-      "new_observations": 1686,
-      "retained_records": 1686,
+      "new_observations": 1680,
+      "retained_records": 1809,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -862,25 +925,31 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 4029,
+      "outside_country_hotels": 82,
       "country": "IE",
-      "started_at": "2026-10-25T18:28:05+00:00",
-      "finished_at": "2026-10-25T21:13:11+00:00",
+      "started_at": "2026-10-27T22:27:55+00:00",
+      "finished_at": "2026-10-28T01:11:16+00:00",
       "planned_locality_queries": 561,
-      "new_observations": 1137,
-      "retained_records": 1137,
+      "new_observations": 1133,
+      "retained_records": 1170,
       "process_exit_code": 0,
-      "time_budget_reached": true,
+      "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
       "paid_proxy": false,
       "complete_hotel_census": false,
-      "all_queries_completed": false,
+      "all_queries_completed": null,
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 155,
+      "outside_country_hotels": 0,
       "country": "IM",
-      "started_at": "2026-10-26T21:07:35+00:00",
-      "finished_at": "2026-10-26T21:18:43+00:00",
+      "started_at": "2026-10-29T01:04:04+00:00",
+      "finished_at": "2026-10-29T01:14:45+00:00",
       "planned_locality_queries": 21,
       "new_observations": 46,
       "retained_records": 46,
@@ -894,12 +963,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1131,
+      "outside_country_hotels": 3,
       "country": "IS",
-      "started_at": "2026-10-26T00:00:05+00:00",
-      "finished_at": "2026-10-26T00:38:41+00:00",
+      "started_at": "2026-10-28T03:58:09+00:00",
+      "finished_at": "2026-10-28T04:27:37+00:00",
       "planned_locality_queries": 49,
-      "new_observations": 435,
-      "retained_records": 435,
+      "new_observations": 485,
+      "retained_records": 589,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -910,13 +982,16 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 6724,
+      "outside_country_hotels": 0,
       "country": "IT",
-      "started_at": "2026-10-25T12:55:57+00:00",
-      "finished_at": "2026-10-25T15:41:16+00:00",
-      "planned_locality_queries": 11720,
-      "new_observations": 3246,
-      "retained_records": 3246,
-      "process_exit_code": -9,
+      "started_at": "2026-10-27T16:55:54+00:00",
+      "finished_at": "2026-10-27T19:41:01+00:00",
+      "planned_locality_queries": 11725,
+      "new_observations": 3739,
+      "retained_records": 4650,
+      "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
@@ -926,12 +1001,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 88,
+      "outside_country_hotels": 4,
       "country": "JE",
-      "started_at": "2026-10-26T21:03:43+00:00",
-      "finished_at": "2026-10-26T21:06:45+00:00",
+      "started_at": "2026-10-29T01:00:41+00:00",
+      "finished_at": "2026-10-29T01:03:17+00:00",
       "planned_locality_queries": 6,
-      "new_observations": 51,
-      "retained_records": 51,
+      "new_observations": 53,
+      "retained_records": 53,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -942,12 +1020,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1821,
+      "outside_country_hotels": 131,
       "country": "KZ",
-      "started_at": "2026-10-27T02:51:58+00:00",
-      "finished_at": "2026-10-27T04:29:44+00:00",
+      "started_at": "2026-10-29T06:47:45+00:00",
+      "finished_at": "2026-10-29T08:11:40+00:00",
       "planned_locality_queries": 348,
-      "new_observations": 1270,
-      "retained_records": 1270,
+      "new_observations": 1231,
+      "retained_records": 1334,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -958,9 +1039,12 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 44,
+      "outside_country_hotels": 0,
       "country": "LI",
-      "started_at": "2026-10-26T20:32:39+00:00",
-      "finished_at": "2026-10-26T20:35:32+00:00",
+      "started_at": "2026-10-29T00:25:17+00:00",
+      "finished_at": "2026-10-29T00:28:19+00:00",
       "planned_locality_queries": 14,
       "new_observations": 25,
       "retained_records": 25,
@@ -974,12 +1058,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1680,
+      "outside_country_hotels": 1,
       "country": "LT",
-      "started_at": "2026-10-26T01:49:11+00:00",
-      "finished_at": "2026-10-26T02:57:59+00:00",
+      "started_at": "2026-10-28T05:48:08+00:00",
+      "finished_at": "2026-10-28T06:57:34+00:00",
       "planned_locality_queries": 164,
-      "new_observations": 790,
-      "retained_records": 790,
+      "new_observations": 773,
+      "retained_records": 798,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -991,11 +1078,11 @@
     },
     {
       "country": "LU",
-      "started_at": "2026-10-25T08:50:31+00:00",
-      "finished_at": "2026-10-25T10:09:07+00:00",
+      "started_at": "2026-10-27T12:51:03+00:00",
+      "finished_at": "2026-10-27T14:08:49+00:00",
       "planned_locality_queries": 235,
-      "new_observations": 219,
-      "retained_records": 219,
+      "new_observations": 220,
+      "retained_records": 221,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1006,12 +1093,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1134,
+      "outside_country_hotels": 2,
       "country": "LV",
-      "started_at": "2026-10-26T00:39:29+00:00",
-      "finished_at": "2026-10-26T01:48:25+00:00",
+      "started_at": "2026-10-28T05:01:04+00:00",
+      "finished_at": "2026-10-28T05:47:17+00:00",
       "planned_locality_queries": 147,
-      "new_observations": 651,
-      "retained_records": 651,
+      "new_observations": 518,
+      "retained_records": 722,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1022,9 +1112,12 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 19,
+      "outside_country_hotels": 0,
       "country": "MC",
-      "started_at": "2026-10-26T20:36:21+00:00",
-      "finished_at": "2026-10-26T20:38:07+00:00",
+      "started_at": "2026-10-29T00:29:11+00:00",
+      "finished_at": "2026-10-29T00:31:05+00:00",
       "planned_locality_queries": 12,
       "new_observations": 13,
       "retained_records": 13,
@@ -1038,12 +1131,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 427,
+      "outside_country_hotels": 3,
       "country": "MD",
-      "started_at": "2026-10-26T16:30:39+00:00",
-      "finished_at": "2026-10-26T16:56:07+00:00",
+      "started_at": "2026-10-28T20:14:34+00:00",
+      "finished_at": "2026-10-28T20:40:13+00:00",
       "planned_locality_queries": 101,
-      "new_observations": 282,
-      "retained_records": 282,
+      "new_observations": 279,
+      "retained_records": 290,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1054,28 +1150,34 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "failed",
+      "parsed_rows": 0,
+      "outside_country_hotels": 0,
       "country": "ME",
-      "started_at": "2026-10-26T09:23:24+00:00",
-      "finished_at": "2026-10-26T10:25:08+00:00",
+      "started_at": "2026-10-28T13:14:06+00:00",
+      "finished_at": "2026-10-28T14:10:37+00:00",
       "planned_locality_queries": 66,
-      "new_observations": 1004,
+      "new_observations": 0,
       "retained_records": 1004,
-      "process_exit_code": 0,
+      "process_exit_code": 1,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
       "paid_proxy": false,
       "complete_hotel_census": false,
-      "all_queries_completed": null,
+      "all_queries_completed": false,
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 1038,
+      "outside_country_hotels": 20,
       "country": "MK",
-      "started_at": "2026-10-26T11:16:30+00:00",
-      "finished_at": "2026-10-26T12:41:38+00:00",
+      "started_at": "2026-10-28T15:16:36+00:00",
+      "finished_at": "2026-10-28T16:43:17+00:00",
       "planned_locality_queries": 301,
-      "new_observations": 518,
-      "retained_records": 518,
+      "new_observations": 520,
+      "retained_records": 534,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1086,12 +1188,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 615,
+      "outside_country_hotels": 0,
       "country": "MT",
-      "started_at": "2026-10-26T19:30:39+00:00",
-      "finished_at": "2026-10-26T20:15:52+00:00",
+      "started_at": "2026-10-28T23:23:51+00:00",
+      "finished_at": "2026-10-29T00:10:14+00:00",
       "planned_locality_queries": 71,
-      "new_observations": 337,
-      "retained_records": 337,
+      "new_observations": 339,
+      "retained_records": 345,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1103,12 +1208,12 @@
     },
     {
       "country": "NL",
-      "started_at": "2026-10-25T06:05:17+00:00",
-      "finished_at": "2026-10-25T08:50:36+00:00",
-      "planned_locality_queries": 2040,
-      "new_observations": 2735,
-      "retained_records": 2735,
-      "process_exit_code": -9,
+      "started_at": "2026-10-27T10:05:07+00:00",
+      "finished_at": "2026-10-27T12:50:14+00:00",
+      "planned_locality_queries": 2057,
+      "new_observations": 2737,
+      "retained_records": 2883,
+      "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
@@ -1118,12 +1223,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 3492,
+      "outside_country_hotels": 14,
       "country": "NO",
-      "started_at": "2026-10-25T19:27:14+00:00",
-      "finished_at": "2026-10-25T21:49:57+00:00",
+      "started_at": "2026-10-27T23:55:49+00:00",
+      "finished_at": "2026-10-28T02:14:06+00:00",
       "planned_locality_queries": 629,
-      "new_observations": 1531,
-      "retained_records": 1531,
+      "new_observations": 1483,
+      "retained_records": 1544,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1134,12 +1242,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 6112,
+      "outside_country_hotels": 1,
       "country": "PL",
-      "started_at": "2026-10-25T10:09:58+00:00",
-      "finished_at": "2026-10-25T12:55:09+00:00",
-      "planned_locality_queries": 3787,
-      "new_observations": 3208,
-      "retained_records": 3208,
+      "started_at": "2026-10-27T14:09:43+00:00",
+      "finished_at": "2026-10-27T16:54:51+00:00",
+      "planned_locality_queries": 3788,
+      "new_observations": 3053,
+      "retained_records": 3655,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1150,12 +1261,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 4942,
+      "outside_country_hotels": 0,
       "country": "PT",
-      "started_at": "2026-10-25T15:42:06+00:00",
-      "finished_at": "2026-10-25T18:27:15+00:00",
+      "started_at": "2026-10-27T19:41:49+00:00",
+      "finished_at": "2026-10-27T22:26:58+00:00",
       "planned_locality_queries": 1066,
-      "new_observations": 2675,
-      "retained_records": 2675,
+      "new_observations": 2490,
+      "retained_records": 2839,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1166,12 +1280,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 6374,
+      "outside_country_hotels": 0,
       "country": "RO",
-      "started_at": "2026-10-26T15:28:15+00:00",
-      "finished_at": "2026-10-26T18:13:22+00:00",
+      "started_at": "2026-10-28T19:30:59+00:00",
+      "finished_at": "2026-10-28T22:16:04+00:00",
       "planned_locality_queries": 7027,
-      "new_observations": 2275,
-      "retained_records": 2275,
+      "new_observations": 2473,
+      "retained_records": 2761,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1182,12 +1299,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 3063,
+      "outside_country_hotels": 96,
       "country": "RS",
-      "started_at": "2026-10-26T08:30:37+00:00",
-      "finished_at": "2026-10-26T11:15:45+00:00",
+      "started_at": "2026-10-28T12:30:29+00:00",
+      "finished_at": "2026-10-28T15:15:37+00:00",
       "planned_locality_queries": 488,
-      "new_observations": 1270,
-      "retained_records": 1270,
+      "new_observations": 1150,
+      "retained_records": 1301,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1198,12 +1318,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 5697,
+      "outside_country_hotels": 4,
       "country": "RU",
-      "started_at": "2026-10-27T00:43:41+00:00",
-      "finished_at": "2026-10-27T03:28:51+00:00",
+      "started_at": "2026-10-29T04:38:23+00:00",
+      "finished_at": "2026-10-29T07:23:31+00:00",
       "planned_locality_queries": 5263,
-      "new_observations": 4244,
-      "retained_records": 4244,
+      "new_observations": 4008,
+      "retained_records": 4662,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1214,28 +1337,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 5268,
+      "outside_country_hotels": 4,
       "country": "SE",
-      "started_at": "2026-10-25T21:14:01+00:00",
-      "finished_at": "2026-10-25T23:59:20+00:00",
+      "started_at": "2026-10-28T01:12:07+00:00",
+      "finished_at": "2026-10-28T03:57:15+00:00",
       "planned_locality_queries": 1302,
-      "new_observations": 2149,
-      "retained_records": 2149,
-      "process_exit_code": -9,
-      "time_budget_reached": true,
-      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
-      "paid_api": false,
-      "paid_proxy": false,
-      "complete_hotel_census": false,
-      "all_queries_completed": false,
-      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
-    },
-    {
-      "country": "SI",
-      "started_at": "2026-10-26T04:41:47+00:00",
-      "finished_at": "2026-10-26T07:26:53+00:00",
-      "planned_locality_queries": 602,
-      "new_observations": 842,
-      "retained_records": 842,
+      "new_observations": 1991,
+      "retained_records": 2330,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1246,13 +1356,16 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
-      "country": "SK",
-      "started_at": "2026-10-26T01:55:53+00:00",
-      "finished_at": "2026-10-26T04:40:59+00:00",
-      "planned_locality_queries": 832,
-      "new_observations": 1248,
-      "retained_records": 1248,
-      "process_exit_code": 0,
+      "status": "observations_collected",
+      "parsed_rows": 4411,
+      "outside_country_hotels": 78,
+      "country": "SI",
+      "started_at": "2026-10-28T08:39:26+00:00",
+      "finished_at": "2026-10-28T11:24:35+00:00",
+      "planned_locality_queries": 602,
+      "new_observations": 844,
+      "retained_records": 862,
+      "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
       "paid_api": false,
@@ -1262,12 +1375,34 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 3977,
+      "outside_country_hotels": 60,
+      "country": "SK",
+      "started_at": "2026-10-28T05:53:27+00:00",
+      "finished_at": "2026-10-28T08:38:36+00:00",
+      "planned_locality_queries": 842,
+      "new_observations": 1282,
+      "retained_records": 1333,
+      "process_exit_code": 1,
+      "time_budget_reached": true,
+      "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
+      "paid_api": false,
+      "paid_proxy": false,
+      "complete_hotel_census": false,
+      "all_queries_completed": false,
+      "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
+    },
+    {
+      "status": "observations_collected",
+      "parsed_rows": 172,
+      "outside_country_hotels": 9,
       "country": "SM",
-      "started_at": "2026-10-26T20:39:02+00:00",
-      "finished_at": "2026-10-26T20:46:06+00:00",
+      "started_at": "2026-10-29T00:31:57+00:00",
+      "finished_at": "2026-10-29T00:43:13+00:00",
       "planned_locality_queries": 15,
-      "new_observations": 32,
-      "retained_records": 32,
+      "new_observations": 51,
+      "retained_records": 52,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1278,12 +1413,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 6103,
+      "outside_country_hotels": 0,
       "country": "TR",
-      "started_at": "2026-10-27T00:06:01+00:00",
-      "finished_at": "2026-10-27T02:51:09+00:00",
-      "planned_locality_queries": 4232,
-      "new_observations": 5486,
-      "retained_records": 5486,
+      "started_at": "2026-10-29T04:01:42+00:00",
+      "finished_at": "2026-10-29T06:46:49+00:00",
+      "planned_locality_queries": 4233,
+      "new_observations": 5399,
+      "retained_records": 6733,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1294,12 +1432,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 4218,
+      "outside_country_hotels": 117,
       "country": "UA",
-      "started_at": "2026-10-26T16:57:07+00:00",
-      "finished_at": "2026-10-26T19:42:15+00:00",
+      "started_at": "2026-10-28T20:41:18+00:00",
+      "finished_at": "2026-10-28T23:26:28+00:00",
       "planned_locality_queries": 5283,
-      "new_observations": 3131,
-      "retained_records": 3131,
+      "new_observations": 2894,
+      "retained_records": 3370,
       "process_exit_code": 1,
       "time_budget_reached": true,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
@@ -1310,9 +1451,12 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "no_matching_hotels",
+      "parsed_rows": 12,
+      "outside_country_hotels": 6,
       "country": "VA",
-      "started_at": "2026-10-26T20:46:50+00:00",
-      "finished_at": "2026-10-26T20:47:26+00:00",
+      "started_at": "2026-10-29T00:44:05+00:00",
+      "finished_at": "2026-10-29T00:44:35+00:00",
       "planned_locality_queries": 1,
       "new_observations": 0,
       "retained_records": 0,
@@ -1326,12 +1470,15 @@
       "note": "Search result coverage is partial; a successful process does not establish exhaustive Google listings. Zero results can mean blocking. Missing totals remain unknown."
     },
     {
+      "status": "observations_collected",
+      "parsed_rows": 507,
+      "outside_country_hotels": 20,
       "country": "XK",
-      "started_at": "2026-10-26T10:25:55+00:00",
-      "finished_at": "2026-10-26T10:57:50+00:00",
+      "started_at": "2026-10-28T14:11:26+00:00",
+      "finished_at": "2026-10-28T14:41:08+00:00",
       "planned_locality_queries": 77,
-      "new_observations": 359,
-      "retained_records": 359,
+      "new_observations": 339,
+      "retained_records": 362,
       "process_exit_code": 0,
       "time_budget_reached": false,
       "source": "Google Maps via gosom/google-maps-scraper v1.18.1",
