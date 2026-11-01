@@ -1,9 +1,9 @@
 {
   "source": "https://www.data.gouv.fr/datasets/hebergements-touristiques-classes-en-france",
-  "checked_at": "2026-10-25T00:34:24+00:00",
-  "register_rows": 21368,
-  "hotel_rows": 13113,
-  "with_rooms": 13113,
+  "checked_at": "2026-11-01T09:25:32+00:00",
+  "register_rows": 21362,
+  "hotel_rows": 13106,
+  "with_rooms": 13106,
   "snapshot_download_complete": true,
   "all_hotels_in_country": false,
   "license": "Licence Ouverte 2.0"
