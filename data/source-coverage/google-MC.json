@@ -1,10 +1,10 @@
 {
   "status": "observations_collected",
-  "parsed_rows": 21,
+  "parsed_rows": 23,
   "outside_country_hotels": 1,
   "country": "MC",
-  "started_at": "2026-11-03T11:44:42+00:00",
-  "finished_at": "2026-11-03T11:46:24+00:00",
+  "started_at": "2026-11-10T11:14:49+00:00",
+  "finished_at": "2026-11-10T11:16:40+00:00",
   "planned_locality_queries": 12,
   "new_observations": 13,
   "retained_records": 13,
