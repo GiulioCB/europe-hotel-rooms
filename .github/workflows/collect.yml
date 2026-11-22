@@ -1,7 +1,5 @@
 name: Weekly European hotel collection
 on:
-  schedule:
-    - cron: '23 2 * * 0'
   workflow_dispatch:
     inputs:
       enrich_limit:
