@@ -1,7 +1,5 @@
 name: Free Google hotel discovery across Europe
 on:
-  schedule:
-    - cron: '17 9 * * 0'
   workflow_dispatch:
     inputs:
       country:
