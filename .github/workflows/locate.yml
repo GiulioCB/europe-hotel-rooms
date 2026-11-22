@@ -18,6 +18,7 @@ jobs:
         env:
           GEOAPIFY_API_KEY: ${{ secrets.GEOAPIFY_API_KEY }}
         run: |
+          python scripts/locate_existing.py --coverage >> "$GITHUB_STEP_SUMMARY"
           if [ -z "$GEOAPIFY_API_KEY" ]; then echo "Geocoding pending Geoapify key" >> "$GITHUB_STEP_SUMMARY"; exit 0; fi
           python scripts/locate_existing.py
           if git diff --quiet -- data; then exit 0; fi
