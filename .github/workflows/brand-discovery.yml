@@ -1,13 +1,5 @@
 name: Publish brand discovery catalogue
 on:
-  push:
-    branches: [main]
-    paths:
-      - scripts/discover-hotelier-brands.py
-      - tests/test_brand_discovery.py
-      - .github/workflows/brand-discovery.yml
-  schedule:
-    - cron: '41 6 1 * *'
   workflow_dispatch:
 permissions:
   contents: write
