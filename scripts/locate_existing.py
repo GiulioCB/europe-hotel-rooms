@@ -1,5 +1,8 @@
 """Resolve missing hotel points using existing structured addresses."""
+import csv
+import gzip
 import json
+import sys
 import math
 import os
 import time
@@ -51,5 +54,22 @@ def main():
             if not remaining:
                 return
 
+def coverage():
+    """Count published inventory records once, using the combined export."""
+    total = located = addressable = 0
+    with gzip.open("exports/hotels.csv.gz", "rt", encoding="utf-8-sig", newline="") as stream:
+        for row in csv.DictReader(stream):
+            total += 1
+            if usable({key: row.get(key, "").lstrip("'") for key in ("latitude", "longitude")}):
+                located += 1
+            elif all(row.get(key, "").strip() for key in ("street", "house_number", "city", "country")):
+                addressable += 1
+    print(f"Published inventory: {total:,} records; {located:,} have coordinates; "
+          f"{addressable:,} have missing coordinates and a structured address; "
+          f"{total-located-addressable:,} need address research.")
+
 if __name__=="__main__":
-    main()
+    if "--coverage" in sys.argv:
+        coverage()
+    else:
+        main()
